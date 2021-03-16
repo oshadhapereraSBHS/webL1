@@ -5,28 +5,51 @@ html {
     
 }
 
-body {
+section {
     display: grid;
-    grid-template-columns: 5% 1fr 5% 1fr 5% 1fr 5%;
+    grid-template-columns: 2% 1fr 2% 1fr 2% 1fr 2%;
     grid-template-rows: auto;
 }
 
 nav {
-    grid-column: 1/8;
-    grid-row: 1/2;
-    background-image: linear-gradient(#0d7bbc, #040640)
+
+    background-image: linear-gradient(#0d7bbc, #040640);
+    max-height: 50px;    text-align: right;
+
 }
 
 nav a {
-    text-align: right;
     color: black;
+    padding-right: 4%;
     text-decoration: none;
+    text-shadow: 0 0 4px white;
+    font-size: 36px;
+    font-family: "FROZEN ICE", sans-serif;
 }
 
-.samples {
-    grid-row: 3/4;
+.slider {
+    width: 100vw;
 }
 
-.mens {
+#mens {
     grid-column: 2/3;
+    grid-row: 1/2;
+}
+#womens {
+    grid-column: 4/5;
+    grid-row: 1/2;
+
+}
+#kids {
+    grid-column: 6/7;
+    grid-row: 1/2;
+
+}
+img {
+display: inline-block;
+}
+
+.homepageimg {
+    height: 100vh;
+    width: 50vh;
 }
