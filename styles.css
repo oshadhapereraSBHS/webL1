@@ -12,6 +12,7 @@ html {
     background-image: linear-gradient(#0b0e70, #0d7cbc);
     background-repeat: no-repeat;
     margin: 0;
+    width: 100vw;
     
 }
 h1 {
@@ -57,6 +58,7 @@ nav a {
 .slider {
     width: 100vw;
     grid-row: 1/2;
+    
 }
 
 #mens {
@@ -155,13 +157,12 @@ box-shadow: 2px 2px 8px black;
 .logo {
     height: 100%;
     width: 100%;
-    min-height: 70px;
     max-height: 40px;
     max-width: 170px;
     display: inline;
     grid-column: 1/2;
     grid-row: 1/2;
-    padding: 2% 0 0 2%;
+    padding: 2% 0 0 5%;
     text-shadow: 2px 2px 2px white;
 }
 
@@ -192,4 +193,122 @@ background-image: url(lake.png);
     box-shadow: -2px -2px 5px black;
     opacity: 100%;
     z-index: 1;
+}
+
+.clothing {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2% 1fr 2% 1fr 2% 1fr 2%;
+    width: 100vw
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m {
+    box-shadow: 2px 2px 8px black;
+    padding: 5%;
+}
+
+.clothingtxt {
+    text-align: center;
+}
+
+.storeimg {
+    width: 100%;
+}
+
+.a {
+    grid-row: 2/3;
+    grid-column: 2/3
+}
+.b {
+    grid-row: 2/3;
+    grid-column: 4/5
+}
+.c {
+    grid-row: 2/3;
+    grid-column: 6/7;
+}
+.d {
+    grid-row: 4/5;
+    grid-column: 2/3
+}
+.e {
+    grid-row: 4/5;
+    grid-column: 4/5
+}
+.f {
+    grid-row: 4/5;
+    grid-column: 6/7;
+}
+.g {
+    grid-row: 6/7;
+    grid-column: 2/3
+}
+.h {
+    grid-row: 6/7;
+    grid-column: 4/5
+}
+.i {
+    grid-row: 6/7;
+    grid-column: 6/7;
+}
+.j {
+    grid-row: 8/9;
+    grid-column: 2/3
+}
+.k {
+    grid-row: 8/9;
+    grid-column: 4/5
+}
+.l {
+    grid-row: 8/9;
+    grid-column: 6/7;
+}
+
+.atxt {
+    grid-row: 3/4;
+    grid-column: 2/3
+}
+.btxt {
+    grid-row: 3/4;
+    grid-column: 4/5
+}
+.ctxt {
+    grid-row: 3/4;
+    grid-column: 6/7;
+}
+.dtxt {
+    grid-row: 5/6;
+    grid-column: 2/3
+}
+.etxt {
+    grid-row: 5/6;
+    grid-column: 4/5
+}
+.ftxt {
+    grid-row: 5/6;
+    grid-column: 6/7;
+}
+.gtxt {
+    grid-row: 7/8;
+    grid-column: 2/3
+}
+.htxt {
+    grid-row: 7/8;
+    grid-column: 4/5
+}
+.itxt {
+    grid-row: 7/8;
+    grid-column: 6/7;
+}
+.jtxt {
+    grid-row: 9/10;
+    grid-column: 2/3
+}
+.ktxt {
+    grid-row: 9/10;
+    grid-column: 4/5
+}
+.ltxt {
+    grid-row: 9/10;
+    grid-column: 6/7;
 }
