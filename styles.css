@@ -238,17 +238,36 @@ background-image: url(lake.png);
 .clothing {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 2% 1fr 2% 1fr 2% 1fr 2%;
-    width: 100vw;
-        background-image: url(ice%20picture.png);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+    margin: auto;
+    width: 96vw;
+            background-image: url(ice%20picture.png);
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
-.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m {
+
+
+ul {
+    list-style: none;
+}
+
+li {
     box-shadow: 2px 2px 8px black;
     padding: 5%;
     background-color: rgba(255, 255, 255, 0.2)
+}
+
+li {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+li img , .middle {
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .clothingtxt {
@@ -260,6 +279,7 @@ background-image: url(lake.png);
     display: block
 }
 
+/*
 .a {
     grid-row: 2/3;
     grid-column: 2/3
@@ -308,7 +328,9 @@ background-image: url(lake.png);
     grid-row: 8/9;
     grid-column: 6/7;
 }
+*/
 
+/*
 .atxt {
     grid-row: 3/4;
     grid-column: 2/3
@@ -357,10 +379,11 @@ background-image: url(lake.png);
     grid-row: 9/10;
     grid-column: 6/7;
 }
+*/
 
 .storeimg {
   opacity: 1;
-  display: block;
+  display: inline;
   width: 100%;
   height: auto;
   transition: .5s ease;
@@ -377,11 +400,10 @@ background-image: url(lake.png);
   text-align: center;
 }*/
 
-
-
 .hva {
         grid-column: 2/3;
     grid-row: 2/3;
+
 }
 .hvb {
         grid-column: 4/5;
@@ -452,8 +474,19 @@ background-image: url(lake.png);
 .middle{
       transition: .5s ease;
   opacity: 0;
-  position: absolute;
+    top: 50%
+}
 
 
- 
+.size {
+       display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+        font-family: "coolvetica", sans-serif;
+
 }
