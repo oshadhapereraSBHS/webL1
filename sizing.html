@@ -7,7 +7,34 @@
     <title>Arctic Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+function check (){
+    var msg = document.getElementById('info').value;
+    
+    if (msg < 81){
+        document.getElementById("jacketsize").innerHTML = "Your size is "+'XXXS';
+    }    else if (msg < 86) {
+        document.getElementById("jacketsize").innerHTML = "Your size is "+'XXS';
+    }    else if (msg < 91) {
+        document.getElementById("jacketsize").innerHTML = "Your size is "+'XXS';
+    }    else if (msg < 96) {
+        document.getElementById("jacketsize").innerHTML = "Your size is "+'S';
+    }    else if (msg < 101) {
+        document.getElementById("jacketsize").innerHTML = "Your size is "+'M';
+    }    else if (msg < 106) {
+        document.getElementById("jacketsize").innerHTML = "Your size is "+'L';
+    }    else if (msg < 111) {
+        document.getElementById("jacketsize").innerHTML = "Your size is "+'XL';
+    }    else if (msg < 116) {
+        document.getElementById("jacketsize").innerHTML = "Your size is "+'XXL';
+    }   else if (msg < 121) {
+        document.getElementById("jacketsize").innerHTML = "Your size is "+'XXXL';
+    } else {
+        document.getElementById("jacketsize").innerHTML = "Size invalid";
+    }
+}
 
+</script>
 
 <body>
     <div>
@@ -71,6 +98,26 @@
 
 
             </table>
+        </div>
+        <div class="inputsize">
+            <h2 id="testing">Enter your chest size here to see which sized jackets you should buy</h2>
+            <input id="info" type="number" value="20">
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <p>cm</p>
+                    <p>inches</p>
+                </div>
+            </div>
+
+
+
+            
+            <button onclick="check()">check</button>
+
+            <h3 id="jacketsize"></h3>
+
         </div>
     </section>
 </body>
