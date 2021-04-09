@@ -68,11 +68,12 @@ nav a {
     align-self: center
 }
 
-.slider {
+.slider, .slider2 {
     width: 100vw;
     grid-row: 1/2;
 
 }
+
 
 #mens {
     grid-column: 2/3;
@@ -184,7 +185,8 @@ img {
 .contactdiv {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 5%;
+    
 }
 
 .contactdetails {
@@ -193,6 +195,11 @@ img {
 
 .contactform {
     grid-column: 2/3;
+}
+
+.map {
+    grid-column: 3/4;
+
 }
 
 .logo {
@@ -300,17 +307,7 @@ li img,
     display: block
 }
 
-.linkonslider {
-    grid-column: 6/7;
-    grid-row: 1/2;
-    text-decoration: none;
-    font-family: "FrozenIce", sans-serif;
-    text-shadow: 0 0 4px white;
-    font-size: 40px;
-    color: black;
-    justify-items: center
-    
-}
+
 
 /*
 .a {
@@ -527,6 +524,9 @@ li img,
     opacity: 1;
 }
 
+.map {
+    
+}
 
 .hva,
 .hvb,
@@ -602,6 +602,98 @@ table {
     z-index: 1;
 }
 
+
 .show {
     display: block
+}
+
+.contactform {
+    text-align: left;
+
+}
+
+#navlink a:hover {
+
+    text-decoration: underline;
+    text-decoration-line: 5px;
+    text-decoration-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slider-container {
+    position: relative;
+
+}
+
+.slides {
+    
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slider-container {
+    grid-row: 1/2;
 }

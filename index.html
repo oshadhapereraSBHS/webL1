@@ -8,7 +8,35 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
+<script>
+    var slideIndex = 1;
+    showSlides (slideIndex);
+    
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+       
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.lengths}
+        for (i=0; i < slides.length; i++){
+            slides[i].style.display="none";
+        }   for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
 
+    
+</script>
 
 <body>
     <div>
@@ -23,9 +51,34 @@
         </nav>
     </div>
     <section>
+        
+        <div class="slider-container">
+        
+        <div class="turbo slides fade">    
+        <a href="store.html"><img width="100%" class="slider" src="slider2.png"></a>
+        </div>
+        
+            
+        <div class="thermo slides fade">    
+        <a href="store.html"><img width="100%" class="slider2" src="slider5.png"></a>
+        </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
 
-        <img class="slider" src="slider.PNG">
-        <a class="linkonslider" href="store.html">SHOP NOW</a>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+
+</div>
+        
+        
+        
+        
+        
+        
 
         <div class="backgroundimg" id="ice"></div>
         <div id="mens">
