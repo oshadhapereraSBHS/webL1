@@ -13,7 +13,7 @@ html {
     background-repeat: no-repeat;
     margin: 0;
     width: 100vw;
-
+    min-height: 100vh
 }
 
 h1 {
@@ -68,7 +68,8 @@ nav a {
     align-self: center
 }
 
-.slider, .slider2 {
+.slider,
+.slider2 {
     width: 100vw;
     grid-row: 1/2;
 
@@ -186,7 +187,7 @@ img {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr 5%;
-    
+
 }
 
 .contactdetails {
@@ -247,7 +248,7 @@ select {
     background-image: url(lake.png);
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 60%;
+    opacity: 80%;
 
 }
 
@@ -274,7 +275,6 @@ select {
     background-repeat: no-repeat;
 
 }
-
 
 
 ul {
@@ -524,9 +524,7 @@ li img,
     opacity: 1;
 }
 
-.map {
-    
-}
+.map {}
 
 .hva,
 .hvb,
@@ -551,9 +549,13 @@ li img,
 .middle {
     transition: .5s ease;
     opacity: 0;
-    top: 50%
+    top: 50%;
 }
 
+.middle {
+    place-self: center;
+
+}
 
 .size {
     display: grid;
@@ -613,10 +615,8 @@ table {
 }
 
 #navlink a:hover {
+    text-shadow: 0 0 7px white;
 
-    text-decoration: underline;
-    text-decoration-line: 5px;
-    text-decoration-color: black;
 }
 
 * {
@@ -629,10 +629,10 @@ table {
 }
 
 .slides {
-    
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 .prev,
@@ -656,44 +656,95 @@ next {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
 
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 .slider-container {
     grid-row: 1/2;
+}
+
+button {
+    font-family: "coolvetica", sans-serif;
+}
+
+.clothingtxt {
+    text-shadow: 0 0 2px white;
+}
+
+#testing {
+    text-shadow: 1px 1px 4px white
+}
+
+table {
+    text-shadow: 0 0 4px white
+}
+
+#sizingunit {
+    text-shadow: 0 0 2px white;
+
+}
+
+.contactus {
+    text-shadow: 0 0 4px white
+}
+
+.contactd {
+    text-shadow: 0 0 2px white;
+
+}
+
+.contacte {
+    text-shadow: 0 0 1px white;
+
+}
+
+.map {
+    padding: 5%
 }

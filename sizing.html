@@ -2,37 +2,67 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="height=device-height, initial-scale=1">
 
     <title>Arctic Home</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <script>
-function check (){
-    var msg = document.getElementById('info').value;
-    
-    if (msg < 81){
-        document.getElementById("jacketsize").innerHTML = "Your size is "+'XXXS';
-    }    else if (msg < 86) {
-        document.getElementById("jacketsize").innerHTML = "Your size is "+'XXS';
-    }    else if (msg < 91) {
-        document.getElementById("jacketsize").innerHTML = "Your size is "+'XXS';
-    }    else if (msg < 96) {
-        document.getElementById("jacketsize").innerHTML = "Your size is "+'S';
-    }    else if (msg < 101) {
-        document.getElementById("jacketsize").innerHTML = "Your size is "+'M';
-    }    else if (msg < 106) {
-        document.getElementById("jacketsize").innerHTML = "Your size is "+'L';
-    }    else if (msg < 111) {
-        document.getElementById("jacketsize").innerHTML = "Your size is "+'XL';
-    }    else if (msg < 116) {
-        document.getElementById("jacketsize").innerHTML = "Your size is "+'XXL';
-    }   else if (msg < 121) {
-        document.getElementById("jacketsize").innerHTML = "Your size is "+'XXXL';
-    } else {
-        document.getElementById("jacketsize").innerHTML = "Size invalid";
+    function check() {
+        var msg = document.getElementById('info').value;
+
+        if (msg < 82 && (msg > 75)) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXXS';
+        } else if (msg < 87 && (msg > 80)) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXS';
+        } else if (msg < 92 && (msg > 85)) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXS';
+        } else if (msg < 97 && (msg > 90)) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'S';
+        } else if (msg < 102 && (msg > 95)) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'M';
+        } else if (msg < 107 && (msg > 100)) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'L';
+        } else if (msg < 112 && (msg > 105)) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XL';
+        } else if (msg < 117 && (msg > 110)) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXL';
+        } else if (msg < 122 && (msg > 115)) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXXL';
+        } else {
+            document.getElementById("jacketsize").innerHTML = "Please enter a valid size";
+        }
     }
-}
+
+
+
+
+    function checkinch() {
+        var msg = document.getElementById('info1').value;
+
+        if (msg < 33 && (msg > 29)) {
+            document.getElementById("jacketsize1").innerHTML = "Your size is " + 'XXXS';
+        } else if (msg < 35 && (msg > 31)) {
+            document.getElementById("jacketsize1").innerHTML = "Your size is " + 'XXS';
+        } else if (msg < 37 && (msg > 33)) {
+            document.getElementById("jacketsize1").innerHTML = "Your size is " + 'XXS';
+        } else if (msg < 39 && (msg > 35)) {
+            document.getElementById("jacketsize1").innerHTML = "Your size is " + 'S';
+        } else if (msg < 41 && (msg > 37)) {
+            document.getElementById("jacketsize1").innerHTML = "Your size is " + 'M';
+        } else if (msg < 43 && (msg > 39)) {
+            document.getElementById("jacketsize1").innerHTML = "Your size is " + 'L';
+        } else if (msg < 45 && (msg > 41)) {
+            document.getElementById("jacketsize1").innerHTML = "Your size is " + 'XL';
+        } else if (msg < 47 && (msg > 43)) {
+            document.getElementById("jacketsize1").innerHTML = "Your size is " + 'XXL';
+        } else if (msg < 49 && (msg > 45)) {
+            document.getElementById("jacketsize1").innerHTML = "Your size is " + 'XXXL';
+        } else {
+            document.getElementById("jacketsize1").innerHTML = "Please enter a valid size";
+        }
+    }
 
 </script>
 
@@ -101,22 +131,28 @@ function check (){
         </div>
         <div class="inputsize">
             <h2 id="testing">Enter your chest size here to see which sized jackets you should buy</h2>
+            <p id="sizingunit">Centimetres</p>
             <input id="info" type="number" value="20">
 
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <p>cm</p>
-                    <p>inches</p>
-                </div>
-            </div>
 
 
 
-            
-            <button onclick="check()">check</button>
+            <button onclick="check()">Check</button>
 
             <h3 id="jacketsize"></h3>
+
+
+
+            <h2 id="testing1"></h2>
+            <p id="sizingunit">Inches</p>
+            <input id="info1" type="number" value="20">
+
+
+
+
+            <button onclick="checkinch()">Check</button>
+
+            <h3 id="jacketsize1"></h3>
 
         </div>
     </section>
