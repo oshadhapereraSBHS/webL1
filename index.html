@@ -9,43 +9,37 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("slides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = slides.lengths
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
-
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  
+  slides[slideIndex-1].style.display = "block";  
+  
+}
 </script>
 
 <body>
-    <div>
         <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
+  <div>
         <nav id="navlink">
             <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
             <div><a href="index.html">HOME</a>
@@ -55,29 +49,45 @@
             </div>
         </nav>
     </div>
+    
+    
+ <!--   <div>
+        <nav id="navlink">
+            <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
+            <div><a href="index.html">HOME</a>
+                <button class="storelink">STORE
+                <i class="drop"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="store.html">Mens</a>
+                    <a href="store.html">Womens</a>
+                </div>
+                <a href="contact.html">CONTACT</a>
+                <a href="sizing.html">SIZING</a>
+            </div>
+        </nav>
+    </div>-->
+
     <section>
 
-        <div class="slider-container">
-
-            <div class="turbo slides fade">
-                <a href="store.html"><img width="100%" class="slider" src="slider2.png"></a>
-            </div>
 
 
-            <div class="thermo slides fade">
-                <a href="store.html"><img width="100%" class="slider2" src="slider5.png"></a>
-            </div>
+<div class="slideshow-container">
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
+<div class="mySlides fade">
+  <img src="slider2.png" style="width:100%">
+</div>
 
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
+<div class="mySlides fade">
+  <img src="slider5.png" style="width:100%">
+</div>
 
-        </div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
 
 
 
@@ -111,8 +121,8 @@
         <div class="homepagetxt" id="kidstxt"><a href="store.html">SHOP<br>KIDS</a></div>
 
 
-
     </section>
+
 </body>
 
 </html>
