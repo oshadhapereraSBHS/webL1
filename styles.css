@@ -23,6 +23,7 @@ h1 {
 
 }
 
+
 h2,
 h3,
 p {
@@ -45,6 +46,7 @@ section {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr;
     align-items: center;
+
 }
 
 /*#navlogo{
@@ -203,6 +205,10 @@ img {
 
 }
 
+.logodiv {
+    justify-self: left
+}
+
 .logo {
     height: 100%;
     width: 100%;
@@ -211,9 +217,9 @@ img {
     display: inline;
     grid-column: 1/2;
     grid-row: 1/2;
-    padding: 2% 0 0 5%;
     text-shadow: 2px 2px 2px white;
-    align-self: center;
+    padding: 2%;
+    margin-left: 3%
 }
 
 /*.toplogo {
@@ -564,8 +570,7 @@ li img,
     grid-gap: 5%;
     background-image: url(lake.png);
     background-repeat: no-repeat;
-
-
+    background-size: cover
 }
 
 table,
@@ -619,9 +624,11 @@ table {
 
 }
 
-* {box-sizing: border-box}
+* {
+    box-sizing: border-box
+}
 
-.mySlides {
+.thermo {
     display: none
 }
 
@@ -631,61 +638,99 @@ img {
 
 
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    display: grid;
+    grid-template-rows: 1/2;
+    grid-template-columns: 5% 1fr 5%;
+    min-width: 100vw;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
 }
 
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
+.nextbutton {
+    grid-row: 1/2;
+    grid-column: 3/4;
+}
+
+.prevbutton {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.prev {
+    padding-left: 1%
+}
+
+.mySlides {
+    grid-column: 1/4;
+    width: 100vw;
+    padding-right: 2%;
+    margin-bottom: 1%s
+}
 
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
 }
 
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 
 
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
-   
+
 .mySlides {
     min-width: 100vw;
+    margin-bottom: 1%;
 }
+
 button {
     font-family: "coolvetica", sans-serif;
 }
@@ -707,7 +752,9 @@ table {
 
 }
 
-#mens, #womens, #kids {
+#mens,
+#womens,
+#kids {
     grid-row: 2/3;
 }
 

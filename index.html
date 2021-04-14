@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="height=device-height, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="arctic%20logo.png" />
 
     <title>Arctic Home</title>
     <link rel="stylesheet" href="styles.css">
@@ -11,37 +12,42 @@
 </head>
 
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  
-  slides[slideIndex-1].style.display = "block";  
-  
-}
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+    }
+
 </script>
 
 <body>
-        <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
-  <div>
+    <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
+    <div>
         <nav id="navlink">
-            <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
+            <div class="logodiv"><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
             <div><a href="index.html">HOME</a>
                 <a href="store.html">STORE</a>
                 <a href="contact.html">CONTACT</a>
@@ -49,9 +55,9 @@ function showSlides(n) {
             </div>
         </nav>
     </div>
-    
-    
- <!--   <div>
+
+
+    <!--   <div>
         <nav id="navlink">
             <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
             <div><a href="index.html">HOME</a>
@@ -72,21 +78,24 @@ function showSlides(n) {
 
 
 
-<div class="slideshow-container">
+        <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <img src="slider2.png" style="width:100%">
-</div>
+            <div class="mySlides fade">
+                <img src="slider2.png" style="width:100%">
+            </div>
 
-<div class="mySlides fade">
-  <img src="slider5.png" style="width:100%">
-</div>
+            <div class="mySlides thermo fade">
+                <img src="slider5.png" style="width:100%">
+            </div>
+            <div class="prevbutton">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            </div>
+            <div class="nextbutton">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
+        </div>
+        <br>
 
 
 
