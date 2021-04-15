@@ -2,76 +2,110 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="height=device-height, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height, initial-scale=1">
 
-    <title>Arctic Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Arctic Home</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+<script>
+  function on(e) {
+    e.preventDefault();
+    document.getElementById("overlay").style.display = "block";
 
+  }
+
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+
+
+
+
+</script>
 
 <body>
-    <div>
-        <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
-        <nav id="navlink">
-            <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
-            <div><a href="index.html">HOME</a>
-                <a href="store.html">STORE</a>
-                <a href="contact.html">CONTACT</a>
-                <a href="sizing.html">SIZING</a>
-            </div>
-        </nav>
-    </div>
-    <section>
+  <div>
+    <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
+    <nav id="navlink">
+      <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
+      <div><a href="index.html">HOME</a>
+        <a href="store.html">STORE</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="sizing.html">SIZING</a>
+      </div>
+    </nav>
+  </div>
+  <section>
 
-        <div class="contact">
-            <h2 class="contactus">We value our customers and strive to provide them a memorable experience with us. Whether it is feedback, queries or help, we would love to hear from you.</h2><br>
+    <div class="contact">
+      <h2 class="contactus">We value our customers and strive to provide them a memorable experience with us. Whether it is feedback, queries or help, we would love to hear from you.</h2><br>
 
-            <section class="contactdiv">
-                <div class="contactdetails">
-                    <h3 class="contactd">Physical Address:</h3>
-                    <p class="contacte">1 Fake Street<br>Faketown<br>Fakecountry<br>9999<br><br>
-                    <h3 class="contactd">Phone:</h3>
-                    <p class="contacte">+1112223334</p><br>
-                    <h3 class="contactd">Email</h3>
-                    <p class="contacte">hi@hello.hi</p>
-                </div>
-                <div class="contactform">
-                    <form action="action_page.php">
-
-                        <label for="name" class="contacte">Name</label><br>
-                        <input type="text" id="name" name="name" placeholder="Your name">
-                        <br>
-                        <br>
-
-                        <label for="email" class="contacte">Email</label><br>
-                        <input type="text" id="email" name="email" placeholder="Your email">
-                        <br>
-                        <br>
-                        <label for="country" class="contacte">Country</label><br>
-                        <select id="country" name="country" class="country">
-                            <option value="nz" class="countries" class="contacte">New Zealand</option>
-                            <option value="other" class="countries" class="contacte">Other</option>
-                        </select>
-                        <br>
-                        <br>
-                        <label for="subject" class="contacte">Subject</label><br>
-                        <textarea id="subject" name="subject" placeholder="Write you feedback, suggestions and questions" style="height:200px"></textarea>
-                        <br>
-                        <br>
-                        <input type="submit" value="Submit">
-
-                    </form>
-                </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d590332.0893760236!2d163.55679314623086!3d-70.49567154190846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snz!4v1617927178261!5m2!1sen!2snz" width="100%" height="100%"></iframe>
-
-                </div>
-            </section>
+      <section class="contactdiv">
+        <div class="contactdetails">
+          <h3 class="contactd">Physical Address:</h3>
+          <p class="contacte">1 Fake Street<br>Faketown<br>Fakecountry<br>9999<br><br>
+          <h3 class="contactd">Phone:</h3>
+          <p class="contacte">+1112223334</p><br>
+          <h3 class="contactd">Email</h3>
+          <p class="contacte">hi@hello.hi</p>
         </div>
-        <div class="contactlake"></div>
+        <div class="contactform">
+          <form action="action_page.php">
 
-    </section>
+            <label for="name" class="contacte">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <br>
+            <br>
+
+            <label for="email" class="contacte">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Your email">
+            <br>
+            <br>
+            <label for="country" class="contacte">Country</label><br>
+            <select id="country" name="country" class="country">
+              <option value="nz" class="countries" class="contacte">New Zealand</option>
+              <option value="other" class="countries" class="contacte">Other</option>
+            </select>
+            <br>
+            <br>
+            <label for="subject" class="contacte">Subject</label><br>
+            <textarea id="subject" name="subject" placeholder="Write you feedback, suggestions and questions" style="height:200px"></textarea>
+            <br>
+            <br>
+            <button onclick="on(event)">Submit</button>
+            <div id="overlay" onclick="off()">
+              <div id="text"><h3>Thank you for contacting us. One of our customer service representatives will get back in touch with you shortly.</h3></div>
+            </div>
+
+          </form>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d590332.0893760236!2d163.55679314623086!3d-70.49567154190846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snz!4v1617927178261!5m2!1sen!2snz" width="100%"
+            height="100%"></iframe>
+
+        </div>
+    
+      </section>
+    </div>
+    <div class="contactlake"></div>
+    <!--
+        <div id="overlay" onclick="off()">
+          <div id="text">Overlay Text</div>
+        </div>
+
+        <div style="padding:20px">
+          <h2>Overlay with Text</h2>
+          <button onclick="on()">Turn on overlay effect</button>
+        </div>
+
+        <div id="overlay">
+          <div id="text">Overlay Text</div>
+        </div>
+-->
+  </section>
 </body>
 
 </html>
