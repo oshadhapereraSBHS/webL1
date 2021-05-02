@@ -768,6 +768,12 @@ table {
   cursor: pointer;
 }
 
+.quantitybox {
+  max-width: 30%;
+
+}
+
+
 #text{
   position: absolute;
   top: 50%;
@@ -778,4 +784,66 @@ text-align: center;
   color: white;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+}#overlaya {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 5;
+  cursor: pointer;
+}
+
+#texta{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-shadow: 0 0 7px black;
+font-size: 20px;
+text-align: center;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+.containercheckout {
+    display: grid;
+    grid-template-columns: 5% 1fr 5% 1fr 5%;
+    grid-template-rows: auto;
+
+}
+
+.checkoutsec {
+        background-image: url(lake.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.columntwo {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.columnone {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.submitcheckout {
+    grid-row: 2/3;
+}
+
+h3 {
+      text-shadow: 0 0 4px white
+
+}
+
+label {
+      text-shadow: 0 0 2px white;
+
 }
