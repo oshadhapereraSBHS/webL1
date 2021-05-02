@@ -62,7 +62,7 @@ section {
   min-height: 80px;
   text-align: right;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 1fr;
   align-items: center;
 }
@@ -723,6 +723,20 @@ table {
   grid-row: 2/3;
 }
 
+#cart{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    
+}
+
+#cartimg{
+  height: 100%;
+  width: 100%;
+  max-height: 80px;
+  max-width: 100px;
+  display: inline;
+}
+
 .contactus {
   text-shadow: 0 0 4px white
 }
@@ -768,11 +782,10 @@ table {
   cursor: pointer;
 }
 
-.quantitybox {
-  max-width: 30%;
-
+#quantitya,#quantityb,#quantityc,#quantityd,#quantitye,#quantityf,#quantityg,#quantityh,#quantityi,#quantityj,#quantityk,#quantityl {
+    text-align: center
 }
-
+    
 
 #text{
   position: absolute;
