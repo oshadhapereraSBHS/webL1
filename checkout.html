@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height, initial-scale=1">
+
+  <title>Arctic Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div>
+    <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
+    <nav id="navlink">
+      <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
+      <div><a href="index.html">HOME</a>
+        <a href="store.html">STORE</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="sizing.html">SIZING</a>
+      </div>
+      <div id="cart"><a onclick="ona()"><img id="cartimg" src="cart6.png"> </a></div>
+
+      <div id="cart2"><a onclick="ona()"><img id="cartimg2" src="cart2.png"> </a></div>
+    </nav>
+  </div>
+    <section class="checkoutsec">
+<div class="row">
+  <div class="col-75">
+    <div class="containercheckout">
+
+          <div class="col-50 columnone">
+            <h3>Billing Address</h3>
+            <label for="fname">Full Name</label><br>
+            <input type="text" id="fname" name="firstname" placeholder="John Smith"><br><br>
+            <label for="email">Email</label> <br>
+            <input type="text" id="email" name="email" placeholder="john@abc.xyz"><br><br>
+            <label for="phone">Phone</label> <br>
+            <input type="number" id="phone" name="phone" placeholder="123456789"><br><br>
+            <label for="adr">Address</label> <br>
+            <input type="text" id="adr" name="address" placeholder="99 End of the World Street"><br><br>
+            <label for="city">City</label> <br>
+            <input type="text" id="city" name="city" placeholder="Dunedin"><br><br>
+
+              <div class="col-50">
+                <label for="state">Region</label><br>
+                <input type="text" id="state" name="state" placeholder="Otago"><br><br>
+              </div>
+              <div class="col-50">
+                <label for="zip">Postcode</label><br>
+                <input type="text" id="zip" name="zip" placeholder="9999"><br><br>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+              </div>
+          </div>
+
+          <div class="col-50 columntwo">
+            <h3>Payment</h3>
+
+
+            <label for="cname">Name on Card</label><br>
+            <input type="text" id="cname" name="cardname" placeholder="John Smith"><br><br>
+            <label for="ccnum">Credit card number</label><br>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br><br>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label><br>
+                <input type="text" id="expyear" name="expyear" placeholder="1111">
+              </div><br>
+              <div class="col-50">
+                <label for="expmonth">Exp Month</label><br>
+                <input type="text" id="expmonth" name="expmonth" placeholder="11">
+              </div><br>
+              <div class="col-50">
+                <label for="cvv">CVV</label><br>
+                <input type="text" id="cvv" name="cvv" placeholder="111">
+              </div>
+            </div> <br>
+            <div class="submitcheckout">
+                    <input type="submit" value="Continue to checkout" class="btn"></div>
+                </div>
+              </div>
+
+          </div>
