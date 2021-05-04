@@ -742,11 +742,24 @@ table {
 #cart {
   text-shadow: 0 0 2px white;
 }
+
+#removea, #removeb, #removec, #removed, #removee, #removef, #removeg, #removeh, #removei, #removej, #removek, #removel {
+  text-align: center;
+}
+
+
 #texta, #textb, #textc, #textd, #texte, #textf, #textg, #texth, #texti, #textj, #textk, #textl  {
   text-align: center;
   text-shadow: 0 0 0;
   color: white;
   font-weight: lighter;
+}
+
+#yourcart {
+  text-align: center;
+  text-shadow: 0 0 0;
+  color: white;
+  font-size: 32px;
 }
 
 #textaa, #textbb, #textcc, #textdd, #textee, #textff, #textgg, #texthh, #textii, #textjj, #textkk, #textll  {
@@ -849,7 +862,7 @@ z-index: 5;
   position: absolute;
   top: 50%;
   left: 50%;
-  text-shadow: 0 0 7px black;
+  text-shadow: 0 0 7px white;
 font-size: 20px;
 text-align: center;
   color: white;
@@ -870,14 +883,12 @@ text-align: center;
 }
 
 .cartcheckoutdiv {
-    grid-column: 1/3;
+    grid-column: 1/4;
     grid-row: auto;
     justify-items: center
 }
 
-#removea {
-display: inline;
-}
+
 
 
 #adda, #addb,#addc, #addd,#adde, #addf,#addg, #addh,#addi, #addj,#addk, #addl {

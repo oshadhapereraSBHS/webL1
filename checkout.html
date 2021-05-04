@@ -8,7 +8,25 @@
   <title>Arctic Home</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+<script>
 
+function oncheckout(e) {
+  e.preventDefault();
+  document.getElementById("overlay").style.display = "block";
+
+}
+
+
+function offcheckout() {
+document.getElementById("overlay").style.display = "none";
+}
+
+
+
+
+
+
+</script>
 <body>
   <div>
     <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
@@ -79,8 +97,10 @@
               </div>
             </div> <br>
             <div class="submitcheckout">
-                    <input type="submit" value="Continue to checkout" class="btn"></div>
+                    <input onclick="oncheckout(event)" type="submit" value="Continue to checkout" class="btn"></div>
                 </div>
               </div>
-
+              <div id="overlay" onclick="offcheckout()">
+                <div id="text"><h3>Thank you for shopping with us. Your order will be delivered to you within three working days.</h3></div>
+              </div>
           </div>
