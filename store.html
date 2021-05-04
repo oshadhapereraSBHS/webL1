@@ -2,439 +2,713 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="height=device-height, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="height=device-height, initial-scale=1">
 
-  <title>Arctic Home</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>Arctic Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 
 
 <script>
+    
+    function removea() {
+                document.getElementById("texta").style.display = "none";
+                document.getElementById("textaa").style.display = "none";
+                document.getElementById("removea").style.display = "none";
+
+    };    function adda() {
+                document.getElementById("texta").style.display = "block";
+                document.getElementById("textaa").style.display = "block";
+                document.getElementById("removea").style.display = "block";
+
+    };
+        
+    function removeb() {
+                document.getElementById("textb").style.display = "none";
+                document.getElementById("textbb").style.display = "none";
+                document.getElementById("removeb").style.display = "none";
+
+    }  ;  function addb() {
+                document.getElementById("textb").style.display = "block";
+                document.getElementById("textbb").style.display = "block";
+                document.getElementById("removeb").style.display = "block";
+
+    }
+        ;
+    function removec() {
+                document.getElementById("textc").style.display = "none";
+                document.getElementById("textcc").style.display = "none";
+                document.getElementById("removec").style.display = "none";
+
+    }    function addc() {
+                document.getElementById("textc").style.display = "block";
+                document.getElementById("textcc").style.display = "block";
+                document.getElementById("removec").style.display = "block";
+
+    }
+        
+    function removed() {
+                document.getElementById("texd").style.display = "none";
+                document.getElementById("textdd").style.display = "none";
+                document.getElementById("removed").style.display = "none";
+
+    }    function addd() {
+                document.getElementById("textd").style.display = "block";
+                document.getElementById("textdd").style.display = "block";
+                document.getElementById("removed").style.display = "block";
+
+    }
+        
+    function removee() {
+                document.getElementById("texte").style.display = "none";
+                document.getElementById("textee").style.display = "none";
+                document.getElementById("removee").style.display = "none";
+
+    }    function adde() {
+                document.getElementById("texte").style.display = "block";
+                document.getElementById("textee").style.display = "block";
+                document.getElementById("removee").style.display = "block";
+
+    }
+        
+    function removef() {
+                document.getElementById("textf").style.display = "none";
+                document.getElementById("textff").style.display = "none";
+                document.getElementById("removef").style.display = "none";
+
+    }    function addf() {
+                document.getElementById("textf").style.display = "block";
+                document.getElementById("textff").style.display = "block";
+                document.getElementById("removef").style.display = "block";
+
+    }
+        
+    function removeg() {
+                document.getElementById("textg").style.display = "none";
+                document.getElementById("textgg").style.display = "none";
+                document.getElementById("removeg").style.display = "none";
+
+    }    function addg() {
+                document.getElementById("textg").style.display = "block";
+                document.getElementById("textgg").style.display = "block";
+                document.getElementById("removeg").style.display = "block";
+
+    }
+        
+    function removeh() {
+                document.getElementById("texth").style.display = "none";
+                document.getElementById("texthh").style.display = "none";
+                document.getElementById("removeh").style.display = "none";
+
+    }    function addh() {
+                document.getElementById("texth").style.display = "block";
+                document.getElementById("texthh").style.display = "block";
+                document.getElementById("removeh").style.display = "block";
+
+    }
+        
+    function removei() {
+                document.getElementById("texti").style.display = "none";
+                document.getElementById("textii").style.display = "none";
+                document.getElementById("removei").style.display = "none";
+
+    }    function addi() {
+                document.getElementById("texti").style.display = "block";
+                document.getElementById("textii").style.display = "block";
+                document.getElementById("removei").style.display = "block";
+
+    }
+        
+    function removej() {
+                document.getElementById("textj").style.display = "none";
+                document.getElementById("textjj").style.display = "none";
+                document.getElementById("removej").style.display = "none";
+
+    }    function addj() {
+                document.getElementById("textj").style.display = "block";
+                document.getElementById("textjj").style.display = "block";
+                document.getElementById("removej").style.display = "block";
+
+    }
+        
+    function removek() {
+                document.getElementById("textk").style.display = "none";
+                document.getElementById("textkk").style.display = "none";
+                document.getElementById("removek").style.display = "none";
+
+    }    function addk() {
+                document.getElementById("textk").style.display = "block";
+                document.getElementById("textkk").style.display = "block";
+                document.getElementById("removek").style.display = "block";
+
+    }
+        
+    function removel() {
+                document.getElementById("textl").style.display = "none";
+                document.getElementById("textll").style.display = "none";
+                document.getElementById("removel").style.display = "none";
+
+    }    function addl() {
+                document.getElementById("textl").style.display = "block";
+                document.getElementById("textll").style.display = "block";
+                document.getElementById("removel").style.display = "block";
+
+    }
+    
+    
+    
+    
+    function ona() {
+        document.getElementById("overlaya").style.display = "block";
+        if (document.getElementById('quantitya').value > 0) {
+            document.getElementById("texta").innerHTML = "Arctic Geothermal Jacket"
+            document.getElementById("textaa").innerHTML = "$" + 199 * document.getElementById('quantitya').value
+        };
+        if (document.getElementById('quantityb').value > 0) {
+            document.getElementById("textb").innerHTML = "Arctic Sleeveless Thermo Jacket"
+            document.getElementById("textbb").innerHTML = "$" + 199 * document.getElementById('quantityb').value
+        };
+        if (document.getElementById('quantityc').value > 0) {
+            document.getElementById("textc").innerHTML = "Arctic HeatPro Jacket"
+            document.getElementById("textcc").innerHTML = "$" + 199 * document.getElementById('quantityc').value
+        };
+        if (document.getElementById('quantityd').value > 0) {
+            document.getElementById("textd").innerHTML = "Arctic Sleeveless Turbo Jacket"
+            document.getElementById("textdd").innerHTML = "$" + 199 * document.getElementById('quantityd').value
+        };
+        if (document.getElementById('quantitye').value > 0) {
+            document.getElementById("texte").innerHTML = "Arctic InsulPro Jacket"
+            document.getElementById("textee").innerHTML = "$" + 199 * document.getElementById('quantitye').value
+        };
+        if (document.getElementById('quantityf').value > 0) {
+            document.getElementById("textf").innerHTML = "Arctic Casual Jacket"
+            document.getElementById("textff").innerHTML = "$" + 199 * document.getElementById('quantityf').value
+        };
+        if (document.getElementById('quantityg').value > 0) {
+            document.getElementById("textg").innerHTML = "Arctic Polar Fleece Jacket" 
+            document.getElementById("textg").innerHTML = "$" + 199 * document.getElementById('quantitygh').value
+        };
+        if (document.getElementById('quantityh').value > 0) {
+            document.getElementById("texth").innerHTML = "Arctic Nuclear Jacket"
+            document.getElementById("texthh").innerHTML = "$" + 199 * document.getElementById('quantityh').value
+        };
+        if (document.getElementById('quantityi').value > 0) {
+            document.getElementById("texti").innerHTML = "Arctic ThermoPro Jacket" 
+            document.getElementById("textii").innerHTML = "$" + 199 * document.getElementById('quantityi').value
+        };
+        if (document.getElementById('quantityj').value > 0) {
+            document.getElementById("textj").innerHTML = "Arctic Turbo 3.1 Jacket"
+            document.getElementById("textjj").innerHTML = "$" + 199 * document.getElementById('quantityj').value
+        };
+        if (document.getElementById('quantityk').value > 0) {
+            document.getElementById("textk").innerHTML = "Arctic GeothermalPro Jacket"
+            document.getElementById("textkk").innerHTML = "$" + 199 * document.getElementById('quantityk').value
+        };
+        if (document.getElementById('quantityl').value > 0) {
+            document.getElementById("textl").innerHTML = "Arctic Polar Jacket"
+            document.getElementById("textll").innerHTML = "$" + 199 * document.getElementById('quantityl').value
+        };
+        document.getElementById("checkoutbutton").style.display = "block";
+    }
+
+    function offa() {
+        document.getElementById("overlaya").style.display = "none";
+        document.getElementById("checkoutbutton").style.display = "none";
+
+    }
 
 
-  function ona() {
-    document.getElementById("overlaya").style.display = "block";
-    if (document.getElementById('quantitya').value > 0) {document.getElementById("texta").innerHTML = "Arctic Geothermal Jacket  $" + 199 * document.getElementById('quantitya').value};
-      if (document.getElementById('quantityb').value > 0) {document.getElementById("textb").innerHTML = "Arctic Sleeveless Thermo Jacket  $" + 199 * document.getElementById('quantityb').value};
-      if (document.getElementById('quantityc').value > 0) {document.getElementById("textc").innerHTML = "Arctic HeatPro Jacket  $" + 199 * document.getElementById('quantityc').value};
-      if (document.getElementById('quantityd').value > 0) {document.getElementById("textd").innerHTML = "Arctic Sleeveless Turbo Jacket  $" + 199 * document.getElementById('quantityd').value};
-      if (document.getElementById('quantitye').value > 0) {document.getElementById("texte").innerHTML = "Arctic InsulPro Jacket  $" + 199 * document.getElementById('quantitye').value};
-      if (document.getElementById('quantityf').value > 0) {document.getElementById("textf").innerHTML = "Arctic Casual Jacket  $" + 199 * document.getElementById('quantityf').value};
-      if (document.getElementById('quantityg').value > 0) {document.getElementById("textg").innerHTML = "Arctic Polar Fleece Jacket  $" + 199 * document.getElementById('quantityg').value};
-      if (document.getElementById('quantityh').value > 0) {document.getElementById("texth").innerHTML = "Arctic Nuclear Jacket  $" + 199 * document.getElementById('quantityh').value};
-      if (document.getElementById('quantityi').value > 0) {document.getElementById("texti").innerHTML = "Arctic ThermoPro Jacket  $" + 199 * document.getElementById('quantityi').value};
-      if (document.getElementById('quantityj').value > 0) {document.getElementById("textj").innerHTML = "Arctic Turbo 3.1 Jacket  $" + 199 * document.getElementById('quantityj').value};
-      if (document.getElementById('quantityk').value > 0) {document.getElementById("textk").innerHTML = "Arctic GeothermalPro Jacket  $" + 199 * document.getElementById('quantityk').value};
-      if (document.getElementById('quantityl').value > 0) {document.getElementById("textl").innerHTML = "Arctic Polar Jacket  $" + 199 * document.getElementById('quantityl').value};
-document.getElementById("checkoutbutton").style.display = "block";
-}
-
-  function offa() {
-    document.getElementById("overlaya").style.display = "none";
-    document.getElementById("checkoutbutton").style.display = "none";
-
-  }
 
 
 
+    function plusa() {
+        document.getElementById('quantitya').stepUp();
+    }
+
+    function minusa() {
+
+        document.getElementById('quantitya').stepDown();
+    }
 
 
-  function plusa() {
-    document.getElementById('quantitya').stepUp();
-  }
+    function plusb() {
+        document.getElementById('quantityb').stepUp();
+    }
 
-  function minusa() {
+    function minusb() {
 
-    document.getElementById('quantitya').stepDown();
-  }
+        document.getElementById('quantityb').stepDown();
+    }
 
+    function plusc() {
+        document.getElementById('quantityc').stepUp();
+    }
 
-  function plusb() {
-    document.getElementById('quantityb').stepUp();
-  }
+    function minusc() {
 
-  function minusb() {
+        document.getElementById('quantityc').stepDown();
+    }
 
-    document.getElementById('quantityb').stepDown();
-  }
+    function plusd() {
+        document.getElementById('quantityd').stepUp();
+    }
 
-  function plusc() {
-    document.getElementById('quantityc').stepUp();
-  }
+    function minusd() {
 
-  function minusc() {
+        document.getElementById('quantityd').stepDown();
+    }
 
-    document.getElementById('quantityc').stepDown();
-  }
+    function pluse() {
+        document.getElementById('quantitye').stepUp();
+    }
 
-  function plusd() {
-    document.getElementById('quantityd').stepUp();
-  }
+    function minuse() {
 
-  function minusd() {
+        document.getElementById('quantitye').stepDown();
+    }
 
-    document.getElementById('quantityd').stepDown();
-  }
+    function plusf() {
+        document.getElementById('quantityf').stepUp();
+    }
 
-  function pluse() {
-    document.getElementById('quantitye').stepUp();
-  }
+    function minusf() {
 
-  function minuse() {
+        document.getElementById('quantityf').stepDown();
+    }
 
-    document.getElementById('quantitye').stepDown();
-  }
+    function plusg() {
+        document.getElementById('quantityg').stepUp();
+    }
 
-  function plusf() {
-    document.getElementById('quantityf').stepUp();
-  }
+    function minusg() {
 
-  function minusf() {
+        document.getElementById('quantityg').stepDown();
+    }
 
-    document.getElementById('quantityf').stepDown();
-  }
+    function plush() {
+        document.getElementById('quantityh').stepUp();
+    }
 
-  function plusg() {
-    document.getElementById('quantityg').stepUp();
-  }
+    function minush() {
 
-  function minusg() {
+        document.getElementById('quantityh').stepDown();
+    }
 
-    document.getElementById('quantityg').stepDown();
-  }
+    function plusi() {
+        document.getElementById('quantityi').stepUp();
+    }
 
-  function plush() {
-    document.getElementById('quantityh').stepUp();
-  }
+    function minusi() {
 
-  function minush() {
+        document.getElementById('quantityi').stepDown();
+    }
 
-    document.getElementById('quantityh').stepDown();
-  }
+    function plusj() {
+        document.getElementById('quantityj').stepUp();
+    }
 
-  function plusi() {
-    document.getElementById('quantityi').stepUp();
-  }
+    function minusj() {
 
-  function minusi() {
+        document.getElementById('quantityj').stepDown();
+    }
 
-    document.getElementById('quantityi').stepDown();
-  }
+    function plusk() {
+        document.getElementById('quantityk').stepUp();
+    }
 
-  function plusj() {
-    document.getElementById('quantityj').stepUp();
-  }
+    function minusk() {
 
-  function minusj() {
+        document.getElementById('quantityk').stepDown();
+    }
 
-    document.getElementById('quantityj').stepDown();
-  }
+    function plusl() {
+        document.getElementById('quantityl').stepUp();
+    }
 
-  function plusk() {
-    document.getElementById('quantityk').stepUp();
-  }
+    function minusl() {
 
-  function minusk() {
+        document.getElementById('quantityl').stepDown();
+    }
 
-    document.getElementById('quantityk').stepDown();
-  }
-
-  function plusl() {
-    document.getElementById('quantityl').stepUp();
-  }
-
-  function minusl() {
-
-    document.getElementById('quantityl').stepDown();
-  }
 </script>
 
 
 <body>
-  <div>
-    <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
-    <nav id="navlink">
-      <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
-      <div><a href="index.html">HOME</a>
-        <a href="store.html">STORE</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="sizing.html">SIZING</a>
-      </div>
-      <div id="cart"><a onclick="ona()"><img id="cartimg" src="cart6.png"> </a></div>
+    <div>
+        <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
+        <nav id="navlink">
+            <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
+            <div><a href="index.html">HOME</a>
+                <a href="store.html">STORE</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="sizing.html">SIZING</a>
+            </div>
+            <div id="cart"><a onclick="ona()"><img id="cartimg" src="cart6.png"> </a></div>
 
-      <div id="cart2"><a onclick="ona()"><img id="cartimg2" src="cart2.png"> </a></div>
-    </nav>
-  </div>
-  <section>
-
-    <div id="overlaya" onclick="offa()">
-<div class="cartdiv">
-
-    <h3 id="texta"></h3>
-    <h3 id="textb"></h3>
-    <h3 id="textc"></h3>
-    <h3 id="textd"></h3>
-    <h3 id="texte"></h3>
-    <h3 id="textf"></h3>
-    <h3 id="textg"></h3>
-    <h3 id="texth"></h3>
-    <h3 id="texti"></h3>
-    <h3 id="textj"></h3><h3 id="textk"></h3><h3 id="textl"></h3>
-
-    <a href="checkout.html"><button id="cartcheckout" type="submit">Proceed to checkout</button></a>
-
+            <div id="cart2"><a onclick="ona()"><img id="cartimg2" src="cart2.png"> </a></div>
+        </nav>
     </div>
-    </div>
+    <section>
 
+        <div id="overlaya" onclick="offa()">
+            <div class="cartdiv">
+                <div class="name">
+                    <h3 id="texta"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="textaa"></h3>
+                </div>
+                
+                
+                    <button id="removea" onclick="remove()">remove</button>
+                
 
-    <ul class="clothing">
+                
+                
+                
+                
+                <div class="name">
+                    <h3 id="textb"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="textbb"></h3>
+                </div>
+                <div class="name">
+                    <h3 id="textc"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="textcc"></h3>
+                </div>
+                <div class="name">
+                    <h3 id="textd"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="textdd"></h3>
+                </div>
+                <div class="name">
+                    <h3 id="texte"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="textee"></h3>
+                </div>
 
+                <div class="name">
+                    <h3 id="textf"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="textff"></h3>
+                </div>
 
+                <div class="name">
+                    <h3 id="textg"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="textgg"></h3>
+                </div>
 
-      <li class="a">
-        <img class="storeimg" src="black%201.png" onclick="ona()">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic Geothermal jacket is suitable for any temperature to keep you warm and comfortable and it is certified by the XYZ.</p>
-          </div>
+                <div class="name">
+                    <h3 id="texth"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="texthh"></h3>
+                </div>
+
+                <div class="name">
+                    <h3 id="texti"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="textii"></h3>
+                </div>
+
+                <div class="name">
+                    <h3 id="textj"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="textjj"></h3>
+                </div>
+
+                <div class="name">
+                    <h3 id="textk"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="textkk"></h3>
+                </div>
+
+                <div class="name">
+                    <h3 id="textl"></h3>
+                </div>
+                <div class="price">
+                    <h3 id="textll"></h3>
+                </div>
+
+<div class="cartcheckoutdiv">
+                <a href="checkout.html"><button id="cartcheckout" type="submit">Proceed to checkout</button></a>
+                </div>
+
+            </div>
         </div>
 
-        <p class="atxt clothingtxt">Arctic Geothermal Jacket<br>$199.99 <br>
 
+        <ul class="clothing">
 
-          <button id="decbutton" onclick="minusa()">&minus;</button>
 
 
-          <input type="number" min="0" id="quantitya" step="0" value="0">
+            <li class="a">
+                <img class="storeimg" src="black%201.png" onclick="ona()">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic Geothermal jacket is suitable for any temperature to keep you warm and comfortable and it is certified by the XYZ.</p>
+                    </div>
+                </div>
 
-          <button id="incbutton" onclick="plusa()">&plus;</button>
-        </p>
+                <p class="atxt clothingtxt">Arctic Geothermal Jacket<br>$199.99 <br>
 
 
-      </li>
+                    <button id="decbutton" onclick="minusa()">&minus;</button>
 
 
+                    <input type="number" min="0" id="quantitya" step="0" value="0">
 
+                    <button id="incbutton" onclick="plusa()">&plus;</button>
+                </p>
 
+                    <button id="adda" onclick="adda()">Add to Cart</button>
+                
+            </li>
 
 
 
 
 
 
-      <li class="b"><img class="storeimg" src="black%203.png">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic Sleeveless Thermo Jacket will stop the cold from reaching you, no matter whether it is summer or winter.</p>
-          </div>
-        </div>
-        <p class="btxt clothingtxt">Arctic Sleeveless Thermo Jacket<br>$199.99 <br>
 
 
-          <button id="decbutton" onclick="minusb()">&minus;</button>
 
 
-          <input type="number" min="0" id="quantityb" step="0" value="0">
+            <li class="b"><img class="storeimg" src="black%203.png">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic Sleeveless Thermo Jacket will stop the cold from reaching you, no matter whether it is summer or winter.</p>
+                    </div>
+                </div>
+                <p class="btxt clothingtxt">Arctic Sleeveless Thermo Jacket<br>$199.99 <br>
 
-          <button id="incbutton" onclick="plusb()">&plus;</button>
-        </p>
-      </li>
 
+                    <button id="decbutton" onclick="minusb()">&minus;</button>
 
-      <li class="c"><img class="storeimg" src="black.png">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic HeatPro Jacket is our premium wind resistant jacket and is tested successfully against 300km/h Antarctic winds.</p>
-          </div>
-        </div>
-        <p class="ctxt clothingtxt">Arctic HeatPro Jacket<br>$199.99 <br>
 
+                    <input type="number" min="0" id="quantityb" step="0" value="0">
 
-          <button id="decbutton" onclick="minusc()">&minus;</button>
+                    <button id="incbutton" onclick="plusb()">&plus;</button>
+                </p>                    <button id="addb" onclick="addb()">Add to Cart</button>
 
+            </li>
 
-          <input type="number" min="0" id="quantityc" step="0" value="0">
 
-          <button id="incbutton" onclick="plusc()">&plus;</button>
-        </p>
-      </li>
+            <li class="c"><img class="storeimg" src="black.png">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic HeatPro Jacket is our premium wind resistant jacket and is tested successfully against 300km/h Antarctic winds.</p>
+                    </div>
+                </div>
+                <p class="ctxt clothingtxt">Arctic HeatPro Jacket<br>$199.99 <br>
 
 
-      <li class="d"><img class="storeimg" src="blue%203.png">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic Sleeveless Turbo Jacket is a stylish jacket specially designed to keep you warm while keeping you on the top of fashion trends.</p>
-          </div>
-        </div>
-        <p class="dtxt clothingtxt">Arctic Sleeveless Turbo Jacket<br>$199.99 <br>
+                    <button id="decbutton" onclick="minusc()">&minus;</button>
 
 
-          <button id="decbutton" onclick="minusd()">&minus;</button>
+                    <input type="number" min="0" id="quantityc" step="0" value="0">
 
+                    <button id="incbutton" onclick="plusc()">&plus;</button>
+                </p>                    <button id="addc" onclick="addc()">Add to Cart</button>
 
-          <input type="number" min="0" id="quantityd" step="0" value="0">
+            </li>
 
-          <button id="incbutton" onclick="plusd()">&plus;</button>
-        </p>
-      </li>
 
+            <li class="d"><img class="storeimg" src="blue%203.png">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic Sleeveless Turbo Jacket is a stylish jacket specially designed to keep you warm while keeping you on the top of fashion trends.</p>
+                    </div>
+                </div>
+                <p class="dtxt clothingtxt">Arctic Sleeveless Turbo Jacket<br>$199.99 <br>
 
-      <li class="e"><img class="storeimg" src="blue.png">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic InsulPro Jacket will not let the freezing temperatures reach you whether you are in the wintery wind or a cave in Antarctica.</p>
-          </div>
-        </div>
-        <p class="etxt clothingtxt">Arctic InsulPro Jacket<br>$199.99 <br>
 
+                    <button id="decbutton" onclick="minusd()">&minus;</button>
 
-          <button id="decbutton" onclick="minuse()">&minus;</button>
 
+                    <input type="number" min="0" id="quantityd" step="0" value="0">
 
-          <input type="number" min="0" id="quantitye" step="0" value="0">
+                    <button id="incbutton" onclick="plusd()">&plus;</button>
+                </p>                    <button id="addd" onclick="addd()">Add to Cart</button>
 
-          <button id="incbutton" onclick="pluse()">&plus;</button>
-        </p>
-      </li>
+            </li>
 
 
-      <li class="f"><img class="storeimg" src="green%202.png">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic Casual Jacket can be worn to any occassion is one of our award winning designs for fashion innovation.</p>
-          </div>
-        </div>
-        <p class="ftxt clothingtxt">Arctic Casual Jacket<br>$199.99 <br>
+            <li class="e"><img class="storeimg" src="blue.png">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic InsulPro Jacket will not let the freezing temperatures reach you whether you are in the wintery wind or a cave in Antarctica.</p>
+                    </div>
+                </div>
+                <p class="etxt clothingtxt">Arctic InsulPro Jacket<br>$199.99 <br>
 
 
-          <button id="decbutton" onclick="minusf()">&minus;</button>
+                    <button id="decbutton" onclick="minuse()">&minus;</button>
 
 
-          <input type="number" min="0" id="quantityf" step="0" value="0">
+                    <input type="number" min="0" id="quantitye" step="0" value="0">
 
-          <button id="incbutton" onclick="plusf()">&plus;</button>
-        </p>
-      </li>
+                    <button id="incbutton" onclick="pluse()">&plus;</button>
+                </p>                    <button id="adde" onclick="adde()">Add to Cart</button>
 
+            </li>
 
-      <li class="g"><img class="storeimg" src="grey%202.png">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic Polar Fleece Jacket is suitable for any temperature to keep you warm and comfortable and it is certified by the XYZ.</p>
-          </div>
-        </div>
-        <p class="gtxt clothingtxt">Arctic Polar Fleece Jacket<br>$199.99 <br>
 
+            <li class="f"><img class="storeimg" src="green%202.png">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic Casual Jacket can be worn to any occassion is one of our award winning designs for fashion innovation.</p>
+                    </div>
+                </div>
+                <p class="ftxt clothingtxt">Arctic Casual Jacket<br>$199.99 <br>
 
-          <button id="decbutton" onclick="minusg()">&minus;</button>
 
+                    <button id="decbutton" onclick="minusf()">&minus;</button>
 
-          <input type="number" min="0" id="quantityg" step="0" value="0">
 
-          <button id="incbutton" onclick="plusg()">&plus;</button>
-        </p>
-      </li>
+                    <input type="number" min="0" id="quantityf" step="0" value="0">
 
+                    <button id="incbutton" onclick="plusf()">&plus;</button>
+                </p>                    <button id="addf" onclick="addf()">Add to Cart</button>
 
-      <li class="h"><img class="storeimg" src="grey.png">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic Nuclear Jacket will stop the cold from reaching you, no matter whether it is summer or winter.</p>
-          </div>
-        </div>
-        <p class="htxt clothingtxt">Arctic Nuclear Jacket<br>$199.99 <br>
+            </li>
 
 
-          <button id="decbutton" onclick="minush()">&minus;</button>
+            <li class="g"><img class="storeimg" src="grey%202.png">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic Polar Fleece Jacket is suitable for any temperature to keep you warm and comfortable and it is certified by the XYZ.</p>
+                    </div>
+                </div>
+                <p class="gtxt clothingtxt">Arctic Polar Fleece Jacket<br>$199.99 <br>
 
 
-          <input type="number" min="0" id="quantityh" step="0" value="0">
+                    <button id="decbutton" onclick="minusg()">&minus;</button>
 
-          <button id="incbutton" onclick="plush()">&plus;</button>
-        </p>
-      </li>
 
+                    <input type="number" min="0" id="quantityg" step="0" value="0">
 
-      <li class="i"><img class="storeimg" src="new1.png">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic ThermoPro Jacket is our premium wind resistant jacket and is tested successfully against 300km/h Antarctic winds.</p>
-          </div>
-        </div>
-        <p class="itxt clothingtxt">Arctic ThermoPro Jacket<br>$199.99 <br>
+                    <button id="incbutton" onclick="plusg()">&plus;</button>
+                </p>                    <button id="addg" onclick="addg()">Add to Cart</button>
 
+            </li>
 
-          <button id="decbutton" onclick="minusi()">&minus;</button>
 
+            <li class="h"><img class="storeimg" src="grey.png">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic Nuclear Jacket will stop the cold from reaching you, no matter whether it is summer or winter.</p>
+                    </div>
+                </div>
+                <p class="htxt clothingtxt">Arctic Nuclear Jacket<br>$199.99 <br>
 
-          <input type="number" min="0" id="quantityi" step="0" value="0">
 
-          <button id="incbutton" onclick="plusi()">&plus;</button>
-        </p>
-      </li>
+                    <button id="decbutton" onclick="minush()">&minus;</button>
 
 
-      <li class="j"><img class="storeimg" src="new3.png">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic Turbo 3.1 Jacket is a stylish jacket specially designed to keep you warm while keeping you on the top of fashion trends.</p>
-          </div>
-        </div>
-        <p class="jtxt clothingtxt">Arctic Turbo 3.1 Jacket<br>$199.99 <br>
+                    <input type="number" min="0" id="quantityh" step="0" value="0">
 
+                    <button id="incbutton" onclick="plush()">&plus;</button>
+                </p>                    <button id="addh" onclick="addh()">Add to Cart</button>
 
-          <button id="decbutton" onclick="minusj()">&minus;</button>
+            </li>
 
 
-          <input type="number" min="0" id="quantityj" step="0" value="0">
+            <li class="i"><img class="storeimg" src="new1.png">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic ThermoPro Jacket is our premium wind resistant jacket and is tested successfully against 300km/h Antarctic winds.</p>
+                    </div>
+                </div>
+                <p class="itxt clothingtxt">Arctic ThermoPro Jacket<br>$199.99 <br>
 
-          <button id="incbutton" onclick="plusj()">&plus;</button>
-        </p>
-      </li>
 
+                    <button id="decbutton" onclick="minusi()">&minus;</button>
 
-      <li class="k"><img class="storeimg" src="red%201.png">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic Geothermal Pro Jacket will not let the freezing temperatures reach you whether you are in the wintery wind or a cave in Antarctica.</p>
-          </div>
-        </div>
-        <p class="ktxt clothingtxt">Arctic GeothermalPro Jacket<br>$199.99 <br>
 
+                    <input type="number" min="0" id="quantityi" step="0" value="0">
 
-          <button id="decbutton" onclick="minusk()">&minus;</button>
+                    <button id="incbutton" onclick="plusi()">&plus;</button>
+                </p>                    <button id="addi" onclick="addi()">Add to Cart</button>
 
+            </li>
 
-          <input type="number" min="0" id="quantityk" step="0" value="0">
 
-          <button id="incbutton" onclick="plusk()">&plus;</button>
-        </p>
-      </li>
+            <li class="j"><img class="storeimg" src="new3.png">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic Turbo 3.1 Jacket is a stylish jacket specially designed to keep you warm while keeping you on the top of fashion trends.</p>
+                    </div>
+                </div>
+                <p class="jtxt clothingtxt">Arctic Turbo 3.1 Jacket<br>$199.99 <br>
 
 
-      <li class="l"><img class="storeimg" src="red.png">
-        <div class="middle">
-          <div class="hovertxt">
-            <p class="hva">The Arctic Polar Jacket can be worn to any occassion is one of our award winning designs for fashion innovation.</p>
-          </div>
-        </div>
-        <p class="ltxt clothingtxt">Arctic Polar Jacket<br>$199.99 <br>
+                    <button id="decbutton" onclick="minusj()">&minus;</button>
 
 
-          <button id="decbutton" onclick="minusl()">&minus;</button>
+                    <input type="number" min="0" id="quantityj" step="0" value="0">
 
+                    <button id="incbutton" onclick="plusj()">&plus;</button>
+                </p>                    <button id="addj" onclick="addj()">Add to Cart</button>
 
-          <input type="number" min="0" id="quantityl" step="0" value="0">
+            </li>
 
-          <button id="incbutton" onclick="plusl()">&plus;</button>
-        </p>
-      </li>
 
+            <li class="k"><img class="storeimg" src="red%201.png">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic Geothermal Pro Jacket will not let the freezing temperatures reach you whether you are in the wintery wind or a cave in Antarctica.</p>
+                    </div>
+                </div>
+                <p class="ktxt clothingtxt">Arctic GeothermalPro Jacket<br>$199.99 <br>
 
-    </ul>
-  </section>
+
+                    <button id="decbutton" onclick="minusk()">&minus;</button>
+
+
+                    <input type="number" min="0" id="quantityk" step="0" value="0">
+
+                    <button id="incbutton" onclick="plusk()">&plus;</button>
+                </p>                    <button id="addk" onclick="addk()">Add to Cart</button>
+
+            </li>
+
+
+            <li class="l"><img class="storeimg" src="red.png">
+                <div class="middle">
+                    <div class="hovertxt">
+                        <p class="hva">The Arctic Polar Jacket can be worn to any occassion is one of our award winning designs for fashion innovation.</p>
+                    </div>
+                </div>
+                <p class="ltxt clothingtxt">Arctic Polar Jacket<br>$199.99 <br>
+
+
+                    <button id="decbutton" onclick="minusl()">&minus;</button>
+
+
+                    <input type="number" min="0" id="quantityl" step="0" value="0">
+
+                    <button id="incbutton" onclick="plusl()">&plus;</button>
+                </p>                    <button id="addl" onclick="addl()">Add to Cart</button>
+
+            </li>
+
+
+        </ul>
+    </section>
 </body>
 
 </html>
