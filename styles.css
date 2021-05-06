@@ -46,7 +46,8 @@ h1 {
   text-shadow: 0 0 4px white;
   font-size: 45px;
 }
-
+#new {  text-shadow: 0 0 2px white;
+}
 h2,
 h3,
 p {
@@ -328,16 +329,17 @@ select {
   top: 50%;
 }
 
-.contactlake {
-  grid-row: 2/3;
-  grid-column: 2/10;
+#mens1 {
+  z-index: 5;
+}
+
+
+
+
+.contact {
   background-image: url(lake.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 80%;
-}
-
-.contact {
   grid-row: 2/3;
   grid-column: 2/10;
   text-align: center;
@@ -634,8 +636,7 @@ li img,
 .size {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 5%;
+  grid-template-columns: 2% 1fr 1fr;
   background-image: url(lake.png);
   background-repeat: no-repeat;
   background-size: cover
@@ -655,14 +656,15 @@ th,
 td {
   padding: 15px;
 }
-
-table {
+table {width: 95%}
+.table {
   width: 100%;
   text-align: center;
+  grid-column: 2/3;
 }
 
 .inputsize {
-  grid-column: 2/3;
+  grid-column: 3/4;
 }
 
 
@@ -677,6 +679,8 @@ table {
 
 #navlink a:hover {
   text-shadow: 0 0 7px white;
+  text-decoration: underline;
+  
 }
 
 * {
@@ -910,12 +914,16 @@ z-index: 5;
   padding: 5%
 }
 
-#mens, #womens, #kids, .homepagetxt {
+#mens, #womens, #kids, #mens1, #womens1, #kids1, .homepagetxt {
   transition: transform .1s;
 }
 
-#mens:hover, #womens:hover, #kids:hover, .homepagetxt:hover {
+#mens:hover, #womens:hover, #kids:hover, #mens1:hover, #womens1:hover, #kids1:hover, .homepagetxt:hover {
     transform: scale(1.08);
+}
+
+#mens1, #womens1, #kids1, #tree1, #ice1, #lake1 {
+  margin-top: 6%;
 }
 
 #.storeimg {
@@ -1030,31 +1038,34 @@ text-align: center;
 
 
 
+.container2 {  margin-top: 5%;
+  box-shadow: 2px 2px 8px black;
+  background-color: rgba(255, 255, 255, 0.2);
+text-align: center;
+padding: 0.5%;
+margin: 2%;
+}
+#newsemail, #newsname, #subscribe {
+  width: 35%;
+  padding: 6px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.contact input {padding: 3px;}
+#info {padding: 3px;}
+.checkoutsec input {padding: 3px;}
+#news {
+  margin-top: 16px;
 
+}
 
+#subscribe {
+  color: black;
+  border: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#subscribe:hover {
+  opacity: 0.8;
+}

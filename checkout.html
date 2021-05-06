@@ -48,7 +48,7 @@ document.getElementById("overlay").style.display = "none";
     <div class="containercheckout">
 
           <div class="col-50 columnone">
-            <h3>Billing Address</h3>
+            <h2>Billing Address</h2>
             <label for="fname">Full Name</label><br>
             <input type="text" id="fname" name="firstname" placeholder="John Smith"><br><br>
             <label for="email">Email</label> <br>
@@ -74,7 +74,7 @@ document.getElementById("overlay").style.display = "none";
           </div>
 
           <div class="col-50 columntwo">
-            <h3>Payment</h3>
+            <h2>Payment</h2>
 
 
             <label for="cname">Name on Card</label><br>
@@ -95,7 +95,15 @@ document.getElementById("overlay").style.display = "none";
                 <label for="cvv">CVV</label><br>
                 <input type="text" id="cvv" name="cvv" placeholder="111">
               </div>
-            </div> <br>
+            </div> <br><br>
+              
+                            <div class="col-50">
+                <label for="promo">Promo code</label><br>
+                <input type="text" id="promo" name="promo" placeholder="111ABC">
+              </div>
+              
+              <br><br>
+              
             <div class="submitcheckout">
                     <input onclick="oncheckout(event)" type="submit" value="Continue to checkout" class="btn"></div>
                 </div>
