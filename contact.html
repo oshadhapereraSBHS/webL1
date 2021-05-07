@@ -1,13 +1,5 @@
 <!doctype html>
 <html>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="height=device-height, initial-scale=1">
-
-  <title>Arctic Home</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
 <script>
   function on(e) {
     e.preventDefault();
@@ -22,23 +14,41 @@ function off() {
 
 
 
+    function onsubscribe(e) {
+      e.preventDefault();
+      document.getElementById("overlay").style.display = "block";
+
+    }
+
+
+  function offsubscribe() {
+    document.getElementById("overlay").style.display = "none";
+  }
+
 
 
 </script>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height, initial-scale=1">
+
+  <title>Arctic Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 
 <body>
   <div>
-    <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
     <nav id="navlink">
-      <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
+      <div><a href="index.html"><img alt="arctic-logo" class="logo" src="arctic%20logo.png"></a></div>
       <div><a href="index.html">HOME</a>
         <a href="store.html">STORE</a>
         <a href="contact.html">CONTACT</a>
         <a href="sizing.html">SIZING</a>
       </div>
-      <div id="cart"><a onclick="ona()"><img id="cartimg" src="cart6.png"> </a></div>
+      <div id="cart"><a onclick="ona()"><img alt="cart1" id="cartimg" src="cart6.png"> </a></div>
 
-      <div id="cart2"><a onclick="ona()"><img id="cartimg2" src="cart2.png"> </a></div>
+      <div id="cart2"><a onclick="ona()"><img alt="cart2" id="cartimg2" src="cart2.png"> </a></div>
     </nav>
   </div>
   <section>
@@ -86,29 +96,30 @@ function off() {
           </form><br><br>
         </div>
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d590332.0893760236!2d163.55679314623086!3d-70.49567154190846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snz!4v1617927178261!5m2!1sen!2snz" width="100%"
-            height="100%"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d590332.0893760236!2d163.55679314623086!3d-70.49567154190846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snz!4v1617927178261!5m2!1sen!2snz" ></iframe>
 
         </div>
 
-      </section>
-    </div>
-    <div class="contactlake"></div>
-    <!--
-        <div id="overlay" onclick="off()">
-          <div id="text">Overlay Text</div>
-        </div>
+     <div id="contcontact">
+                    <form action="/action_page.php"><div class="container2">
 
-        <div style="padding:20px">
-          <h2>Overlay with Text</h2>
-          <button onclick="on()">Turn on overlay effect</button>
-        </div>
 
-        <div id="overlay">
-          <div id="text">Overlay Text</div>
-        </div>
--->
-  </section>
-</body>
+                <h2 id ="new">Subscribe to our Newsletter</h2>
+                <p>Subscribe to our newsletter and get 20% off your first order. We also deliver the lastest news and offers straight to your inbox.</p>
+
+                <input id="newsname" type="text" placeholder="Name" name="name">
+<input id="newsemail" type="text" placeholder="Email address" name="mail">
+                <label>
+                  <input id="news" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                </label>
+
+                <input type="submit"  onclick="onsubscribe(event)"value="Subscribe" id="subscribe">
+                <div id="overlay" onclick="offsubscribe()">
+                  <div id="text"><h3>Thank you for subscribing.</h3></div>
+                </div>
+            </div></form>
+</div>
+ </section>
+      </div></section></body>
 
 </html>

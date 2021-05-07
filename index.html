@@ -1,16 +1,6 @@
 <!doctype html>
 <html>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="height=device-height, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="arctic%20logo.png" />
-
-    <title>Arctic Home</title>
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -46,6 +36,8 @@
 
 
 
+
+
     function onsubscribe(e) {
       e.preventDefault();
       document.getElementById("overlay").style.display = "block";
@@ -57,42 +49,34 @@
     document.getElementById("overlay").style.display = "none";
   }
 
-
 </script>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="height=device-height, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="arctic%20logo.png" />
+
+    <title>Arctic Home</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
 <body>
-    <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
     <div>
         <nav id="navlink">
-            <div class="logodiv"><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
+            <div class="logodiv"><a href="index.html"><img alt="arctic-logo" class="logo" src="arctic%20logo.png"></a></div>
             <div><a href="index.html">HOME</a>
                 <a href="store.html">STORE</a>
                 <a href="contact.html">CONTACT</a>
                 <a href="sizing.html">SIZING</a>
             </div>
-            <div id="cart"><a onclick="ona()"><img id="cartimg" src="cart6.png"> </a></div>
+            <div id="cart"><a onclick="ona()"><img alt="cart1" id="cartimg" src="cart6.png"> </a></div>
 
-            <div id="cart2"><a onclick="ona()"><img id="cartimg2" src="cart2.png"> </a></div>
+            <div id="cart2"><a onclick="ona()"><img alt="cart2" id="cartimg2" src="cart2.png"> </a></div>
         </nav>
     </div>
 
-
-    <!--   <div>
-        <nav id="navlink">
-            <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
-            <div><a href="index.html">HOME</a>
-                <button class="storelink">STORE
-                <i class="drop"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="store.html">Mens</a>
-                    <a href="store.html">Womens</a>
-                </div>
-                <a href="contact.html">CONTACT</a>
-                <a href="sizing.html">SIZING</a>
-            </div>
-        </nav>
-    </div>-->
 
     <section class="home">
 
@@ -101,11 +85,11 @@
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-                <img src="slider2.png" style="width:100%">
+                <img alt="new-season1" src="slider2.png" style="width:100%">
             </div>
 
             <div class="mySlides thermo fade">
-                <img src="slider5.png" style="width:100%">
+                <img alt="new-season2" src="slider5.png" style="width:100%">
             </div>
             <div class="prevbutton">
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -130,7 +114,7 @@
 
         <div class="backgroundimg" id="ice"></div>
         <div id="mens">
-          <a href="store.html">  <img class="homepageimg" src="black.png"> </a>
+          <a href="store.html">  <img alt="jacket" class="homepageimg" src="black.png"> </a>
 
         </div>
         <div class="homepagetxt" id="menstxt"><a href="store.html">SHOP<br>MENS</a></div>
@@ -139,7 +123,7 @@
 
 
         <div id="womens">
-            <a href="store.html"><img class="homepageimg" src="grey%202.png"></a>
+            <a href="store.html"><img  alt="jacket" class="homepageimg" src="grey%202.png"></a>
 
         </div>
         <div class="homepagetxt" id="womenstxt"><a href="store.html">SHOP<br>WOMENS</a></div>
@@ -148,7 +132,7 @@
         <div class="backgroundimg" id="tree"></div>
 
         <div id="kids">
-            <a href="store.html"><img class="homepageimg" src="blue%203.png"></a>
+            <a href="store.html"><img alt="jacket"  class="homepageimg" src="blue%203.png"></a>
 
         </div>
         <div class="homepagetxt" id="kidstxt"><a href="store.html">SHOP<br>KIDS</a></div>
@@ -158,7 +142,7 @@
 
         <div class="backgroundimg" id="tree1"></div>
         <div id="mens1">
-          <a href="store.html">  <img class="homepageimg" src="red%201.png"> </a>
+          <a href="store.html">  <img alt="jacket"  class="homepageimg" src="red%201.png"> </a>
 
         </div>
         <div class="homepagetxt" id="menstxt1"><a href="store.html">SHOP<br>MENS</a></div>
@@ -167,7 +151,7 @@
 
 
         <div id="womens1">
-            <a href="store.html"><img class="homepageimg" src="green%202.png"></a>
+            <a href="store.html"><img  alt="jacket" class="homepageimg" src="green%202.png"></a>
 
         </div>
         <div class="homepagetxt" id="womenstxt1"><a href="store.html">SHOP<br>WOMENS</a></div>
@@ -176,7 +160,7 @@ With all six stones, Wi
         <div class="backgroundimg" id="ice1"></div>
 
         <div id="kids1">
-            <a href="store.html"><img class="homepageimg" src="black%203.png"></a>
+            <a href="store.html"><img  alt="jacket" class="homepageimg" src="black%203.png"></a>
 
         </div>
         <div class="homepagetxt" id="kidstxt1"><a href="store.html">SHOP<br>KIDS</a></div>
@@ -186,6 +170,7 @@ With all six stones, Wi
 
 
     </section>
+
 
             <form action="/action_page.php"><div class="container2">
 
@@ -208,5 +193,3 @@ With all six stones, Wi
 </body>
 
 </html>
-
-<!--zoom on hover>

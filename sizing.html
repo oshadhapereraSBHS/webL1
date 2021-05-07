@@ -1,13 +1,5 @@
 <!doctype html>
 <html>
-
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="height=device-height, initial-scale=1">
-
-  <title>Arctic Home</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
 <script>
   function check() {
     var msg = document.getElementById('info').value;
@@ -52,21 +44,43 @@
       document.getElementById("jacketsize").innerHTML = "Please enter a valid size";
     }
   }
+
+
+    function onsubscribe(e) {
+      e.preventDefault();
+      document.getElementById("overlay").style.display = "block";
+
+    }
+
+
+  function offsubscribe() {
+    document.getElementById("overlay").style.display = "none";
+  }
+
+
 </script>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height, initial-scale=1">
+
+  <title>Arctic Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 
 <body>
   <div>
     <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
     <nav id="navlink">
-      <div><a href="index.html"><img class="logo" src="arctic%20logo.png"></a></div>
+      <div><a href="index.html"><img alt="arctic-logo"class="logo" src="arctic%20logo.png"></a></div>
       <div><a href="index.html">HOME</a>
         <a href="store.html">STORE</a>
         <a href="contact.html">CONTACT</a>
         <a href="sizing.html">SIZING</a>
       </div>
-      <div id="cart"><a onclick="ona()"><img id="cartimg" src="cart6.png"> </a></div>
+      <div id="cart"><a onclick="ona()"><img alt="cart1" id="cartimg" src="cart6.png"> </a></div>
 
-      <div id="cart2"><a onclick="ona()"><img id="cartimg2" src="cart2.png"> </a></div>
+      <div id="cart2"><a onclick="ona()"><img alt="cart2" id="cartimg2" src="cart2.png"> </a></div>
     </nav>
   </div>
   <section class="size">
@@ -139,8 +153,24 @@
       <h3 id="jacketsize"></h3>
 
 
-    </div>
-  </section>
-</body>
+    </div><div id="contsize">
+    <form action="/action_page.php"><div class="container2" >
 
+
+                <h2 id ="new">Subscribe to our Newsletter</h2>
+                <p>Subscribe to our newsletter and get 20% off your first order. We also deliver the lastest news and offers straight to your inbox.</p>
+
+                <input id="newsname" type="text" placeholder="Name" name="name">
+<input id="newsemail" type="text" placeholder="Email address" name="mail">
+                <label>
+                  <input id="news" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                </label>
+
+                <input type="submit"  onclick="onsubscribe(event)"value="Subscribe" id="subscribe">
+                <div id="overlay" onclick="offsubscribe()">
+                  <div id="text"><h3>Thank you for subscribing.</h3></div>
+                </div>
+            </div></form></div>
+    </section>
+</body>
 </html>
