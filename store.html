@@ -12,6 +12,8 @@
 
 
 <script>
+
+    
     function removea() {
         document.getElementById("texta").style.display = "none";
         document.getElementById("textaa").style.display = "none";
@@ -212,6 +214,13 @@
         document.getElementById("overlaya").style.display = "block";
 
 
+if (document.getElementById('quantitya').value == 0 && document.getElementById('quantityb').value == 0 && document.getElementById('quantityc').value == 0 && document.getElementById('quantityd').value == 0 && document.getElementById('quantitye').value == 0 && document.getElementById('quantityf').value == 0 && document.getElementById('quantityg').value == 0 && document.getElementById('quantityh').value == 0 && document.getElementById('quantityi').value == 0 && document.getElementById('quantityj').value == 0 && document.getElementById('quantityk').value == 0 && document.getElementById('quantityl').value == 0 ){  document.getElementById("cartcheckout").style.display = "none";
+document.getElementById("empty").style.display = "block";
+};
+if (document.getElementById('quantitya').value != 0 || document.getElementById('quantityb').value != 0 || document.getElementById('quantityc').value != 0 || document.getElementById('quantityd').value != 0 || document.getElementById('quantitye').value != 0 || document.getElementById('quantityf').value != 0 || document.getElementById('quantityg').value != 0 || document.getElementById('quantityh').value != 0 || document.getElementById('quantityi').value != 0 || document.getElementById('quantityj').value != 0 || document.getElementById('quantityk').value != 0 || document.getElementById('quantityl').value != 0 ){  document.getElementById("cartcheckout").style.display = "inline";
+document.getElementById("empty").style.display = "none";
+};
+
         if (document.getElementById('quantitya').value > 0) {
             document.getElementById("texta").innerHTML = "Arctic Geothermal Jacket"
             document.getElementById("textaa").innerHTML = "$" + 199 * document.getElementById('quantitya').value
@@ -335,8 +344,6 @@
 
 
 
-
-
     function plusa() {
         document.getElementById('quantitya').stepUp();
     }
@@ -445,10 +452,33 @@
 
         document.getElementById('quantityl').stepDown();
     }
+    
+    
+
+    function onsubscribe(e) {
+      e.preventDefault();
+      document.getElementById("overlay").style.display = "block";
+
+    }
+
+
+  function offsubscribe() {
+    document.getElementById("overlay").style.display = "none";
+  }
+    
+    function hi(){
+        alert(
+            document.getElementById('quantitya').value * 199 + document.getElementById('quantityb').value * 199 + document.getElementById('quantityc').value * 199 + document.getElementById('quantityd').value * 199 +document.getElementById('quantitye').value * 199 + document.getElementById('quantityf').value * 199 + document.getElementById('quantityg').value * 199 + document.getElementById('quantityh').value * 199 + document.getElementById('quantityi').value * 199 + document.getElementById('quantityj').value * 199 + document.getElementById('quantityk').value * 199 + document.getElementById('quantityl').value * 199 
+        
+        
+        )
+    }
+
+
 </script>
 
 
-<body>
+<body class="clothingbody">
     <div>
         <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
         <nav id="navlink">
@@ -461,12 +491,14 @@
             <div id="cart"><a onclick="ona()"><img id="cartimg" src="cart6.png"> </a></div>
 
             <div id="cart2"><a onclick="ona()"><img id="cartimg2" src="cart2.png"> </a></div>
+            <a onclick="hi()">hi</a>
         </nav>
     </div>
-    <section>
+    <section class="clothingsec">
 
         <div id="overlaya" onclick="offa()">
             <h2 id="yourcart">Your Cart</h2>
+            <h3 id="empty">Your cart in empty. Please add items and return to checkout.</h3>
             <div class="cartdiv">
 
                 <img id="jacketa" src="black%201.png">
@@ -811,5 +843,24 @@
 
 
         </ul>
-    </section>
+        
+        
+    </section><br><br><br><br><br><br><br>    
+            <form action="/action_page.php"><div class="container2">
+
+
+                <h2 id ="new">Subscribe to our Newsletter</h2>
+                <p>Subscribe to our newsletter and get 20% off your first order. We also deliver the lastest news and offers straight to your inbox.</p>
+
+                <input id="newsname" type="text" placeholder="Name" name="name">
+<input id="newsemail" type="text" placeholder="Email address" name="mail">
+                <label>
+                  <input id="news" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                </label>
+
+                <input type="submit"  onclick="onsubscribe(event)"value="Subscribe" id="subscribe">
+                <div id="overlay" onclick="offsubscribe()">
+                  <div id="text"><h3>Thank you for subscribing.</h3></div>
+                </div>
+            </div></form>
 </body></html>
