@@ -16,7 +16,7 @@
     function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
+        var dots = document.getElementsByClassName("dot");
         if (n > slides.length) {
             slideIndex = 1
         }
@@ -30,7 +30,7 @@
             dots[i].className = dots[i].className.replace(" active", "");
         }
         slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+        dots[slideIndex - 1].className += " active";
 
     }
 
@@ -39,16 +39,15 @@
 
 
     function onsubscribe(e) {
-      e.preventDefault();
-      document.getElementById("overlay").style.display = "block";
+        e.preventDefault();
+        document.getElementById("overlay").style.display = "block";
 
     }
 
 
-  function offsubscribe() {
-    document.getElementById("overlay").style.display = "none";
-  }
-
+    function offsubscribe() {
+        document.getElementById("overlay").style.display = "none";
+    }
 </script>
 
 <head>
@@ -98,11 +97,11 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
             <div class="dotdiv">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
             </div>
 
-            </div>
+        </div>
 
         <br>
 
@@ -114,7 +113,7 @@
 
         <div class="backgroundimg" id="ice"></div>
         <div id="mens">
-          <a href="store.html">  <img alt="jacket" class="homepageimg" src="black.png"> </a>
+            <a href="store.html"> <img alt="jacket" class="homepageimg" src="black.png"> </a>
 
         </div>
         <div class="homepagetxt" id="menstxt"><a href="store.html">SHOP<br>MENS</a></div>
@@ -123,7 +122,7 @@
 
 
         <div id="womens">
-            <a href="store.html"><img  alt="jacket" class="homepageimg" src="grey%202.png"></a>
+            <a href="store.html"><img alt="jacket" class="homepageimg" src="grey%202.png"></a>
 
         </div>
         <div class="homepagetxt" id="womenstxt"><a href="store.html">SHOP<br>WOMENS</a></div>
@@ -132,7 +131,7 @@
         <div class="backgroundimg" id="tree"></div>
 
         <div id="kids">
-            <a href="store.html"><img alt="jacket"  class="homepageimg" src="blue%203.png"></a>
+            <a href="store.html"><img alt="jacket" class="homepageimg" src="blue%203.png"></a>
 
         </div>
         <div class="homepagetxt" id="kidstxt"><a href="store.html">SHOP<br>KIDS</a></div>
@@ -142,7 +141,7 @@
 
         <div class="backgroundimg" id="tree1"></div>
         <div id="mens1">
-          <a href="store.html">  <img alt="jacket"  class="homepageimg" src="red%201.png"> </a>
+            <a href="store.html"> <img alt="jacket" class="homepageimg" src="red%201.png"> </a>
 
         </div>
         <div class="homepagetxt" id="menstxt1"><a href="store.html">SHOP<br>MENS</a></div>
@@ -151,16 +150,16 @@
 
 
         <div id="womens1">
-            <a href="store.html"><img  alt="jacket" class="homepageimg" src="green%202.png"></a>
+            <a href="store.html"><img alt="jacket" class="homepageimg" src="green%202.png"></a>
 
         </div>
         <div class="homepagetxt" id="womenstxt1"><a href="store.html">SHOP<br>WOMENS</a></div>
-With all six stones, Wi
+        With all six stones, Wi
 
         <div class="backgroundimg" id="ice1"></div>
 
         <div id="kids1">
-            <a href="store.html"><img  alt="jacket" class="homepageimg" src="black%203.png"></a>
+            <a href="store.html"><img alt="jacket" class="homepageimg" src="black%203.png"></a>
 
         </div>
         <div class="homepagetxt" id="kidstxt1"><a href="store.html">SHOP<br>KIDS</a></div>
@@ -172,24 +171,26 @@ With all six stones, Wi
     </section>
 
 
-            <form action="/action_page.php"><div class="container2">
+    <form action="/action_page.php">
+        <div class="container2">
 
 
-                <h2 id ="new">Subscribe to our Newsletter</h2>
-                <p>Subscribe to our newsletter and get 20% off your first order. We also deliver the lastest news and offers straight to your inbox.</p>
+            <h2 id="new">Subscribe to our Newsletter</h2>
+            <p>Subscribe to our newsletter and get 20% off your first order. We also deliver the lastest news and offers straight to your inbox.</p>
 
-                <input id="newsname" type="text" placeholder="Name" name="name">
-<input id="newsemail" type="text" placeholder="Email address" name="mail">
-                <label>
-                  <input id="news" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-                </label>
+            <input id="newsname" type="text" placeholder="Name" name="name">
+            <input id="newsemail" type="text" placeholder="Email address" name="mail">
+            <label>
+                <input id="news" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+            </label>
 
-                <input type="submit"  onclick="onsubscribe(event)"value="Subscribe" id="subscribe">
-                <div id="overlay" onclick="offsubscribe()">
-                  <div id="text"><h3>Thank you for subscribing.</h3></div>
+            <input type="submit" onclick="onsubscribe(event)" value="Subscribe" id="subscribe">
+            <div id="overlay" onclick="offsubscribe()">
+                <div id="text">
+                    <h3>Thank you for subscribing.</h3>
                 </div>
-            </div></form>
+            </div>
+        </div>
+    </form>
 
-</body>
-
-</html>
+</body></html>

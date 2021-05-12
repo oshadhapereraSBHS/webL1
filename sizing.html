@@ -1,176 +1,181 @@
 <!doctype html>
 <html>
 <script>
-  function check() {
-    var msg = document.getElementById('info').value;
-    var unit = document.getElementById('unit').value;
-    if (msg > 75 && (msg < 82 && (unit == 1))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXXS';
-    } else if (msg < 87 && (msg > 80 && (unit == 1))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXS';
-    } else if (msg < 92 && (msg > 85 && (unit == 1))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XS';
-    } else if (msg < 97 && (msg > 90 && (unit == 1))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'S';
-    } else if (msg < 102 && (msg > 95 && (unit == 1))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'M';
-    } else if (msg < 107 && (msg > 100 && (unit == 1))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'L';
-    } else if (msg < 112 && (msg > 105 && (unit == 1))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XL';
-    } else if (msg < 117 && (msg > 110 && (unit == 1))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXL';
-    } else if (msg < 122 && (msg > 115 && (unit == 1))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXXL';
-    } else if (msg < 33 && (msg > 29 && (unit == 2))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXXS';
-    } else if (msg < 35 && (msg > 31 && (unit == 2))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXS';
-    } else if (msg < 37 && (msg > 33 && (unit == 2))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XS';
-    } else if (msg < 39 && (msg > 35 && (unit == 2))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'S';
-    } else if (msg < 41 && (msg > 37 && (unit == 2))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'M';
-    } else if (msg < 43 && (msg > 39 && (unit == 2))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'LL';
-    } else if (msg < 45 && (msg > 41 && (unit == 2))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XL';
-    } else if (msg < 47 && (msg > 43 && (unit == 2))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXL';
-    } else if (msg < 49 && (msg > 45 && (unit == 2))) {
-      document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXXL';
-    } else {
-      document.getElementById("jacketsize").innerHTML = "Please enter a valid size";
+    function check() {
+        var msg = document.getElementById('info').value;
+        var unit = document.getElementById('unit').value;
+        if (msg > 75 && (msg < 82 && (unit == 1))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXXS';
+        } else if (msg < 87 && (msg > 80 && (unit == 1))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXS';
+        } else if (msg < 92 && (msg > 85 && (unit == 1))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XS';
+        } else if (msg < 97 && (msg > 90 && (unit == 1))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'S';
+        } else if (msg < 102 && (msg > 95 && (unit == 1))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'M';
+        } else if (msg < 107 && (msg > 100 && (unit == 1))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'L';
+        } else if (msg < 112 && (msg > 105 && (unit == 1))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XL';
+        } else if (msg < 117 && (msg > 110 && (unit == 1))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXL';
+        } else if (msg < 122 && (msg > 115 && (unit == 1))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXXL';
+        } else if (msg < 33 && (msg > 29 && (unit == 2))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXXS';
+        } else if (msg < 35 && (msg > 31 && (unit == 2))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXS';
+        } else if (msg < 37 && (msg > 33 && (unit == 2))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XS';
+        } else if (msg < 39 && (msg > 35 && (unit == 2))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'S';
+        } else if (msg < 41 && (msg > 37 && (unit == 2))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'M';
+        } else if (msg < 43 && (msg > 39 && (unit == 2))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'LL';
+        } else if (msg < 45 && (msg > 41 && (unit == 2))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XL';
+        } else if (msg < 47 && (msg > 43 && (unit == 2))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXL';
+        } else if (msg < 49 && (msg > 45 && (unit == 2))) {
+            document.getElementById("jacketsize").innerHTML = "Your size is " + 'XXXL';
+        } else {
+            document.getElementById("jacketsize").innerHTML = "Please enter a valid size";
+        }
     }
-  }
 
 
     function onsubscribe(e) {
-      e.preventDefault();
-      document.getElementById("overlay").style.display = "block";
+        e.preventDefault();
+        document.getElementById("overlay").style.display = "block";
 
     }
 
 
-  function offsubscribe() {
-    document.getElementById("overlay").style.display = "none";
-  }
-
-
+    function offsubscribe() {
+        document.getElementById("overlay").style.display = "none";
+    }
 </script>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="height=device-height, initial-scale=1">
 
-  <title>Arctic Home</title>
-  <link rel="stylesheet" href="styles.css">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="height=device-height, initial-scale=1">
+
+    <title>Arctic Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 
 <body>
-  <div>
-    <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
-    <nav id="navlink">
-      <div><a href="index.html"><img alt="arctic-logo"class="logo" src="arctic%20logo.png"></a></div>
-      <div><a href="index.html">HOME</a>
-        <a href="store.html">STORE</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="sizing.html">SIZING</a>
-      </div>
-      <div id="cart"><a onclick="ona()"><img alt="cart1" id="cartimg" src="cart6.png"> </a></div>
+    <div>
+        <!-- <nav id="navlogo">            <div><a href="store.html"><img class="toplogo" src="arctic%20logo.png"></a></div></nav>-->
+        <nav id="navlink">
+            <div><a href="index.html"><img alt="arctic-logo" class="logo" src="arctic%20logo.png"></a></div>
+            <div><a href="index.html">HOME</a>
+                <a href="store.html">STORE</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="sizing.html">SIZING</a>
+            </div>
+            <div id="cart"><a onclick="ona()"><img alt="cart1" id="cartimg" src="cart6.png"> </a></div>
 
-      <div id="cart2"><a onclick="ona()"><img alt="cart2" id="cartimg2" src="cart2.png"> </a></div>
-    </nav>
-  </div>
-  <section class="size">
-    <div class="table">
-      <table><br>
-        <tr>
-          <th rowspan="2">Size</th>
+            <div id="cart2"><a onclick="ona()"><img alt="cart2" id="cartimg2" src="cart2.png"> </a></div>
+        </nav>
+    </div>
+    <section class="size">
+        <div class="table">
+            <table><br>
+                <tr>
+                    <th rowspan="2">Size</th>
 
-          <th colspan="2">Chest Size</th>
-        <tr>
-          <th>cm</th>
-          <th>inch</th>
-        <tr>
-          <td>XXXS</td>
-          <td>76-81</td>
-          <td>30-32</td>
-        <tr>
-          <td>XXS</td>
-          <td>82-86</td>
-          <td>33-34</td>
-        <tr>
-          <td>XS</td>
-          <td>87-91</td>
-          <td>35-36</td>
-        <tr>
-          <td>S</td>
-          <td>92-96</td>
-          <td>37-38</td>
-        <tr>
-          <td>M</td>
-          <td>97-101</td>
-          <td>39-40</td>
-        <tr>
-          <td>L</td>
-          <td>102-106</td>
-          <td>4142</td>
-        <tr>
-          <td>XL</td>
-          <td>107-111</td>
-          <td>43-44</td>
-        <tr>
-          <td>XXL</td>
-          <td>112-116</td>
-          <td>45-46</td>
-        <tr>
-          <td>XXXL</td>
-          <td>117-121</td>
-          <td>47-48</td>
-
-
-
-      </table>
-<br><br>    </div>
-    <div class="inputsize">
-      <h2 id="testing">Enter your chest size here to see which sized jackets you should buy</h2>
-
-      <input id="info" type="number" value="76">
+                    <th colspan="2">Chest Size</th>
+                <tr>
+                    <th>cm</th>
+                    <th>inch</th>
+                <tr>
+                    <td>XXXS</td>
+                    <td>76-81</td>
+                    <td>30-32</td>
+                <tr>
+                    <td>XXS</td>
+                    <td>82-86</td>
+                    <td>33-34</td>
+                <tr>
+                    <td>XS</td>
+                    <td>87-91</td>
+                    <td>35-36</td>
+                <tr>
+                    <td>S</td>
+                    <td>92-96</td>
+                    <td>37-38</td>
+                <tr>
+                    <td>M</td>
+                    <td>97-101</td>
+                    <td>39-40</td>
+                <tr>
+                    <td>L</td>
+                    <td>102-106</td>
+                    <td>4142</td>
+                <tr>
+                    <td>XL</td>
+                    <td>107-111</td>
+                    <td>43-44</td>
+                <tr>
+                    <td>XXL</td>
+                    <td>112-116</td>
+                    <td>45-46</td>
+                <tr>
+                    <td>XXXL</td>
+                    <td>117-121</td>
+                    <td>47-48</td>
 
 
 
-      <select id="unit">
-        <option value="1">cm</option>
-        <option value="2">inches</option>
-      </select>
+            </table>
+            <br><br>
+        </div>
+        <div class="inputsize">
+            <h2 id="testing">Enter your chest size here to see which sized jackets you should buy</h2>
+
+            <input id="info" type="number" value="76">
 
 
 
-      <button onclick="check()">Check</button>
-
-      <h3 id="jacketsize"></h3>
-
-
-    </div><div id="contsize">
-    <form action="/action_page.php"><div class="container2" >
+            <select id="unit">
+                <option value="1">cm</option>
+                <option value="2">inches</option>
+            </select>
 
 
-                <h2 id ="new">Subscribe to our Newsletter</h2>
-                <p>Subscribe to our newsletter and get 20% off your first order. We also deliver the lastest news and offers straight to your inbox.</p>
 
-                <input id="newsname" type="text" placeholder="Name" name="name">
-<input id="newsemail" type="text" placeholder="Email address" name="mail">
-                <label>
-                  <input id="news" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-                </label>
+            <button onclick="check()">Check</button>
 
-                <input type="submit"  onclick="onsubscribe(event)"value="Subscribe" id="subscribe">
-                <div id="overlay" onclick="offsubscribe()">
-                  <div id="text"><h3>Thank you for subscribing.</h3></div>
+            <h3 id="jacketsize"></h3>
+
+
+        </div>
+        <div id="contsize">
+            <form action="/action_page.php">
+                <div class="container2">
+
+
+                    <h2 id="new">Subscribe to our Newsletter</h2>
+                    <p>Subscribe to our newsletter and get 20% off your first order. We also deliver the lastest news and offers straight to your inbox.</p>
+
+                    <input id="newsname" type="text" placeholder="Name" name="name">
+                    <input id="newsemail" type="text" placeholder="Email address" name="mail">
+                    <label>
+                        <input id="news" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                    </label>
+
+                    <input type="submit" onclick="onsubscribe(event)" value="Subscribe" id="subscribe">
+                    <div id="overlay" onclick="offsubscribe()">
+                        <div id="text">
+                            <h3>Thank you for subscribing.</h3>
+                        </div>
+                    </div>
                 </div>
-            </div></form></div>
+            </form>
+        </div>
     </section>
-</body>
-</html>
+</body></html>
