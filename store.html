@@ -4,6 +4,11 @@
 
 
 <script>
+
+
+
+
+
     function removea() {
 
         document.getElementById("texta").style.display = "none";
@@ -61,8 +66,8 @@
         document.getElementById('items').innerHTML = document.getElementById('quantitya').value * 1 + document.getElementById('quantityb').value * 1 + document.getElementById('quantityc').value * 1 + document.getElementById('quantityd')
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
-   
-        localStorage.setItem("quantityb", document.getElementById("quantityb").value); 
+
+        localStorage.setItem("quantityb", document.getElementById("quantityb").value);
     };
 
     function addb() {
@@ -115,8 +120,7 @@
     }
 
     function removed() {
-        document.getElementById("jacketa").style.display = "block";
-        document.getElementById("texd").style.display = "none";
+        document.getElementById("textd").style.display = "none";
         document.getElementById("textdd").style.display = "none";
         document.getElementById("removed").style.display = "none";
         document.getElementById("jacketd").style.display = "none";
@@ -476,7 +480,7 @@
         };
         if (document.getElementById('quantityg').value > 0) {
             document.getElementById("textg").innerHTML = "Arctic Polar Fleece Jacket"
-            document.getElementById("textg").innerHTML = "$" + 199 * document.getElementById('quantitygh').value
+            document.getElementById("textg").innerHTML = "$" + 199 * document.getElementById('quantityg').value
             document.getElementById("textggg").innerHTML = document.getElementById('quantityg').value;
         };
 
@@ -635,7 +639,7 @@
             199 + document.getElementById('quantitye').value * 199 + document.getElementById('quantityf').value * 199 + document.getElementById('quantityg').value * 199 + document.getElementById('quantityh').value * 199 + document.getElementById(
                 'quantityi').value * 199 + document.getElementById('quantityj').value * 199 + document.getElementById('quantityk').value * 199 + document.getElementById('quantityl').value * 199);
 
-
+localStorage.setItem('total', document.getElementById('total').innerHTML)
 
 
         document.getElementById('total').style.display = "block";
@@ -907,7 +911,7 @@
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
 
-        localStorage.setItem("quantitya", document.getElementById("quantitya").value);
+        localStorage.setItem("quantityb", document.getElementById("quantityb").value);
     }
 
     function reducec() {
@@ -917,7 +921,7 @@
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
 
-        localStorage.setItem("quantitya", document.getElementById("quantitya").value);
+        localStorage.setItem("quantityc", document.getElementById("quantityc").value);
     }
 
     function reduced() {
@@ -927,7 +931,7 @@
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
 
-        localStorage.setItem("quantitya", document.getElementById("quantitya").value);
+        localStorage.setItem("quantityd", document.getElementById("quantityd").value);
     }
 
     function reducee() {
@@ -937,7 +941,7 @@
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
 
-        localStorage.setItem("quantitya", document.getElementById("quantitya").value);
+        localStorage.setItem("quantitye", document.getElementById("quantitye").value);
     }
 
     function reducef() {
@@ -947,7 +951,7 @@
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
 
-        localStorage.setItem("quantitya", document.getElementById("quantitya").value);
+        localStorage.setItem("quantityf", document.getElementById("quantityf").value);
     }
 
     function reduceg() {
@@ -956,7 +960,7 @@
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
 
-        localStorage.setItem("quantitya", document.getElementById("quantitya").value);
+        localStorage.setItem("quantityg", document.getElementById("quantityg").value);
     }
 
     function reduceh() {
@@ -966,7 +970,7 @@
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
 
-        localStorage.setItem("quantitya", document.getElementById("quantitya").value);
+        localStorage.setItem("quantityh", document.getElementById("quantityh").value);
     }
 
     function reducei() {
@@ -976,7 +980,7 @@
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
 
-        localStorage.setItem("quantitya", document.getElementById("quantitya").value);
+        localStorage.setItem("quantityi", document.getElementById("quantityi").value);
     }
 
     function reducej() {
@@ -986,7 +990,7 @@
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
 
-        localStorage.setItem("quantitya", document.getElementById("quantitya").value);
+        localStorage.setItem("quantityj", document.getElementById("quantityj").value);
     }
 
     function reducek() {
@@ -996,7 +1000,7 @@
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
 
-        localStorage.setItem("quantitya", document.getElementById("quantitya").value);
+        localStorage.setItem("quantityk", document.getElementById("quantityk").value);
     }
 
     function reducel() {
@@ -1006,8 +1010,62 @@
             .value * 1 + document.getElementById('quantitye').value * 1 + document.getElementById('quantityf').value * 1 + document.getElementById('quantityg').value * 1 + document.getElementById('quantityh').value * 1 + document.getElementById(
                 'quantityi').value * 1 + document.getElementById('quantityj').value * 1 + document.getElementById('quantityk').value * 1 + document.getElementById('quantityl').value * 1;
 
-        localStorage.setItem("quantitya", document.getElementById("quantitya").value);
+        localStorage.setItem("quantityl", document.getElementById("quantityl").value);
     }
+
+
+
+
+window.onload = function(){
+  document.getElementById("quantitya").value = localStorage.getItem("quantitya")
+  document.getElementById("quantityb").value = localStorage.getItem("quantityb")
+  document.getElementById("quantityc").value = localStorage.getItem("quantityc")
+  document.getElementById("quantityd").value = localStorage.getItem("quantityd")
+  document.getElementById("quantitye").value = localStorage.getItem("quantitye")
+  document.getElementById("quantityf").value = localStorage.getItem("quantityf")
+  document.getElementById("quantityg").value = localStorage.getItem("quantityg")
+  document.getElementById("quantityh").value = localStorage.getItem("quantityh")
+  document.getElementById("quantityi").value = localStorage.getItem("quantityi")
+  document.getElementById("quantityj").value = localStorage.getItem("quantityj")
+  document.getElementById("quantityk").value = localStorage.getItem("quantityk")
+  document.getElementById("quantityl").value = localStorage.getItem("quantityl")
+  document.getElementById('items').innerHTML = localStorage.getItem('quantitya') * 1 +
+   localStorage.getItem('quantityb') * 1 +
+   localStorage.getItem('quantityc') * 1 +
+   localStorage.getItem('quantityd') * 1 +
+   localStorage.getItem('quantitye') * 1 +
+   localStorage.getItem('quantityf') * 1 +
+   localStorage.getItem('quantityg') * 1 +
+   localStorage.getItem('quantityh') * 1 +
+   localStorage.getItem('quantityi') * 1 +
+   localStorage.getItem('quantityj') * 1 +
+   localStorage.getItem('quantityk') * 1 +
+   localStorage.getItem('quantityl') * 1;
+   if(localStorage.getItem("quantitya") == null) {document.getElementById("quantitya").value = 0}
+if(localStorage.getItem("quantityb") == null) {document.getElementById("quantityb").value = 0}
+if(localStorage.getItem("quantityc") == null) {document.getElementById("quantityc").value = 0}
+if(localStorage.getItem("quantityd") == null) {document.getElementById("quantityd").value = 0}
+if(localStorage.getItem("quantitye") == null) {document.getElementById("quantitye").value = 0}
+if(localStorage.getItem("quantityf") == null) {document.getElementById("quantityf").value = 0}
+if(localStorage.getItem("quantityg") == null) {document.getElementById("quantityg").value = 0}
+if(localStorage.getItem("quantityh") == null) {document.getElementById("quantityh").value = 0}
+if(localStorage.getItem("quantityi") == null) {document.getElementById("quantityi").value = 0}
+if(localStorage.getItem("quantityj") == null) {document.getElementById("quantityj").value = 0}
+if(localStorage.getItem("quantityk") == null) {document.getElementById("quantityk").value = 0}
+if(localStorage.getItem("quantityl") == null) {document.getElementById("quantityl").value = 0}
+
+
+
+
+
+
+
+
+
+
+
+}
+
 
 </script>
 

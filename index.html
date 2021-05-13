@@ -1,196 +1,703 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
 
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-            slideIndex = 1
+
+window.onload = function(){
+  document.getElementById('items').innerHTML = localStorage.getItem('quantitya') * 1 +
+   localStorage.getItem('quantityb') * 1 +
+   localStorage.getItem('quantityc') * 1 +
+   localStorage.getItem('quantityd') * 1 +
+   localStorage.getItem('quantitye') * 1 +
+   localStorage.getItem('quantityf') * 1 +
+   localStorage.getItem('quantityg') * 1 +
+   localStorage.getItem('quantityh') * 1 +
+   localStorage.getItem('quantityi') * 1 +
+   localStorage.getItem('quantityj') * 1 +
+   localStorage.getItem('quantityk') * 1 +
+   localStorage.getItem('quantityl') * 1;
+
+
+
+
+
+
+
+      if(localStorage.getItem("quantitya") == null) {document.getElementById("quantitya").value = 0}
+   if(localStorage.getItem("quantityb") == null) {document.getElementById("quantityb").value = 0}
+   if(localStorage.getItem("quantityc") == null) {document.getElementById("quantityc").value = 0}
+   if(localStorage.getItem("quantityd") == null) {document.getElementById("quantityd").value = 0}
+   if(localStorage.getItem("quantitye") == null) {document.getElementById("quantitye").value = 0}
+   if(localStorage.getItem("quantityf") == null) {document.getElementById("quantityf").value = 0}
+   if(localStorage.getItem("quantityg") == null) {document.getElementById("quantityg").value = 0}
+   if(localStorage.getItem("quantityh") == null) {document.getElementById("quantityh").value = 0}
+   if(localStorage.getItem("quantityi") == null) {document.getElementById("quantityi").value = 0}
+   if(localStorage.getItem("quantityj") == null) {document.getElementById("quantityj").value = 0}
+   if(localStorage.getItem("quantityk") == null) {document.getElementById("quantityk").value = 0}
+   if(localStorage.getItem("quantityl") == null) {document.getElementById("quantityl").value = 0}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+        function offa() {
+            document.getElementById("overlaya").style.display = "none";
+            document.getElementById("checkoutbutton").style.display = "none";
+
         }
-        if (n < 1) {
-            slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
 
+
+    function ona(){
+            document.getElementById("overlaya").style.display = "block";
+document.getElementById("increasea").style.display = "none"
+
+document.getElementById("increaseb").style.display = "none"
+document.getElementById("increasec").style.display = "none"
+document.getElementById("increased").style.display = "none"
+document.getElementById("increasee").style.display = "none"
+document.getElementById("increasef").style.display = "none"
+document.getElementById("increaseg").style.display = "none"
+document.getElementById("increaseh").style.display = "none"
+document.getElementById("increasei").style.display = "none"
+document.getElementById("increasej").style.display = "none"
+document.getElementById("increasek").style.display = "none"
+document.getElementById("increasel").style.display = "none"
+document.getElementById("reducea").style.display = "none"
+document.getElementById("reduceb").style.display = "none"
+document.getElementById("reducec").style.display = "none"
+document.getElementById("reduced").style.display = "none"
+document.getElementById("reducee").style.display = "none"
+document.getElementById("reducef").style.display = "none"
+document.getElementById("reduceg").style.display = "none"
+document.getElementById("reduceh").style.display = "none"
+document.getElementById("reducei").style.display = "none"
+document.getElementById("reducej").style.display = "none"
+document.getElementById("reducek").style.display = "none"
+document.getElementById("reducel").style.display = "none"
+document.getElementById("removea").style.display = "none"
+document.getElementById("removel").style.display = "none"
+document.getElementById("removeb").style.display = "none"
+document.getElementById("removec").style.display = "none"
+document.getElementById("removed").style.display = "none"
+document.getElementById("removee").style.display = "none"
+document.getElementById("removef").style.display = "none"
+document.getElementById("removeg").style.display = "none"
+document.getElementById("removeh").style.display = "none"
+document.getElementById("removei").style.display = "none"
+document.getElementById("removej").style.display = "none"
+document.getElementById("removek").style.display = "none"
+
+
+           if ((localStorage.getItem('quantitya') * 1 +
+            localStorage.getItem('quantityb') * 1 +
+            localStorage.getItem('quantityc') * 1 +
+            localStorage.getItem('quantityd') * 1 +
+            localStorage.getItem('quantitye') * 1 +
+            localStorage.getItem('quantityf') * 1 +
+            localStorage.getItem('quantityg') * 1 +
+            localStorage.getItem('quantityh') * 1 +
+            localStorage.getItem('quantityi') * 1 +
+            localStorage.getItem('quantityj') * 1 +
+            localStorage.getItem('quantityk') * 1 +
+            localStorage.getItem('quantityl') * 1) == 0
+){
+  document.getElementById("overlaya").style.display = "block";
+                document.getElementById("cartcheckout").style.display = "none";
+                document.getElementById("empty").style.display = "block";
+                document.getElementById("total").style.display = "none";
+                document.getElementById("totaltext").style.display = "none";
+
+
+            };
+
+
+
+
+
+
+
+            if (
+localStorage.getItem('quantitya') > 0 ||
+localStorage.getItem('quantityb') > 0 ||
+localStorage.getItem('quantityc') > 0 ||
+localStorage.getItem('quantityd') > 0 ||
+localStorage.getItem('quantitye') > 0 ||
+localStorage.getItem('quantityf') > 0 ||
+localStorage.getItem('quantityg') > 0 ||
+localStorage.getItem('quantityh') > 0 ||
+localStorage.getItem('quantityi') > 0 ||
+localStorage.getItem('quantityj') > 0 ||
+localStorage.getItem('quantityk') > 0 ||
+localStorage.getItem('quantityl') > 0) {
+                document.getElementById("cartcheckout").style.display = "inline";
+                document.getElementById("empty").style.display = "none";
+                document.getElementById("total").style.display = "block";
+                document.getElementById("totaltext").style.display = "block";
+
+            };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       if (localStorage.getItem("quantitya") > 0){
+          document.getElementById("texta").innerHTML = "Arctic Geothermal Jacket";
+          document.getElementById("textaa").innerHTML = "$" + 199 * localStorage.getItem('quantitya');
+          document.getElementById("textaaa").innerHTML = localStorage.getItem('quantitya');   }
+
+
+   if (localStorage.getItem("quantityb") > 0){
+      document.getElementById("textb").innerHTML = "Arctic Sleeveless Thermo Jacket";
+      document.getElementById("textbb").innerHTML = "$" + 199 * localStorage.getItem('quantityb');
+      document.getElementById("textbbb").innerHTML = localStorage.getItem('quantityb');   }
+
+   if (localStorage.getItem("quantityc") > 0){
+      document.getElementById("textc").innerHTML = "Arctic HeatPro Jacket";
+      document.getElementById("textcc").innerHTML = "$" + 199 * localStorage.getItem('quantityc');
+      document.getElementById("textccc").innerHTML = localStorage.getItem('quantityc');   }
+
+   if (localStorage.getItem("quantityd") > 0){
+      document.getElementById("textd").innerHTML = "Arctic Sleeveless Turbo Jacket";
+      document.getElementById("textdd").innerHTML = "$" + 199 * localStorage.getItem('quantityd');
+      document.getElementById("textddd").innerHTML = localStorage.getItem('quantityd');   }
+
+   if (localStorage.getItem("quantitye") > 0){
+      document.getElementById("texte").innerHTML = "Arctic InsulPro Jacket";
+      document.getElementById("textee").innerHTML = "$" + 199 * localStorage.getItem('quantitye');
+      document.getElementById("texteee").innerHTML = localStorage.getItem('quantitye');   }
+
+   if (localStorage.getItem("quantityf") > 0){
+      document.getElementById("textf").innerHTML = "Arctic Casual Jacket";
+      document.getElementById("textff").innerHTML = "$" + 199 * localStorage.getItem('quantityf');
+      document.getElementById("textfff").innerHTML = localStorage.getItem('quantityf');   }
+
+   if (localStorage.getItem("quantityg") > 0){
+      document.getElementById("textg").innerHTML = "Arctic  Polar Fleece Jacket";
+      document.getElementById("textgg").innerHTML = "$" + 199 * localStorage.getItem('quantityg');
+      document.getElementById("textggg").innerHTML = localStorage.getItem('quantityg');   }
+
+   if (localStorage.getItem("quantith") > 0){
+      document.getElementById("texth").innerHTML = "Arctic Nuclear Jacket";
+      document.getElementById("texthh").innerHTML = "$" + 199 * localStorage.getItem('quantityh');
+      document.getElementById("texthhh").innerHTML = localStorage.getItem('quantityh');   }
+
+   if (localStorage.getItem("quantityi") > 0){
+      document.getElementById("texti").innerHTML = "Arctic ThermoPro Jacket";
+      document.getElementById("textii").innerHTML = "$" + 199 * localStorage.getItem('quantityi');
+      document.getElementById("textiii").innerHTML = localStorage.getItem('quantityi');   }
+
+   if (localStorage.getItem("quantityj") > 0){
+      document.getElementById("textj").innerHTML = "Arctic Turbo 3.1 Jacket";
+      document.getElementById("textjj").innerHTML = "$" + 199 * localStorage.getItem('quantityj');
+      document.getElementById("textjjj").innerHTML = localStorage.getItem('quantityj');   }
+
+   if (localStorage.getItem("quantityk") > 0){
+      document.getElementById("textk").innerHTML = "Arctic GeothermalPro Jacket";
+      document.getElementById("textkk").innerHTML = "$" + 199 * localStorage.getItem('quantityk');
+      document.getElementById("textkkk").innerHTML = localStorage.getItem('quantityk');   }
+
+   if (localStorage.getItem("quantityl") > 0){
+      document.getElementById("textl").innerHTML = "Arctic Polar Jacket";
+      document.getElementById("textll").innerHTML = "$" + 199 * localStorage.getItem('quantityl');
+      document.getElementById("textlll").innerHTML = localStorage.getItem('quantityl');   }
+
+
+
+              if (localStorage.getItem('quantitya') == 0 || localStorage.getItem('quantitya') == null ) {
+                  document.getElementById("removea").style.display = "none";
+                  document.getElementById("jacketa").style.display = "none";
+                  document.getElementById("reducea").style.display = "none";
+                  document.getElementById("increasea").style.display = "none";
+                  document.getElementById("texta").style.display = "none";
+                  document.getElementById("textaa").style.display = "none";
+                  document.getElementById("textaaa").style.display = "none";
+              };
+              if (localStorage.getItem('quantityb') == 0 || localStorage.getItem('quantityb') == null) {
+                  document.getElementById("removeb").style.display = "none"
+                  document.getElementById("jacketb").style.display = "none";
+                  document.getElementById("reduceb").style.display = "none";
+                  document.getElementById("increaseb").style.display = "none";
+                  document.getElementById("textb").style.display = "none";
+                  document.getElementById("textbb").style.display = "none";
+                  document.getElementById("textbbb").style.display = "none";
+
+              };
+              if (localStorage.getItem('quantityc') == 0 || localStorage.getItem('quantityc') == null) {
+                  document.getElementById("removec").style.display = "none"
+                  document.getElementById("jacketc").style.display = "none";
+                  document.getElementById("reducec").style.display = "none";
+                  document.getElementById("increasec").style.display = "none";
+                  document.getElementById("textc").style.display = "none";
+                  document.getElementById("textcc").style.display = "none";
+                  document.getElementById("textccc").style.display = "none";
+
+              };
+              if (localStorage.getItem('quantityd') == 0 || localStorage.getItem('quantityd') == null) {
+                  document.getElementById("jacketd").style.display = "none";
+                  document.getElementById("removed").style.display = "none";
+                  document.getElementById("reduced").style.display = "none";
+                  document.getElementById("increased").style.display = "none";
+                  document.getElementById("textd").style.display = "none";
+                  document.getElementById("textdd").style.display = "none";
+                  document.getElementById("textddd").style.display = "none";
+
+              };
+              if (localStorage.getItem('quantitye') == 0 || localStorage.getItem('quantitye') == null) {
+                  document.getElementById("jackete").style.display = "none";
+                  document.getElementById("removee").style.display = "none";
+                  document.getElementById("reducee").style.display = "none";
+                  document.getElementById("increasee").style.display = "none";
+                  document.getElementById("texte").style.display = "none";
+                  document.getElementById("textee").style.display = "none";
+                  document.getElementById("texteee").style.display = "none";
+
+              };
+              if (localStorage.getItem('quantityf') == 0 || localStorage.getItem('quantityf') == null) {
+                  document.getElementById("jacketf").style.display = "none";
+                  document.getElementById("removef").style.display = "none";
+                  document.getElementById("reducef").style.display = "none";
+                  document.getElementById("increasef").style.display = "none";
+                  document.getElementById("textf").style.display = "none";
+                  document.getElementById("textff").style.display = "none";
+                  document.getElementById("textfff").style.display = "none";
+              };
+              if (localStorage.getItem('quantityg') == 0 || localStorage.getItem('quantityg') == null) {
+                  document.getElementById("jacketg").style.display = "none";
+                  document.getElementById("removeg").style.display = "none";
+                  document.getElementById("reduceg").style.display = "none";
+                  document.getElementById("increaseg").style.display = "none";
+                  document.getElementById("textg").style.display = "none";
+                  document.getElementById("textgg").style.display = "none";
+                  document.getElementById("textggg").style.display = "none";
+
+              }
+              if (localStorage.getItem('quantityh') == 0 || localStorage.getItem('quantityh') == null) {
+                  document.getElementById("jacketh").style.display = "none";
+                  document.getElementById("removeh").style.display = "none";
+                  document.getElementById("reduceh").style.display = "none";
+                  document.getElementById("increaseh").style.display = "none";
+                  document.getElementById("texth").style.display = "none";
+                  document.getElementById("texthh").style.display = "none";
+                  document.getElementById("texthhh").style.display = "none";
+
+              };
+              if (localStorage.getItem('quantityi') == 0 || localStorage.getItem('quantityi') == null) {
+                  document.getElementById("jacketi").style.display = "none";
+                  document.getElementById("removei").style.display = "none";
+                  document.getElementById("reducei").style.display = "none";
+                  document.getElementById("increasei").style.display = "none";
+                  document.getElementById("texti").style.display = "none";
+                  document.getElementById("textii").style.display = "none";
+                  document.getElementById("textiii").style.display = "none";
+
+              };
+              if (localStorage.getItem('quantityj') == 0 || localStorage.getItem('quantityj') == null) {
+                  document.getElementById("removej").style.display = "none";
+                  document.getElementById("jacketj").style.display = "none";
+                  document.getElementById("reducej").style.display = "none";
+                  document.getElementById("increasej").style.display = "none";
+                  document.getElementById("textj").style.display = "none";
+                  document.getElementById("textjj").style.display = "none";
+                  document.getElementById("textjjj").style.display = "none";
+
+              };
+              if (localStorage.getItem('quantityk') == 0 || localStorage.getItem('quantityk') == null) {
+                  document.getElementById("removek").style.display = "none";
+                  document.getElementById("jacketk").style.display = "none";
+                  document.getElementById("reducek").style.display = "none";
+                  document.getElementById("increasek").style.display = "none";
+                  document.getElementById("textk").style.display = "none";
+                  document.getElementById("textkk").style.display = "none";
+                  document.getElementById("textkkk").style.display = "none";
+
+              };
+              if (localStorage.getItem('quantityl') == 0 || localStorage.getItem('quantityl') == null) {
+                  document.getElementById("jacketl").style.display = "none";
+                  document.getElementById("removel").style.display = "none";
+                  document.getElementById("reducel").style.display = "none";
+                  document.getElementById("increasel").style.display = "none";
+                  document.getElementById("textl").style.display = "none";
+                  document.getElementById("textll").style.display = "none";
+                  document.getElementById("textlll").style.display = "none";
+
+              };
+
+              document.getElementById('total').innerHTML = localStorage.getItem("total")
+
+
+};
+
+
+
+
+
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+      slideIndex = 1
     }
-
-
-
-
-
-    function onsubscribe(e) {
-        e.preventDefault();
-        document.getElementById("overlay").style.display = "block";
-
+    if (n < 1) {
+      slideIndex = slides.length
     }
-
-
-    function offsubscribe() {
-        document.getElementById("overlay").style.display = "none";
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
     }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+
+  }
+
+
+
+
+
+  function onsubscribe(e) {
+    e.preventDefault();
+    document.getElementById("overlay").style.display = "block";
+
+  }
+
+
+  function offsubscribe() {
+    document.getElementById("overlay").style.display = "none";
+  }
 </script>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="height=device-height, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="arctic%20logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="height=device-height, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="arctic%20logo.png" />
 
-    <title>Arctic Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Arctic Home</title>
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 
 
 <body>
-    <div>
-        <nav id="navlink">
-            <div class="logodiv"><a href="index.html"><img alt="arctic-logo" class="logo" src="arctic%20logo.png"></a></div>
-            <div><a href="index.html">HOME</a>
-                <a href="store.html">STORE</a>
-                <a href="contact.html">CONTACT</a>
-                <a href="sizing.html">SIZING</a>
-            </div>
-            <div id="cart"><a onclick="ona()"><img alt="cart1" id="cartimg" src="cart6.png"> </a></div>
+  <div>
+    <nav id="navlink">
+      <div class="logodiv"><a href="index.html"><img alt="arctic-logo" class="logo" src="arctic%20logo.png"></a></div>
+      <div><a href="index.html">HOME</a>
+        <a href="store.html">STORE</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="sizing.html">SIZING</a>
+      </div>
+      <div id="cart"><a onclick="ona()"><img alt="cart1" id="cartimg" src="cart6.png"> </a></div>
 
-            <div id="cart2"><a onclick="ona()"><img alt="cart2" id="cartimg2" src="cart2.png"> </a></div>
-        </nav>
+      <div id="cart2"><a onclick="ona()"><img alt="cart2" id="cartimg2" src="cart2.png"> </a></div>
+      <div class="itemdiv" onclick="ona()">
+          <a id="items">
+              0
+          </a>
+      </div></nav>
+  </div>
+  <div id="overlaya" onclick="offa()">
+<h2 id="yourcart">Your Cart</h2>
+<h3 id="empty">Your cart in empty. Please add items and return to checkout.</h3>
+<div class="cartdivb">
+
+    <img alt="jacket" id="jacketa" src="black%201.png">
+
+    <h3 id="texta"></h3>
+    <h3 id="textaa" value="0" step="0"></h3>
+    <button class="minusoncart" id="reducea" onclick="reducea()">&minus;</button>
+
+    <h3 id="textaaa"></h3>
+
+    <button class="plusoncart" id="increasea" onclick="increasea()">&plus;</button>
+
+    <button id="removea" onclick="removea()">remove</button>
+
+
+
+
+
+    <img alt="jacket" id="jacketb" src="black%203.png">
+
+
+    <h3 id="textb"></h3>
+
+
+    <h3 id="textbb"></h3>
+    <button class="minusoncart" id="reduceb" onclick="reduceb()">&minus;</button>
+
+    <h3 id="textbbb"></h3> <button class="plusoncart" id="increaseb" onclick="increaseb()">&plus;</button>
+
+
+    <button id="removeb" onclick="removeb()">remove</button>
+
+    <img alt="jacket" id="jacketc" src="black.png">
+
+
+    <h3 id="textc"></h3>
+
+
+    <h3 id="textcc"></h3>
+    <button class="minusoncart" id="reducec" onclick="reducec()">&minus;</button>
+
+    <h3 id="textccc"></h3> <button class="plusoncart" id="increasec" onclick="increasec()">&plus;</button>
+
+    <button id="removec" onclick="removec()">remove</button>
+
+
+    <img alt="jacket" id="jacketd" src="blue%203.png">
+
+    <h3 id="textd"></h3>
+    <h3 id="textdd"></h3>
+    <button class="minusoncart" id="reduced" onclick="reduced()">&minus;</button>
+
+    <h3 id="textddd"></h3> <button class="plusoncart" id="increased" onclick="increased()">&plus;</button>
+
+
+    <button id="removed" onclick="removed()">remove</button>
+
+    <img alt="jacket" id="jackete" src="blue.png">
+    <h3 id="texte"></h3>
+    <h3 id="textee"></h3>
+    <button class="minusoncart" id="reducee" onclick="reducee()">&minus;</button>
+
+    <h3 id="texteee"></h3> <button class="plusoncart" id="increasee" onclick="increasee()">&plus;</button>
+
+
+    <button id="removee" onclick="removee()">remove</button>
+
+    <img alt="jacket" id="jacketf" src="green%202.png">
+
+    <h3 id="textf"></h3>
+    <h3 id="textff"></h3> <button class="minusoncart" id="reducef" onclick="reducef()">&minus;</button>
+
+    <h3 id="textfff"></h3> <button class="plusoncart" id="increasef" onclick="increasef()">&plus;</button>
+
+
+    <button id="removef" onclick="removef()">remove</button>
+    <img alt="jacket" id="jacketg" src="grey%202.png">
+    <h3 id="textg"></h3>
+    <h3 id="textgg"></h3> <button class="minusoncart" id="reduceg" onclick="reduceg()">&minus;</button>
+
+    <h3 id="textggg"></h3> <button class="plusoncart" id="increaseg" onclick="increaseg()">&plus;</button>
+
+
+    <button id="removeg" onclick="removeg()">remove</button>
+    <img alt="jacket" id="jacketh" src="grey.png">
+    <h3 id="texth"></h3>
+    <h3 id="texthh"></h3> <button class="minusoncart" id="reduceh" onclick="reduceh()">&minus;</button>
+
+    <h3 id="texthhh"></h3> <button class="plusoncart" id="increaseh" onclick="increaseh()">&plus;</button>
+
+
+    <button id="removeh" onclick="removeh()">remove</button>
+    <img alt="jacket" id="jacketi" src="new1.png">
+    <h3 id="texti"></h3>
+    <h3 id="textii"></h3> <button class="minusoncart" id="reducei" onclick="reducei()">&minus;</button>
+
+    <h3 id="textiii"></h3> <button class="plusoncart" id="increasei" onclick="increasei()">&plus;</button>
+
+
+    <button id="removei" onclick="removei()">remove</button>
+    <img alt="jacket" id="jacketj" src="new3.png">
+    <h3 id="textj"></h3>
+    <h3 id="textjj"></h3> <button class="minusoncart" id="reducej" onclick="reducej()">&minus;</button>
+
+    <h3 id="textjjj"></h3> <button class="plusoncart" id="increasej" onclick="increasej()">&plus;</button>
+
+
+    <button id="removej" onclick="removej()">remove</button>
+    <img alt="jacket" id="jacketk" src="red%201.png">
+    <h3 id="textk"></h3>
+    <h3 id="textkk"></h3> <button class="minusoncart" id="reducek" onclick="reducek()">&minus;</button>
+
+    <h3 id="textkkk"></h3> <button class="plusoncart" id="increasek" onclick="increasek()">&plus;</button>
+
+
+    <button id="removek" onclick="removek()">remove</button>
+    <img alt="jacket" id="jacketl" src="red.png">
+    <h3 id="textl"></h3>
+    <h3 id="textll"></h3> <button class="minusoncart" id="reducel" onclick="reducel()">&minus;</button>
+
+    <h3 id="textlll"></h3> <button class="plusoncart" id="increasel" onclick="increasel()">&plus;</button>
+
+    <button id="removel" onclick="removel()">remove</button>
+
+    <div class="totaldiv">
+        <h2 id="totaltext">Total</h2>
+    </div>
+    <div class="totalnumberdiv">
+        <h2 id="total"></h2>
+    </div>
+    <div class="cartcheckoutdiv">
+        <a href="checkout.html"><button id="cartcheckout" type="submit">Proceed to checkout</button></a>
     </div>
 
+</div>
+</div>
 
-    <section class="home">
+
+  <section class="home">
 
 
 
-        <div class="slideshow-container">
+    <div class="slideshow-container">
 
-            <div class="mySlides fade">
-                <img alt="new-season1" src="slider2.png" style="width:100%">
-            </div>
+      <div class="mySlides fade">
+        <img alt="new-season1" src="slider2.png" style="width:100%">
+      </div>
 
-            <div class="mySlides thermo fade">
-                <img alt="new-season2" src="slider5.png" style="width:100%">
-            </div>
-            <div class="prevbutton">
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            </div>
-            <div class="nextbutton">
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <div class="dotdiv">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-            </div>
+      <div class="mySlides thermo fade">
+        <img alt="new-season2" src="slider5.png" style="width:100%">
+      </div>
+      <div class="prevbutton">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      </div>
+      <div class="nextbutton">
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div class="dotdiv">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
 
+    </div>
+
+    <br>
+
+
+
+
+
+
+
+    <div class="backgroundimg" id="ice"></div>
+    <div id="mens">
+      <a href="store.html"> <img alt="jacket" class="homepageimg" src="black.png"> </a>
+
+    </div>
+    <div class="homepagetxt" id="menstxt"><a href="store.html">SHOP<br>MENS</a></div>
+
+    <div class="backgroundimg" id="lake"></div>
+
+
+    <div id="womens">
+      <a href="store.html"><img alt="jacket" class="homepageimg" src="grey%202.png"></a>
+
+    </div>
+    <div class="homepagetxt" id="womenstxt"><a href="store.html">SHOP<br>WOMENS</a></div>
+
+
+    <div class="backgroundimg" id="tree"></div>
+
+    <div id="kids">
+      <a href="store.html"><img alt="jacket" class="homepageimg" src="blue%203.png"></a>
+
+    </div>
+    <div class="homepagetxt" id="kidstxt"><a href="store.html">SHOP<br>KIDS</a></div>
+
+
+
+
+    <div class="backgroundimg" id="tree1"></div>
+    <div id="mens1">
+      <a href="store.html"> <img alt="jacket" class="homepageimg" src="red%201.png"> </a>
+
+    </div>
+    <div class="homepagetxt" id="menstxt1"><a href="store.html">SHOP<br>MENS</a></div>
+
+    <div class="backgroundimg" id="lake1"></div>
+
+
+    <div id="womens1">
+      <a href="store.html"><img alt="jacket" class="homepageimg" src="green%202.png"></a>
+
+    </div>
+    <div class="homepagetxt" id="womenstxt1"><a href="store.html">SHOP<br>WOMENS</a></div>
+    With all six stones, Wi
+
+    <div class="backgroundimg" id="ice1"></div>
+
+    <div id="kids1">
+      <a href="store.html"><img alt="jacket" class="homepageimg" src="black%203.png"></a>
+
+    </div>
+    <div class="homepagetxt" id="kidstxt1"><a href="store.html">SHOP<br>KIDS</a></div>
+
+
+
+
+
+  </section>
+
+
+  <form action="/action_page.php">
+    <div class="container2">
+
+
+      <h2 id="new">Subscribe to our Newsletter</h2>
+      <p>Subscribe to our newsletter and get 20% off your first order. We also deliver the lastest news and offers straight to your inbox.</p>
+
+      <input id="newsname" type="text" placeholder="Name" name="name">
+      <input id="newsemail" type="text" placeholder="Email address" name="mail">
+      <label>
+        <input id="news" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+      </label>
+
+      <input type="submit" onclick="onsubscribe(event)" value="Subscribe" id="subscribe">
+      <div id="overlay" onclick="offsubscribe()">
+        <div id="text">
+          <h3>Thank you for subscribing.</h3>
         </div>
+      </div>
+    </div>
+  </form>
 
-        <br>
+</body>
 
-
-
-
-
-
-
-        <div class="backgroundimg" id="ice"></div>
-        <div id="mens">
-            <a href="store.html"> <img alt="jacket" class="homepageimg" src="black.png"> </a>
-
-        </div>
-        <div class="homepagetxt" id="menstxt"><a href="store.html">SHOP<br>MENS</a></div>
-
-        <div class="backgroundimg" id="lake"></div>
-
-
-        <div id="womens">
-            <a href="store.html"><img alt="jacket" class="homepageimg" src="grey%202.png"></a>
-
-        </div>
-        <div class="homepagetxt" id="womenstxt"><a href="store.html">SHOP<br>WOMENS</a></div>
-
-
-        <div class="backgroundimg" id="tree"></div>
-
-        <div id="kids">
-            <a href="store.html"><img alt="jacket" class="homepageimg" src="blue%203.png"></a>
-
-        </div>
-        <div class="homepagetxt" id="kidstxt"><a href="store.html">SHOP<br>KIDS</a></div>
-
-
-
-
-        <div class="backgroundimg" id="tree1"></div>
-        <div id="mens1">
-            <a href="store.html"> <img alt="jacket" class="homepageimg" src="red%201.png"> </a>
-
-        </div>
-        <div class="homepagetxt" id="menstxt1"><a href="store.html">SHOP<br>MENS</a></div>
-
-        <div class="backgroundimg" id="lake1"></div>
-
-
-        <div id="womens1">
-            <a href="store.html"><img alt="jacket" class="homepageimg" src="green%202.png"></a>
-
-        </div>
-        <div class="homepagetxt" id="womenstxt1"><a href="store.html">SHOP<br>WOMENS</a></div>
-        With all six stones, Wi
-
-        <div class="backgroundimg" id="ice1"></div>
-
-        <div id="kids1">
-            <a href="store.html"><img alt="jacket" class="homepageimg" src="black%203.png"></a>
-
-        </div>
-        <div class="homepagetxt" id="kidstxt1"><a href="store.html">SHOP<br>KIDS</a></div>
-
-
-
-
-
-    </section>
-
-
-    <form action="/action_page.php">
-        <div class="container2">
-
-
-            <h2 id="new">Subscribe to our Newsletter</h2>
-            <p>Subscribe to our newsletter and get 20% off your first order. We also deliver the lastest news and offers straight to your inbox.</p>
-
-            <input id="newsname" type="text" placeholder="Name" name="name">
-            <input id="newsemail" type="text" placeholder="Email address" name="mail">
-            <label>
-                <input id="news" type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-            </label>
-
-            <input type="submit" onclick="onsubscribe(event)" value="Subscribe" id="subscribe">
-            <div id="overlay" onclick="offsubscribe()">
-                <div id="text">
-                    <h3>Thank you for subscribing.</h3>
-                </div>
-            </div>
-        </div>
-    </form>
-
-</body></html>
+</html>

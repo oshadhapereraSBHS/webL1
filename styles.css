@@ -89,6 +89,17 @@ p {
     grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr 2fr;
     grid-template-rows: auto;
 }
+.cartdivb {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 0.5fr 2fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: auto;
+}
+
+.cartdivb img {
+  grid-column: 1/2;
+}
+
+
 
 .cartdiv img {
     grid-column: 1/2;
@@ -874,6 +885,10 @@ img {
     text-align: center;
 }
 
+.cartdivb {
+    justify-content: center;
+    text-align: center;
+}
 .mySlides {
     min-width: 100vw;
     margin-bottom: 1%;
