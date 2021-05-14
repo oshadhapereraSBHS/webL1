@@ -1,14 +1,19 @@
 <!doctype html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="height=device-height, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="arctic%20logo.png" />
+    <meta name="keywords" content="jackets, winter, arctic, clothing">
+    <meta name="description" content="Arctic jackets">
+
+    <title>Arctic Home</title>
+    <link rel="stylesheet" href="styles.css">
 
 
 <script>
-
-
-
-
-
     function removea() {
 
         document.getElementById("texta").style.display = "none";
@@ -419,6 +424,55 @@
 
 
     function ona() {
+
+
+
+
+
+        if (localStorage.getItem("quantitya") == null) {
+            document.getElementById("quantitya").value = 0
+        }
+        if (localStorage.getItem("quantityb") == null) {
+            document.getElementById("quantityb").value = 0
+        }
+        if (localStorage.getItem("quantityc") == null) {
+            document.getElementById("quantityc").value = 0
+        }
+        if (localStorage.getItem("quantityd") == null) {
+            document.getElementById("quantityd").value = 0
+        }
+        if (localStorage.getItem("quantitye") == null) {
+            document.getElementById("quantitye").value = 0
+        }
+        if (localStorage.getItem("quantityf") == null) {
+            document.getElementById("quantityf").value = 0
+        }
+        if (localStorage.getItem("quantityg") == null) {
+            document.getElementById("quantityg").value = 0
+        }
+        if (localStorage.getItem("quantityh") == null) {
+            document.getElementById("quantityh").value = 0
+        }
+        if (localStorage.getItem("quantityi") == null) {
+            document.getElementById("quantityi").value = 0
+        }
+        if (localStorage.getItem("quantityj") == null) {
+            document.getElementById("quantityj").value = 0
+        }
+        if (localStorage.getItem("quantityk") == null) {
+            document.getElementById("quantityk").value = 0
+        }
+        if (localStorage.getItem("quantityl") == null) {
+            document.getElementById("quantityl").value = 0
+        }
+
+
+
+
+
+
+
+
         document.getElementById("overlaya").style.display = "block";
         if (document.getElementById('quantitya').value == 0 && document.getElementById('quantityb').value == 0 && document.getElementById('quantityc').value == 0 && document.getElementById('quantityd').value == 0 && document.getElementById('quantitye')
             .value == 0 && document.getElementById('quantityf').value == 0 && document.getElementById('quantityg').value == 0 && document.getElementById('quantityh').value == 0 && document.getElementById('quantityi').value == 0 && document.getElementById(
@@ -430,6 +484,19 @@
 
 
         };
+        /*        if (document.getElementById('quantitya').value != 0 || document.getElementById('quantityb').value != 0 || document.getElementById('quantityc').value != 0 || document.getElementById('quantityd').value != 0 || document.getElementById('quantitye')
+                    .value != 0 || document.getElementById('quantityf').value != 0 || document.getElementById('quantityg').value != 0 || document.getElementById('quantityh').value != 0 || document.getElementById('quantityi').value != 0 || document.getElementById(
+                        'quantityj').value != 0 || document.getElementById('quantityk').value != 0 || document.getElementById('quantityl').value != 0) {
+                    document.getElementById("cartcheckout").style.display = "inline";
+                    document.getElementById("empty").style.display = "none";
+                    document.getElementById("total").style.display = "block";
+                    document.getElementById("totaltext").style.display = "block";
+
+                };
+                */
+
+
+
         if (document.getElementById('quantitya').value != 0 || document.getElementById('quantityb').value != 0 || document.getElementById('quantityc').value != 0 || document.getElementById('quantityd').value != 0 || document.getElementById('quantitye')
             .value != 0 || document.getElementById('quantityf').value != 0 || document.getElementById('quantityg').value != 0 || document.getElementById('quantityh').value != 0 || document.getElementById('quantityi').value != 0 || document.getElementById(
                 'quantityj').value != 0 || document.getElementById('quantityk').value != 0 || document.getElementById('quantityl').value != 0) {
@@ -440,7 +507,7 @@
 
         };
 
-        if (document.getElementById('quantitya').value > 0) {
+        if (document.getElementById('quantitya').value != 0) {
             document.getElementById("texta").innerHTML = "Arctic Geothermal Jacket";
             document.getElementById("textaa").innerHTML = "$" + 199 * document.getElementById('quantitya').value;
             document.getElementById("textaaa").innerHTML = document.getElementById('quantitya').value;
@@ -448,67 +515,67 @@
 
         };
 
-        if (document.getElementById('quantityb').value > 0) {
+        if (document.getElementById('quantityb').value != 0) {
             document.getElementById("textb").innerHTML = "Arctic Sleeveless Thermo Jacket"
             document.getElementById("textbbb").innerHTML = document.getElementById('quantityb').value;
             document.getElementById("textbb").innerHTML = "$" + 199 * document.getElementById('quantityb').value
 
         };
-        if (document.getElementById('quantityc').value > 0) {
+        if (document.getElementById('quantityc').value != 0) {
             document.getElementById("textc").innerHTML = "Arctic HeatPro Jacket"
             document.getElementById("textcc").innerHTML = "$" + 199 * document.getElementById('quantityc').value
             document.getElementById("textccc").innerHTML = document.getElementById('quantityc').value;
 
         };
-        if (document.getElementById('quantityd').value > 0) {
+        if (document.getElementById('quantityd').value != 0) {
             document.getElementById("textd").innerHTML = "Arctic Sleeveless Turbo Jacket"
             document.getElementById("textdd").innerHTML = "$" + 199 * document.getElementById('quantityd').value
             document.getElementById("textddd").innerHTML = document.getElementById('quantityd').value;
 
         };
-        if (document.getElementById('quantitye').value > 0) {
+        if (document.getElementById('quantitye').value != 0) {
             document.getElementById("texte").innerHTML = "Arctic InsulPro Jacket"
             document.getElementById("textee").innerHTML = "$" + 199 * document.getElementById('quantitye').value
             document.getElementById("texteee").innerHTML = document.getElementById('quantitye').value;
 
         };
-        if (document.getElementById('quantityf').value > 0) {
+        if (document.getElementById('quantityf').value != 0) {
             document.getElementById("textf").innerHTML = "Arctic Casual Jacket"
             document.getElementById("textff").innerHTML = "$" + 199 * document.getElementById('quantityf').value
             document.getElementById("textfff").innerHTML = document.getElementById('quantityf').value;
 
         };
-        if (document.getElementById('quantityg').value > 0) {
+        if (document.getElementById('quantityg').value != 0) {
             document.getElementById("textg").innerHTML = "Arctic Polar Fleece Jacket"
             document.getElementById("textg").innerHTML = "$" + 199 * document.getElementById('quantityg').value
             document.getElementById("textggg").innerHTML = document.getElementById('quantityg').value;
         };
 
-        if (document.getElementById('quantityh').value > 0) {
+        if (document.getElementById('quantityh').value != 0) {
             document.getElementById("texth").innerHTML = "Arctic Nuclear Jacket"
             document.getElementById("texthh").innerHTML = "$" + 199 * document.getElementById('quantityh').value
             document.getElementById("texthhh").innerHTML = document.getElementById('quantityh').value;
 
         };
-        if (document.getElementById('quantityi').value > 0) {
+        if (document.getElementById('quantityi').value != 0) {
             document.getElementById("texti").innerHTML = "Arctic ThermoPro Jacket"
             document.getElementById("textii").innerHTML = "$" + 199 * document.getElementById('quantityi').value
             document.getElementById("textiii").innerHTML = document.getElementById('quantityi').value;
 
         };
-        if (document.getElementById('quantityj').value > 0) {
+        if (document.getElementById('quantityj').value != 0) {
             document.getElementById("textj").innerHTML = "Arctic Turbo 3.1 Jacket"
             document.getElementById("textjj").innerHTML = "$" + 199 * document.getElementById('quantityj').value
             document.getElementById("textjjj").innerHTML = document.getElementById('quantityj').value;
 
         };
-        if (document.getElementById('quantityk').value > 0) {
+        if (document.getElementById('quantityk').value != 0) {
             document.getElementById("textk").innerHTML = "Arctic GeothermalPro Jacket"
             document.getElementById("textkk").innerHTML = "$" + 199 * document.getElementById('quantityk').value
             document.getElementById("textkkk").innerHTML = document.getElementById('quantityk').value;
 
         };
-        if (document.getElementById('quantityl').value > 0) {
+        if (document.getElementById('quantityl').value != 0) {
             document.getElementById("textl").innerHTML = "Arctic Polar Jacket"
             document.getElementById("textll").innerHTML = "$" + 199 * document.getElementById('quantityl').value
             document.getElementById("textlll").innerHTML = document.getElementById('quantityl').value;
@@ -639,7 +706,7 @@
             199 + document.getElementById('quantitye').value * 199 + document.getElementById('quantityf').value * 199 + document.getElementById('quantityg').value * 199 + document.getElementById('quantityh').value * 199 + document.getElementById(
                 'quantityi').value * 199 + document.getElementById('quantityj').value * 199 + document.getElementById('quantityk').value * 199 + document.getElementById('quantityl').value * 199);
 
-localStorage.setItem('total', document.getElementById('total').innerHTML)
+        localStorage.setItem('total', document.getElementById('total').innerHTML)
 
 
         document.getElementById('total').style.display = "block";
@@ -648,9 +715,15 @@ localStorage.setItem('total', document.getElementById('total').innerHTML)
 
 
         document.getElementById("checkoutbutton").style.display = "block";
+
+
+
+
+
     }
 
     function offa() {
+
         document.getElementById("overlaya").style.display = "none";
         document.getElementById("checkoutbutton").style.display = "none";
 
@@ -1016,83 +1089,100 @@ localStorage.setItem('total', document.getElementById('total').innerHTML)
 
 
 
-window.onload = function(){
-  document.getElementById("quantitya").value = localStorage.getItem("quantitya")
-  document.getElementById("quantityb").value = localStorage.getItem("quantityb")
-  document.getElementById("quantityc").value = localStorage.getItem("quantityc")
-  document.getElementById("quantityd").value = localStorage.getItem("quantityd")
-  document.getElementById("quantitye").value = localStorage.getItem("quantitye")
-  document.getElementById("quantityf").value = localStorage.getItem("quantityf")
-  document.getElementById("quantityg").value = localStorage.getItem("quantityg")
-  document.getElementById("quantityh").value = localStorage.getItem("quantityh")
-  document.getElementById("quantityi").value = localStorage.getItem("quantityi")
-  document.getElementById("quantityj").value = localStorage.getItem("quantityj")
-  document.getElementById("quantityk").value = localStorage.getItem("quantityk")
-  document.getElementById("quantityl").value = localStorage.getItem("quantityl")
-  document.getElementById('items').innerHTML = localStorage.getItem('quantitya') * 1 +
-   localStorage.getItem('quantityb') * 1 +
-   localStorage.getItem('quantityc') * 1 +
-   localStorage.getItem('quantityd') * 1 +
-   localStorage.getItem('quantitye') * 1 +
-   localStorage.getItem('quantityf') * 1 +
-   localStorage.getItem('quantityg') * 1 +
-   localStorage.getItem('quantityh') * 1 +
-   localStorage.getItem('quantityi') * 1 +
-   localStorage.getItem('quantityj') * 1 +
-   localStorage.getItem('quantityk') * 1 +
-   localStorage.getItem('quantityl') * 1;
-   if(localStorage.getItem("quantitya") == null) {document.getElementById("quantitya").value = 0}
-if(localStorage.getItem("quantityb") == null) {document.getElementById("quantityb").value = 0}
-if(localStorage.getItem("quantityc") == null) {document.getElementById("quantityc").value = 0}
-if(localStorage.getItem("quantityd") == null) {document.getElementById("quantityd").value = 0}
-if(localStorage.getItem("quantitye") == null) {document.getElementById("quantitye").value = 0}
-if(localStorage.getItem("quantityf") == null) {document.getElementById("quantityf").value = 0}
-if(localStorage.getItem("quantityg") == null) {document.getElementById("quantityg").value = 0}
-if(localStorage.getItem("quantityh") == null) {document.getElementById("quantityh").value = 0}
-if(localStorage.getItem("quantityi") == null) {document.getElementById("quantityi").value = 0}
-if(localStorage.getItem("quantityj") == null) {document.getElementById("quantityj").value = 0}
-if(localStorage.getItem("quantityk") == null) {document.getElementById("quantityk").value = 0}
-if(localStorage.getItem("quantityl") == null) {document.getElementById("quantityl").value = 0}
+    window.onload = function() {
 
 
 
+        document.getElementById("quantitya").value = localStorage.getItem("quantitya")
+        document.getElementById("quantityb").value = localStorage.getItem("quantityb")
+        document.getElementById("quantityc").value = localStorage.getItem("quantityc")
+        document.getElementById("quantityd").value = localStorage.getItem("quantityd")
+        document.getElementById("quantitye").value = localStorage.getItem("quantitye")
+        document.getElementById("quantityf").value = localStorage.getItem("quantityf")
+        document.getElementById("quantityg").value = localStorage.getItem("quantityg")
+        document.getElementById("quantityh").value = localStorage.getItem("quantityh")
+        document.getElementById("quantityi").value = localStorage.getItem("quantityi")
+        document.getElementById("quantityj").value = localStorage.getItem("quantityj")
+        document.getElementById("quantityk").value = localStorage.getItem("quantityk")
+        document.getElementById("quantityl").value = localStorage.getItem("quantityl")
+        document.getElementById('items').innerHTML = localStorage.getItem('quantitya') * 1 +
+            localStorage.getItem('quantityb') * 1 +
+            localStorage.getItem('quantityc') * 1 +
+            localStorage.getItem('quantityd') * 1 +
+            localStorage.getItem('quantitye') * 1 +
+            localStorage.getItem('quantityf') * 1 +
+            localStorage.getItem('quantityg') * 1 +
+            localStorage.getItem('quantityh') * 1 +
+            localStorage.getItem('quantityi') * 1 +
+            localStorage.getItem('quantityj') * 1 +
+            localStorage.getItem('quantityk') * 1 +
+            localStorage.getItem('quantityl') * 1;
+        if (localStorage.getItem("quantitya") == null) {
+            document.getElementById("quantitya").value = 0
+        }
+        if (localStorage.getItem("quantityb") == null) {
+            document.getElementById("quantityb").value = 0
+        }
+        if (localStorage.getItem("quantityc") == null) {
+            document.getElementById("quantityc").value = 0
+        }
+        if (localStorage.getItem("quantityd") == null) {
+            document.getElementById("quantityd").value = 0
+        }
+        if (localStorage.getItem("quantitye") == null) {
+            document.getElementById("quantitye").value = 0
+        }
+        if (localStorage.getItem("quantityf") == null) {
+            document.getElementById("quantityf").value = 0
+        }
+        if (localStorage.getItem("quantityg") == null) {
+            document.getElementById("quantityg").value = 0
+        }
+        if (localStorage.getItem("quantityh") == null) {
+            document.getElementById("quantityh").value = 0
+        }
+        if (localStorage.getItem("quantityi") == null) {
+            document.getElementById("quantityi").value = 0
+        }
+        if (localStorage.getItem("quantityj") == null) {
+            document.getElementById("quantityj").value = 0
+        }
+        if (localStorage.getItem("quantityk") == null) {
+            document.getElementById("quantityk").value = 0
+        }
+        if (localStorage.getItem("quantityl") == null) {
+            document.getElementById("quantityl").value = 0
+        }
 
 
 
+    }
 
 
+    function redirect(){
+      location.replace("checkout.html")
 
-
-
-}
-
+    }
 
 </script>
 
 
-<head>
-    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="height=device-height, initial-scale=1">
-
-    <title>Arctic Home</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 
 <body class="clothingbody">
     <div>
         <nav id="navlink">
-            <div><a class="navigation" href="index.html"><img alt="arctic-logo" class="logo" src="arctic%20logo.png"></a></div>
+            <div><a class="navigation" href="index.html"><img alt="arctic-logo" class="logo" src="images/arctic%20logo.png"></a></div>
             <div><a class="navigation" href="index.html">HOME</a>
                 <a class="navigation" href="store.html">STORE</a>
                 <a class="navigation" href="contact.html">CONTACT</a>
                 <a class="navigation" href="sizing.html">SIZING</a>
             </div>
-            <div id="cart"><a onclick="ona()"><img alt="cart1" id="cartimg" src="cart6.png"> </a></div>
+            <div id="cart"><a onclick="ona()"><img alt="cart1" id="cartimg" src="images/cart6.png"> </a></div>
 
-            <div id="cart2"><a onclick="ona()"><img alt="cart2" id="cartimg2" src="cart2.png"> </a></div>
+            <div id="cart2"><a onclick="ona()"><img alt="cart2" id="cartimg2" src="images/cart2.png"> </a></div>
             <div class="itemdiv" onclick="ona()">
                 <a id="items">
                     0
@@ -1104,14 +1194,18 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
     <section class="clothingsec">
 
         <div id="overlaya" onclick="offa()">
-            <h2 id="yourcart">Your Cart</h2>
-            <h3 id="empty">Your cart in empty. Please add items and return to checkout.</h3>
+            <div id="topic">
+              <h2 id="yourcart">Your Cart</h2>
+
+
+          </div>
+            <h3 id="empty">Your cart is empty. Please add items and return to checkout.</h3>
             <div class="cartdiv">
 
-                <img alt="jacket" id="jacketa" src="black%201.png">
+                <img alt="jacket" id="jacketa" src="images/black%201.png">
 
                 <h3 id="texta"></h3>
-                <h3 id="textaa" value="0" step="0"></h3>
+                <h3 id="textaa"></h3>
                 <button class="minusoncart" id="reducea" onclick="reducea()">&minus;</button>
 
                 <h3 id="textaaa"></h3>
@@ -1124,7 +1218,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
 
 
-                <img alt="jacket" id="jacketb" src="black%203.png">
+                <img alt="jacket" id="jacketb" src="images/black%203.png">
 
 
                 <h3 id="textb"></h3>
@@ -1138,7 +1232,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
                 <button id="removeb" onclick="removeb()">remove</button>
 
-                <img alt="jacket" id="jacketc" src="black.png">
+                <img alt="jacket" id="jacketc" src="images/black.png">
 
 
                 <h3 id="textc"></h3>
@@ -1152,7 +1246,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <button id="removec" onclick="removec()">remove</button>
 
 
-                <img alt="jacket" id="jacketd" src="blue%203.png">
+                <img alt="jacket" id="jacketd" src="images/blue%203.png">
 
                 <h3 id="textd"></h3>
                 <h3 id="textdd"></h3>
@@ -1163,7 +1257,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
                 <button id="removed" onclick="removed()">remove</button>
 
-                <img alt="jacket" id="jackete" src="blue.png">
+                <img alt="jacket" id="jackete" src="images/blue.png">
                 <h3 id="texte"></h3>
                 <h3 id="textee"></h3>
                 <button class="minusoncart" id="reducee" onclick="reducee()">&minus;</button>
@@ -1173,7 +1267,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
                 <button id="removee" onclick="removee()">remove</button>
 
-                <img alt="jacket" id="jacketf" src="green%202.png">
+                <img alt="jacket" id="jacketf" src="images/green%202.png">
 
                 <h3 id="textf"></h3>
                 <h3 id="textff"></h3> <button class="minusoncart" id="reducef" onclick="reducef()">&minus;</button>
@@ -1182,7 +1276,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
 
                 <button id="removef" onclick="removef()">remove</button>
-                <img alt="jacket" id="jacketg" src="grey%202.png">
+                <img alt="jacket" id="jacketg" src="images/grey%202.png">
                 <h3 id="textg"></h3>
                 <h3 id="textgg"></h3> <button class="minusoncart" id="reduceg" onclick="reduceg()">&minus;</button>
 
@@ -1190,7 +1284,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
 
                 <button id="removeg" onclick="removeg()">remove</button>
-                <img alt="jacket" id="jacketh" src="grey.png">
+                <img alt="jacket" id="jacketh" src="images/grey.png">
                 <h3 id="texth"></h3>
                 <h3 id="texthh"></h3> <button class="minusoncart" id="reduceh" onclick="reduceh()">&minus;</button>
 
@@ -1198,7 +1292,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
 
                 <button id="removeh" onclick="removeh()">remove</button>
-                <img alt="jacket" id="jacketi" src="new1.png">
+                <img alt="jacket" id="jacketi" src="images/new1.png">
                 <h3 id="texti"></h3>
                 <h3 id="textii"></h3> <button class="minusoncart" id="reducei" onclick="reducei()">&minus;</button>
 
@@ -1206,7 +1300,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
 
                 <button id="removei" onclick="removei()">remove</button>
-                <img alt="jacket" id="jacketj" src="new3.png">
+                <img alt="jacket" id="jacketj" src="images/new3.png">
                 <h3 id="textj"></h3>
                 <h3 id="textjj"></h3> <button class="minusoncart" id="reducej" onclick="reducej()">&minus;</button>
 
@@ -1214,7 +1308,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
 
                 <button id="removej" onclick="removej()">remove</button>
-                <img alt="jacket" id="jacketk" src="red%201.png">
+                <img alt="jacket" id="jacketk" src="images/red%201.png">
                 <h3 id="textk"></h3>
                 <h3 id="textkk"></h3> <button class="minusoncart" id="reducek" onclick="reducek()">&minus;</button>
 
@@ -1222,7 +1316,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
 
                 <button id="removek" onclick="removek()">remove</button>
-                <img alt="jacket" id="jacketl" src="red.png">
+                <img alt="jacket" id="jacketl" src="images/red.png">
                 <h3 id="textl"></h3>
                 <h3 id="textll"></h3> <button class="minusoncart" id="reducel" onclick="reducel()">&minus;</button>
 
@@ -1237,7 +1331,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                     <h2 id="total"></h2>
                 </div>
                 <div class="cartcheckoutdiv">
-                    <a href="checkout.html"><button id="cartcheckout" type="submit">Proceed to checkout</button></a>
+                  <button id="cartcheckout" type="submit" onclick="redirect()">Proceed to checkout</button>
                 </div>
 
             </div>
@@ -1249,7 +1343,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
 
             <li class="a">
-                <img alt="jacket" class="storeimg" src="black%201.png" onclick="ona()">
+                <img alt="jacket" class="storeimg" src="images/black%201.png" onclick="ona()">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic Geothermal jacket is suitable for any temperature to keep you warm and comfortable and it is certified by the XYZ.</p>
@@ -1259,12 +1353,12 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="atxt clothingtxt">Arctic Geothermal Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minusa()">&minus;</button>
+                    <button class="decbutton" onclick="minusa()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantitya" step="0" value="0">
+                    <input type="number" min="0" id="quantitya" step="1" value="0">
 
-                    <button id="incbutton" onclick="plusa()">&plus;</button>
+                    <button class="incbutton" onclick="plusa()">&plus;</button>
                 </p>
 
                 <button id="adda" onclick="adda()">Add to Cart</button>
@@ -1280,7 +1374,7 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
 
 
 
-            <li class="b"> <img class="storeimg" src="black%203.png">
+            <li class="b"> <img alt ="jacket" class="storeimg" src="images/black%203.png">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic Sleeveless Thermo Jacket will stop the cold from reaching you, no matter whether it is summer or winter.</p>
@@ -1289,18 +1383,18 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="btxt clothingtxt">Arctic Sleeveless Thermo Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minusb()">&minus;</button>
+                    <button class="decbutton" onclick="minusb()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantityb" step="0" value="0">
+                    <input type="number" min="0" id="quantityb" step="1" value="0">
 
-                    <button id="incbutton" onclick="plusb()">&plus;</button>
+                    <button class="incbutton" onclick="plusb()">&plus;</button>
                 </p> <button id="addb" onclick="addb()">Add to Cart</button>
 
             </li>
 
 
-            <li class="c"><img alt="jacket" class="storeimg" src="black.png">
+            <li class="c"><img alt="jacket" class="storeimg" src="images/black.png">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic HeatPro Jacket is our premium wind resistant jacket and is tested successfully against 300km/h Antarctic winds.</p>
@@ -1309,18 +1403,18 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="ctxt clothingtxt">Arctic HeatPro Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minusc()">&minus;</button>
+                    <button class="decbutton" onclick="minusc()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantityc" step="0" value="0">
+                    <input type="number" min="0" id="quantityc" step="1" value="0">
 
-                    <button id="incbutton" onclick="plusc()">&plus;</button>
+                    <button class="incbutton" onclick="plusc()">&plus;</button>
                 </p> <button id="addc" onclick="addc()">Add to Cart</button>
 
             </li>
 
 
-            <li class="d"><img alt="jacket" class="storeimg" src="blue%203.png">
+            <li class="d"><img alt="jacket" class="storeimg" src="images/blue%203.png">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic Sleeveless Turbo Jacket is a stylish jacket specially designed to keep you warm while keeping you on the top of fashion trends.</p>
@@ -1329,18 +1423,18 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="dtxt clothingtxt">Arctic Sleeveless Turbo Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minusd()">&minus;</button>
+                    <button class="decbutton" onclick="minusd()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantityd" step="0" value="0">
+                    <input type="number" min="0" id="quantityd" step="1" value="0">
 
-                    <button id="incbutton" onclick="plusd()">&plus;</button>
+                    <button class="incbutton" onclick="plusd()">&plus;</button>
                 </p> <button id="addd" onclick="addd()">Add to Cart</button>
 
             </li>
 
 
-            <li class="e"><img alt="jacket" class="storeimg" src="blue.png">
+            <li class="e"><img alt="jacket" class="storeimg" src="images/blue.png">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic InsulPro Jacket will not let the freezing temperatures reach you whether you are in the wintery wind or a cave in Antarctica.</p>
@@ -1349,18 +1443,18 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="etxt clothingtxt">Arctic InsulPro Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minuse()">&minus;</button>
+                    <button class="decbutton" onclick="minuse()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantitye" step="0" value="0">
+                    <input type="number" min="0" id="quantitye" step="1" value="0">
 
-                    <button id="incbutton" onclick="pluse()">&plus;</button>
+                    <button class="incbutton" onclick="pluse()">&plus;</button>
                 </p> <button id="adde" onclick="adde()">Add to Cart</button>
 
             </li>
 
 
-            <li class="f"><img alt="jacket" class="storeimg" src="green%202.png">
+            <li class="f"><img alt="jacket" class="storeimg" src="images/green%202.png">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic Casual Jacket can be worn to any occassion is one of our award winning designs for fashion innovation.</p>
@@ -1369,18 +1463,18 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="ftxt clothingtxt">Arctic Casual Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minusf()">&minus;</button>
+                    <button class="decbutton" onclick="minusf()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantityf" step="0" value="0">
+                    <input type="number" min="0" id="quantityf" step="1" value="0">
 
-                    <button id="incbutton" onclick="plusf()">&plus;</button>
+                    <button class="incbutton" onclick="plusf()">&plus;</button>
                 </p> <button id="addf" onclick="addf()">Add to Cart</button>
 
             </li>
 
 
-            <li class="g"><img alt="jacket" class="storeimg" src="grey%202.png">
+            <li class="g"><img alt="jacket" class="storeimg" src="images/grey%202.png">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic Polar Fleece Jacket is suitable for any temperature to keep you warm and comfortable and it is certified by the XYZ.</p>
@@ -1389,18 +1483,18 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="gtxt clothingtxt">Arctic Polar Fleece Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minusg()">&minus;</button>
+                    <button class="decbutton" onclick="minusg()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantityg" step="0" value="0">
+                    <input type="number" min="0" id="quantityg" step="1" value="0">
 
-                    <button id="incbutton" onclick="plusg()">&plus;</button>
+                    <button class="incbutton" onclick="plusg()">&plus;</button>
                 </p> <button id="addg" onclick="addg()">Add to Cart</button>
 
             </li>
 
 
-            <li class="h"><img alt="jacket" class="storeimg" src="grey.png">
+            <li class="h"><img alt="jacket" class="storeimg" src="images/grey.png">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic Nuclear Jacket will stop the cold from reaching you, no matter whether it is summer or winter.</p>
@@ -1409,18 +1503,18 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="htxt clothingtxt">Arctic Nuclear Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minush()">&minus;</button>
+                    <button class="decbutton" onclick="minush()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantityh" step="0" value="0">
+                    <input type="number" min="0" id="quantityh" step="1" value="0">
 
-                    <button id="incbutton" onclick="plush()">&plus;</button>
+                    <button class="incbutton" onclick="plush()">&plus;</button>
                 </p> <button id="addh" onclick="addh()">Add to Cart</button>
 
             </li>
 
 
-            <li class="i"><img alt="jacket" class="storeimg" src="new1.png">
+            <li class="i"><img alt="jacket" class="storeimg" src="images/new1.png">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic ThermoPro Jacket is our premium wind resistant jacket and is tested successfully against 300km/h Antarctic winds.</p>
@@ -1429,18 +1523,18 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="itxt clothingtxt">Arctic ThermoPro Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minusi()">&minus;</button>
+                    <button class="decbutton" onclick="minusi()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantityi" step="0" value="0">
+                    <input type="number" min="0" id="quantityi" step="1" value="0">
 
-                    <button id="incbutton" onclick="plusi()">&plus;</button>
+                    <button class="incbutton" onclick="plusi()">&plus;</button>
                 </p> <button id="addi" onclick="addi()">Add to Cart</button>
 
             </li>
 
 
-            <li class="j"><img alt="jacket" class="storeimg" src="new3.png">
+            <li class="j"><img alt="jacket" class="storeimg" src="images/new3.png">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic Turbo 3.1 Jacket is a stylish jacket specially designed to keep you warm while keeping you on the top of fashion trends.</p>
@@ -1449,18 +1543,18 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="jtxt clothingtxt">Arctic Turbo 3.1 Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minusj()">&minus;</button>
+                    <button class="decbutton" onclick="minusj()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantityj" step="0" value="0">
+                    <input type="number" min="0" id="quantityj" step="1" value="0">
 
-                    <button id="incbutton" onclick="plusj()">&plus;</button>
+                    <button class="incbutton" onclick="plusj()">&plus;</button>
                 </p> <button id="addj" onclick="addj()">Add to Cart</button>
 
             </li>
 
 
-            <li class="k"><img alt="jacket" class="storeimg" src="red%201.png">
+            <li class="k"><img alt="jacket" class="storeimg" src="images/red%201.png">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic Geothermal Pro Jacket will not let the freezing temperatures reach you whether you are in the wintery wind or a cave in Antarctica.</p>
@@ -1469,18 +1563,18 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="ktxt clothingtxt">Arctic GeothermalPro Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minusk()">&minus;</button>
+                    <button class="decbutton" onclick="minusk()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantityk" step="0" value="0">
+                    <input type="number" min="0" id="quantityk" step="1" value="0">
 
-                    <button id="incbutton" onclick="plusk()">&plus;</button>
+                    <button class="incbutton" onclick="plusk()">&plus;</button>
                 </p> <button id="addk" onclick="addk()">Add to Cart</button>
 
             </li>
 
 
-            <li class="l"><img alt="jacket" class="storeimg" src="red.png">
+            <li class="l"><img alt="jacket" class="storeimg" src="images/red.png">
                 <div class="middle">
                     <div class="hovertxt">
                         <p class="hva">The Arctic Polar Jacket can be worn to any occassion is one of our award winning designs for fashion innovation.</p>
@@ -1490,12 +1584,12 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
                 <p class="ltxt clothingtxt">Arctic Polar Jacket<br>$199.99 <br>
 
 
-                    <button id="decbutton" onclick="minusl()">&minus;</button>
+                    <button class="decbutton" onclick="minusl()">&minus;</button>
 
 
-                    <input type="number" min="0" id="quantityl" step="0" value="0">
+                    <input type="number" min="0" id="quantityl" step="1" value="0">
 
-                    <button id="incbutton" onclick="plusl()">&plus;</button>
+                    <button class="incbutton" onclick="plusl()">&plus;</button>
                 </p> <button id="addl" onclick="addl()">Add to Cart</button>
             </li>
 
@@ -1525,6 +1619,4 @@ if(localStorage.getItem("quantityl") == null) {document.getElementById("quantity
             </div>
         </div>
     </form>
-</body>
-
-</html>
+</body></html>
