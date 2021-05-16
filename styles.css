@@ -1,3 +1,4 @@
+/*importing custom fonts*/
 @font-face {
     font-family: FrozenIce;
     src: url(fonts/FROZEN%20ICE.otf);
@@ -8,11 +9,8 @@
     src: url(fonts/coolvetica%20rg.ttf)
 }
 
+/*code for html background animation and size*/
 html {
-
-    /*
-    background-image: linear-gradient(#0b0e70, #0d7cbc);
-*/
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     background-attachment: fixed;
@@ -20,18 +18,10 @@ html {
     width: 100vw;
     min-height: 100vh;
     max-width: 100vw;
-}
-
-html {
     animation: pulse 6s infinite;
-
-
-    margin: 0;
-    width: 100vw;
-    min-height: 100vh;
-    max-width: 100vw;
 }
 
+/*animation for background transfers between different shades of blue*/
 @keyframes pulse {
     0% {
         background-color: #1075b0;
@@ -41,11 +31,11 @@ html {
         background-color: #0b5885;
     }
 
-    4% {
+    40% {
         background-color: #024399;
     }
 
-    60% {
+    50% {
         background-color: #02367a;
     }
 
@@ -58,6 +48,7 @@ html {
     }
 }
 
+/*dots in the slider in index.html*/
 .dot {
     cursor: pointer;
     height: 15px;
@@ -71,43 +62,47 @@ html {
     margin-bottom: 30%;
 }
 
+/*positioning dots in the slider*/
 .dotdiv {
     grid-column: 3/4;
     grid-row: 1/2;
 }
 
+/*darken background color when hovering over dot*/
 .active,
 .dot:hover {
     background-color: #717171;
 }
 
+/*general font and text size for level 2 headings*/
 h1 {
     font-family: "FrozenIce", sans-serif;
     text-shadow: 0 0 4px white;
     font-size: 45px;
 }
 
-#new {
-    text-shadow: 0 0 2px white;
-}
 
+/*font size for number of items in cart displayed on the navigation bar*/
 #items {
     text-decoration: none;
     font-size: 30px;
 }
 
+/*general font for h2, h3 and paragraphs*/
 h2,
 h3,
 p {
     font-family: "coolvetica", sans-serif;
 }
 
+/*layout of home page*/
 .home {
     display: grid;
     grid-template-columns: 2% 2fr 1fr 2% 2fr 1fr 2% 2fr 1fr 2%;
     grid-template-rows: auto;
 }
 
+/*layout, colours and text settings of navigation bar*/
 #navlink {
     background-image: radial-gradient(#0d7bbc, #040640);
     max-height: 100px;
@@ -117,36 +112,42 @@ p {
     grid-template-columns: 2fr 12fr 1fr 0.5fr;
     grid-template-rows: 1fr;
     align-items: center;
+    margin-right: 1%
 }
 
+/*layout of for number of items in cart displayed on the navigation bar*/
 .itemdiv {
     grid-column: 4/5;
     justify-content: center;
     align-content: center;
 }
 
+/*layout for cart in store.html*/
 .cartdiv {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr 2fr;
     grid-template-rows: auto;
 }
 
+/*layout for cart in pages other than store.html*/
 .cartdivb {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 0.5fr 2fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: auto;
 }
 
+/*image position in grids for cart in pages other than store.html*/
 .cartdivb img {
     grid-column: 1/2;
 }
 
-
-
+/*image position in grids for cart in store.html*/
 .cartdiv img {
     grid-column: 1/2;
 }
 
+
+/*colours and styles for increase decrease buttons on the cart*/
 .plusoncart,
 .minusoncart {
     background: none;
@@ -155,12 +156,10 @@ p {
     border: none;
 }
 
-
-
+/*following code is for positions for in the grid for product name, price, increase and decrease buttons*/
 .name {
     grid-column: 1/2
 }
-
 
 .price {
     grid-column: 2/3
@@ -175,8 +174,7 @@ p {
 }
 
 
-
-
+/*sizes and alignments for image of product on cart*/
 #jacketa,
 #jacketb,
 #jacketc,
@@ -196,28 +194,21 @@ p {
     background-image: radial-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
     justify-self: center;
     align-self: center;
-
-
 }
 
+/*text shown when cart is empty*/
 #empty {
     text-align: center;
     color: white;
 }
 
+/*size for map on contact.html*/
 iframe {
     width: 100%;
     height: 100%;
 }
 
-/*#navlogo{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    background-image: radial-gradient(#0d7cbc, #0b0e70);
-
-    text-align: center;
-}*/
+/*colours, positions, font settings for links on nav bar*/
 nav a {
     color: black;
     padding-right: 4%;
@@ -230,12 +221,14 @@ nav a {
     align-self: center
 }
 
+/*position of slider on index.html*/
 .slider,
 .slider2 {
     width: 100vw;
     grid-row: 1/2;
 }
 
+/*following is code for positions and sizes of products for index.html*/
 #mens {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -256,6 +249,10 @@ nav a {
     grid-row: 3/4;
 }
 
+#mens1 {
+    z-index: 5;
+}
+
 #womens1 {
     grid-column: 5/6;
     grid-row: 3/4;
@@ -266,10 +263,6 @@ nav a {
     grid-row: 3/4;
 }
 
-
-
-
-
 img {
     display: block;
 }
@@ -277,24 +270,6 @@ img {
 .homepageimg {
     height: 100%;
     width: 100%;
-}
-
-.backgroundimg {
-    height: 100%;
-    width: 100%;
-    opacity: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.homepagetxt {
-    bottom: 50%;
-    right: 10%;
-    font-family: "FrozenIce", sans-serif;
-    font-size: 40px;
-    text-shadow: 0 0 4px white;
-    text-align: center;
-    opacity: 100%;
 }
 
 #kids,
@@ -316,6 +291,42 @@ img {
     margin-top: 2%;
 }
 
+/*background for images on index.html*/
+.backgroundimg {
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*text for products on index.html*/
+.homepagetxt {
+    bottom: 50%;
+    right: 10%;
+    font-family: "FrozenIce", sans-serif;
+    font-size: 40px;
+    text-shadow: 0 0 4px white;
+    text-align: center;
+    opacity: 100%;
+}
+
+.homepagetxt a {
+    color: black;
+    text-decoration: none;
+}
+
+.homepagetxt {
+    padding-top: 50%;
+    padding-right: 5%;
+    opacity: 100%;
+    z-index: 1;
+    top: 50%;
+}
+
+
+
+/*positions and sources of background images for products in index.html8*/
 
 #ice {
     grid-column: 2/4;
@@ -389,21 +400,19 @@ img {
     grid-column: 9/10;
 }
 
-.homepagetxt a {
-    color: black;
-    text-decoration: none;
-}
 
-.navlogo {
-    background-image: linear-gradient(#040640, #0d7bbc);
-}
-
+/*layout of grids for contact.html*/
 .contactdiv {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr 5%;
 }
 
+.contactform {
+    text-align: left;
+}
+
+/*position of elements in grids in contact.html*/
 .contactdetails {
     grid-column: 1/2;
 }
@@ -416,6 +425,7 @@ img {
     grid-column: 3/4;
 }
 
+/*positions and sizes for logo on nav bar*/
 .logodiv {
     justify-self: left
 }
@@ -433,6 +443,7 @@ img {
     margin-left: 3%
 }
 
+/*font for contact form*/
 label,
 input,
 textarea,
@@ -440,34 +451,21 @@ select {
     font-family: "coolvetica", sans-serif;
 }
 
-.homepagetxt {
-    padding-top: 50%;
-    padding-right: 5%;
-    opacity: 100%;
-    z-index: 1;
-    top: 50%;
-}
 
-#mens1 {
-    z-index: 5;
-}
-
+/*position of total in cart*/
 .totaldiv {
     grid-column: 1/2;
 }
-
-
 
 .totalnumberdiv {
     grid-column: 4/5;
 }
 
+/*background image and other setting for contact.html*/
 .contact {
     background-image: url(images/lake.png);
     background-repeat: no-repeat;
     background-size: cover;
-    grid-row: 2/3;
-    grid-column: 2/10;
     text-align: center;
     box-shadow: 2px 2px 5px black;
     box-shadow: -2px -2px 5px black;
@@ -475,20 +473,29 @@ select {
     z-index: 1;
 }
 
+/*background settings for store.html*/
 .clothingbody {
     background-image: url(images/ice%20picture.png);
     background-size: 100% 100%;
-
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
+/*background settings for checkout.html*/
+
 .checkoutsec {
     box-shadow: 2px 2px 5px black;
     box-shadow: -2px -2px 5px black;
-    min-height: 100vh
+    min-height: 100vh;
+    background-image: url(images/lake.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
+/*display grid settings for store.html*/
 .clothing {
     display: grid;
     grid-template-rows: auto;
@@ -496,9 +503,9 @@ select {
     grid-gap: 2%;
     margin: auto;
     padding: 2%;
-
 }
 
+/*list settings for products in store.html*/
 ul {
     list-style: none;
 }
@@ -506,14 +513,12 @@ ul {
 li {
     box-shadow: 2px 2px 8px black;
     padding: 5%;
-    background-color: rgba(255, 255, 255, 0.2)
-}
-
-li {
+    background-color: rgba(255, 255, 255, 0.2);
     display: grid;
     grid-template-columns: auto;
 }
 
+/*position, alignment and size in grid for products and their descriptions*/
 li img,
 .middle {
     grid-column: 1/2;
@@ -529,110 +534,6 @@ li img,
     display: block
 }
 
-
-
-
-
-/*
-.a {
-    grid-row: 2/3;
-    grid-column: 2/3
-}
-.b {
-    grid-row: 2/3;
-    grid-column: 4/5
-}
-.c {
-    grid-row: 2/3;
-    grid-column: 6/7;
-}
-.d {
-    grid-row: 4/5;
-    grid-column: 2/3
-}
-.e {
-    grid-row: 4/5;
-    grid-column: 4/5
-}
-.f {
-    grid-row: 4/5;
-    grid-column: 6/7;
-}
-.g {
-    grid-row: 6/7;
-    grid-column: 2/3
-}
-.h {
-    grid-row: 6/7;
-    grid-column: 4/5
-}
-.i {
-    grid-row: 6/7;
-    grid-column: 6/7;
-}
-.j {
-    grid-row: 8/9;
-    grid-column: 2/3
-}
-.k {
-    grid-row: 8/9;
-    grid-column: 4/5
-}
-.l {
-    grid-row: 8/9;
-    grid-column: 6/7;
-}
-*/
-/*
-.atxt {
-    grid-row: 3/4;
-    grid-column: 2/3
-}
-.btxt {
-    grid-row: 3/4;
-    grid-column: 4/5
-}
-.ctxt {
-    grid-row: 3/4;
-    grid-column: 6/7;
-}
-.dtxt {
-    grid-row: 5/6;
-    grid-column: 2/3
-}
-.etxt {
-    grid-row: 5/6;
-    grid-column: 4/5
-}
-.ftxt {
-    grid-row: 5/6;
-    grid-column: 6/7;
-}
-.gtxt {
-    grid-row: 7/8;
-    grid-column: 2/3
-}
-.htxt {
-    grid-row: 7/8;
-    grid-column: 4/5
-}
-.itxt {
-    grid-row: 7/8;
-    grid-column: 6/7;
-}
-.jtxt {
-    grid-row: 9/10;
-    grid-column: 2/3
-}
-.ktxt {
-    grid-row: 9/10;
-    grid-column: 4/5
-}
-.ltxt {
-    grid-row: 9/10;
-    grid-column: 6/7;
-}
-*/
 .storeimg {
     opacity: 1;
     display: inline;
@@ -642,15 +543,7 @@ li img,
     backface-visibility: hidden;
 }
 
-/*.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}*/
+
 .hva {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -711,6 +604,7 @@ li img,
     grid-row: 8/9;
 }
 
+/*hover settings for product images and descriptions*/
 .a:hover .storeimg,
 .b:hover .storeimg,
 .c:hover .storeimg,
@@ -741,8 +635,14 @@ li img,
     opacity: 1;
 }
 
-.map {}
 
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+}
+
+/*text and alignment settings for descriptions*/
 .hva,
 .hvb,
 .hvc,
@@ -763,15 +663,10 @@ li img,
 }
 
 .middle {
-    transition: .5s ease;
-    opacity: 0;
-    top: 50%;
-}
-
-.middle {
     place-self: center;
 }
 
+/*layout for sizing.html*/
 .size {
     display: grid;
     grid-template-rows: auto;
@@ -781,6 +676,7 @@ li img,
     background-size: cover
 }
 
+/*formatting the table including borders, sizes and positions in sizing.htm;*/
 table,
 th,
 td {
@@ -806,41 +702,38 @@ table {
     grid-column: 2/3;
 }
 
+/*position of button in sizing.html*/
 .inputsize {
     grid-column: 3/4;
 }
 
 
 
-.show {
-    display: block
-}
 
-.contactform {
-    text-align: left;
-}
-
+/*hover settings for nav bar link*/
 .navigation:hover {
     text-shadow: 0 0 7px white;
     text-decoration: underline;
-
 }
 
+/*box sizing for all pages*/
 * {
     box-sizing: border-box
 }
 
-.thermo {
-    display: none
-}
-
+/*vertically align images*/
 img {
     vertical-align: middle;
 }
 
+/*for slider*/
+.thermo {
+    display: none
+}
+
+/*layout for sliders*/
 .slideshow-container {
     display: grid;
-    grid-template-rows: 1/2;
     grid-template-columns: 5% 1fr 5% 1fr 5%;
     min-width: 100vw;
     max-width: 1000px;
@@ -848,7 +741,52 @@ img {
     margin: auto;
     align-items: end
 }
+.mySlides {
+    grid-row: 1/2;
+    grid-column: 1/6;
+    width: 100%;
+    padding-right: 2%;
+    margin-bottom: 1%;
+}
 
+
+.slideimg {
+    width: 100%
+}
+.mySlides {
+    min-width: 100vw;
+    margin-bottom: 1%;
+}
+
+/*hover settings for slider*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*positions in grids for newsletter*/
 #contsize {
     grid-column: 2/4;
 }
@@ -858,6 +796,7 @@ img {
     grid-row: 2/3;
 }
 
+/*sizing, positions and other settings for arrows in slider*/
 .prev,
 .next {
     cursor: pointer;
@@ -888,49 +827,17 @@ img {
     padding-left: 1%
 }
 
-.mySlides {
-    grid-row: 1/2;
-    grid-column: 1/6;
-    width: 100vw;
-    padding-right: 2%;
-    margin-bottom: 1%;
-}
-
 .next {
     border-radius: 3px 0 0 3px;
 }
 
+/*hover settings for arrows in slider*/
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
+/*text alignment in carts*/
 
 .cartdiv {
     justify-content: center;
@@ -942,11 +849,8 @@ img {
     text-align: center;
 }
 
-.mySlides {
-    min-width: 100vw;
-    margin-bottom: 1%;
-}
 
+/*positions for totals in cart*/
 .totaldiv {
     grid-column: 1/3
 }
@@ -955,10 +859,12 @@ img {
     grid-column: 5/6
 }
 
+/*font for buttons*/
 button {
     font-family: "coolvetica", sans-serif;
 }
 
+/*text shadows*/
 .clothingtxt {
     text-shadow: 0 0 2px white;
 }
@@ -976,6 +882,7 @@ table {
     text-shadow: 0 0 2px white;
 }
 
+/*positions, sizes and other settings remove buttons in cart*/
 #removea,
 #removeb,
 #removec,
@@ -997,11 +904,9 @@ table {
     background: none;
     color: white;
     grid-column: 7/8;
-
 }
 
-
-
+/*hover settings for remove button in cart*/
 #removea:hover,
 #removeb:hover,
 #removec:hover,
@@ -1016,7 +921,7 @@ table {
 #removel:hover {
     text-decoration: underline
 }
-
+/*positions, sizes and other settings product names in cart*/
 
 #texta,
 #textb,
@@ -1038,7 +943,6 @@ table {
     justify-self: center;
     align-self: center;
     grid-column: 2/3;
-
 }
 
 #yourcart {
@@ -1048,6 +952,8 @@ table {
     font-size: 32px;
     font-size: 32px;
 }
+
+/*positions, sizes and other settings prices in cart*/
 
 #textaaa,
 #textbbb,
@@ -1066,8 +972,7 @@ table {
     justify-self: center;
     align-self: center;
 }
-
-
+/*positions, sizes and other settings quanitities in cart*/
 
 #textaa,
 #textbb,
@@ -1089,15 +994,16 @@ table {
     justify-self: center;
     align-self: center;
     grid-column: 3/4;
-
 }
 
+/*positions of products in index.html*/
 #mens,
 #womens,
 #kids {
     grid-row: 2/3;
 }
 
+/*position of the cart in the nav bar and its hover settings*/
 #cart {
     grid-row: 1/2;
     grid-column: 3/4;
@@ -1108,12 +1014,11 @@ table {
     grid-column: 3/4;
 }
 
-
-
 #cartimg2:hover {
     opacity: 100%;
 }
 
+/*position, sizes and other settings for cart in nav bar*/
 #cartimg {
     height: 80%;
     width: 80%;
@@ -1125,9 +1030,6 @@ table {
     margin-left: 10%
 }
 
-.hi {
-    grid-column: 4/5;
-}
 
 #cartimg2 {
     opacity: 0;
@@ -1141,6 +1043,7 @@ table {
     margin-left: 10%
 }
 
+/*text shadows*/
 .contactus {
     text-shadow: 0 0 4px white
 }
@@ -1152,15 +1055,38 @@ table {
 .contacte {
     text-shadow: 0 0 1px white;
 }
-.contactus {margin: 0 2% 0 2%}
+
+/*margins and paddings*/
+.contactus {
+    margin: 0 2% 0 2%
+}
+
 .map {
     padding: 5%
 }
-table {margin-top: 5%}
-#contsizing{
-  margin-top: 7%;
+
+table {
+    margin-top: 5%
 }
-.inputsize {margin-top: 5%}
+
+#contsizing {
+    margin-top: 7%;
+}
+
+.inputsize {
+    margin-top: 5%
+}
+
+#mens1,
+#womens1,
+#kids1,
+#tree1,
+#ice1,
+#lake1 {
+    margin-top: 6%;
+}
+
+/*zoom products on hover in index.html*/
 #mens,
 #womens,
 #kids,
@@ -1181,15 +1107,8 @@ table {margin-top: 5%}
     transform: scale(1.08);
 }
 
-#mens1,
-#womens1,
-#kids1,
-#tree1,
-#ice1,
-#lake1 {
-    margin-top: 6%;
-}
 
+/*zoom product images on ohver in store.html*/
 #.storeimg {
     transition: transform .1s;
 }
@@ -1198,7 +1117,10 @@ table {margin-top: 5%}
     transform: scale(1.08);
 }
 
-#overlay, #overlaycontact, #overlaycheckout {
+/*positions and sizes of overlays*/
+#overlay,
+#overlaycontact,
+#overlaycheckout {
     position: fixed;
     display: none;
     width: 100%;
@@ -1211,7 +1133,21 @@ table {margin-top: 5%}
     z-index: 2;
     cursor: pointer;
 }
+#overlaya {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 5;
+    cursor: pointer;
+}
 
+/*text alignment in inout boxes in store.html*/
 #quantitya,
 #quantityb,
 #quantityc,
@@ -1227,21 +1163,7 @@ table {margin-top: 5%}
     text-align: center
 }
 
-
-#overlaya {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 5;
-    cursor: pointer;
-}
-
+/*position of checkout button on cart*/
 .cartcheckoutdiv {
     grid-column: 1/8;
     grid-row: auto;
@@ -1249,21 +1171,22 @@ table {margin-top: 5%}
     margin-top: 2%
 }
 
-
 #cartcheckout {
     font-size: 15px
 }
 
+/*text settings for total on cart*/
 #total,
 #totaltext {
     color: white;
     margin-top: 50px
 }
-
+/*text decoration for checkout button on cart*/
 .cartcheckoutdiv a {
     text-decoration: none
 }
 
+/*size of add to cart button*/
 #adda,
 #addb,
 #addc,
@@ -1280,21 +1203,15 @@ table {margin-top: 5%}
     margin: auto
 }
 
+/*layout of checkout.html*/
 .containercheckout {
     display: grid;
     grid-template-columns: 15% 1fr 15% 1fr 15%;
     grid-template-rows: auto;
-
 }
 
-.checkoutsec {
-    background-image: url(images/lake.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: 1fr;
-}
 
+/*position of elements in grids in checkout.html*/
 .columntwo {
     grid-column: 4/5;
     grid-row: 1/2;
@@ -1309,6 +1226,7 @@ table {margin-top: 5%}
     grid-row: 2/3;
 }
 
+/*text shadows*/
 h3 {
     text-shadow: 0 0 4px black
 }
@@ -1319,10 +1237,11 @@ h3 {
 
 label {
     text-shadow: 0 0 2px white;
-
 }
 
-#text, #textcontact {
+/*overlay text settings, sizes and positions*/
+#text,
+#textcontact {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1334,10 +1253,7 @@ label {
     -ms-transform: translate(-50%, -50%);
 }
 
-
-
-
-
+/*nerwsletter subscribe container positions, colours and sizes*/
 .container2 {
     margin-top: 5%;
     box-shadow: 2px 2px 8px black;
@@ -1347,6 +1263,7 @@ label {
     margin: 2%;
 }
 
+/*sizes, positions and borders for elements in newsltter subscribe form*/
 #newsemail,
 #newsname,
 #subscribe {
@@ -1358,6 +1275,7 @@ label {
     box-sizing: border-box;
 }
 
+/*paddings for inputs*/
 .contact input {
     padding: 3px;
 }
@@ -1372,38 +1290,39 @@ label {
 
 #news {
     margin-top: 16px;
-
 }
 
+/*subscribe button*/
 #subscribe {
     color: black;
     border: none;
 }
 
+/*hover settings for subscribe button*/
 #subscribe:hover {
     opacity: 0.8;
 }
 
-#containerinstore {
-    background-image: linear-gradient(#0b0e70, #0d7cbc);
 
-}
-
-
-#items:hover {
-    text-decoration: none;
-}
-
+/*positions and alignments for number of items on cart displayed on the nav bar*/
 #items {
     font-size: 30px;
     text-align: center;
     align-self: center;
     padding-right: 50%
 }
-
+/*hover settings for number of items on cart displayed on the nav bar*/
+#items:hover {
+    text-decoration: none;
+}
+/*overlay in checkout.html*/
 #thanks {
- margin:3% 4% 4% 4%;
- text-shadow: 1px 1px 4px white;
-   text-align: center;
+    margin: 3% 4% 4% 4%;
+    text-shadow: 1px 1px 4px white;
+    text-align: center;
+}
 
+/*subcribe to newsltter heading text shadow*/
+#new {
+    text-shadow: 0 0 2px white;
 }
