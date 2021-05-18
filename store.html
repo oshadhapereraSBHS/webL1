@@ -15,6 +15,9 @@
 
 
   <script>
+
+/*add to cart and remove buttons*/
+
     function removea() {
 
       document.getElementById("texta").style.display = "none";
@@ -33,12 +36,6 @@
 
       localStorage.setItem("quantitya", document.getElementById("quantitya").value);
     };
-
-    /*
-    function increasea() {
-      alert(document.getElementById('textaa').innerHTML = document.getElementById('quantitya').value * 199 + 199;)
-    }*/
-
 
 
 
@@ -422,13 +419,9 @@
       localStorage.setItem("quantityl", document.getElementById("quantityl").value);
     }
 
-
+/*when cart button is pressed, display correct products, prices and quanitites with increase decrease and remove buttons*/
 
     function ona() {
-
-
-
-
 
       if (localStorage.getItem("quantitya") == null) {
         document.getElementById("quantitya").value = 0
@@ -486,16 +479,7 @@
 
 
       };
-      /*        if (document.getElementById('quantitya').value != 0 || document.getElementById('quantityb').value != 0 || document.getElementById('quantityc').value != 0 || document.getElementById('quantityd').value != 0 || document.getElementById('quantitye')
-                  .value != 0 || document.getElementById('quantityf').value != 0 || document.getElementById('quantityg').value != 0 || document.getElementById('quantityh').value != 0 || document.getElementById('quantityi').value != 0 || document.getElementById(
-                      'quantityj').value != 0 || document.getElementById('quantityk').value != 0 || document.getElementById('quantityl').value != 0) {
-                  document.getElementById("cartcheckout").style.display = "inline";
-                  document.getElementById("empty").style.display = "none";
-                  document.getElementById("total").style.display = "block";
-                  document.getElementById("totaltext").style.display = "block";
 
-              };
-              */
 
 
 
@@ -732,7 +716,7 @@
 
     }
 
-
+/*newsltter subscribe*/
     function onsubscribe(e) {
       e.preventDefault();
       document.getElementById("overlay").style.display = "block";
@@ -744,7 +728,7 @@
       document.getElementById("overlay").style.display = "none";
     }
 
-
+/*increase decrease buttons*/
     function plusa() {
       document.getElementById('quantitya').stepUp();
     }
@@ -854,6 +838,8 @@
       document.getElementById('quantityl').stepDown();
     }
 
+
+/*increase decrease buttons in cart*/
     function increasea() {
       document.getElementById('quantitya').stepUp();
       document.getElementById('items').innerHTML = document.getElementById('quantitya').value * 1 + document.getElementById('quantityb').value * 1 + document.getElementById('quantityc').value * 1 + document.getElementById('quantityd')
@@ -1090,7 +1076,7 @@
     }
 
 
-
+/*storing selected products on localStorage as numbers*/
 
     window.onload = function() {
 
@@ -1161,7 +1147,7 @@
 
     }
 
-
+/*checkout button*/
     function redirect() {
       location.replace("checkout.html")
 
@@ -1176,6 +1162,7 @@
 <body class="clothingbody">
   <div>
     <nav id="navlink">
+      <!--nav bar-->
       <div><a class="navigation" href="index.html"><img alt="arctic-logo" class="logo" src="images/arctic%20logo.png"></a></div>
       <div><a class="navigation" href="index.html">HOME</a>
         <a class="navigation" href="store.html">STORE</a>
@@ -1194,7 +1181,7 @@
     </nav>
   </div>
   <section class="clothingsec">
-
+<!--cart-->
     <div id="overlaya" onclick="offa()">
       <div id="topic">
         <h2 id="yourcart">Your Cart</h2>
@@ -1339,7 +1326,7 @@
       </div>
     </div>
 
-
+<!--products-->
     <ul class="clothing">
 
 
@@ -1603,7 +1590,7 @@
   <form action="/action_page.php">
     <div class="container2">
 
-
+<!--newsletter-->
       <h2 id="new">Subscribe to our Newsletter</h2>
       <p>Subscribe to our newsletter and get 20% off your first order. We also deliver the lastest news and offers straight to your inbox.</p>
 

@@ -760,21 +760,11 @@ img {
 
 /*hover settings for slider*/
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+
     animation-name: fade;
     animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
 
 @keyframes fade {
     from {
@@ -1108,8 +1098,8 @@ table {
 }
 
 
-/*zoom product images on ohver in store.html*/
-#.storeimg {
+/*zoom product images on hover in store.html*/
+.storeimg {
     transition: transform .1s;
 }
 
@@ -1250,7 +1240,6 @@ label {
     text-align: center;
     color: white;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 /*nerwsletter subscribe container positions, colours and sizes*/

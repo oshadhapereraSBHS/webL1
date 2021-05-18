@@ -33,6 +33,7 @@
 
 
 
+        /*set null values to 0*/
 
       if (localStorage.getItem("quantitya") == null) {
         document.getElementById("quantitya").value = 0
@@ -88,6 +89,7 @@
       document.getElementById("checkoutbutton").style.display = "none";
 
     }
+    /*displaying, increasing, decreasing and removing products in cart*/
 
 
     function ona() {
@@ -385,9 +387,14 @@
 
     };
 
+        function redirect() {
+          location.replace("checkout.html")
+
+        }
 
 
 
+    /*size calculator*/
 
     function check() {
       var msg = document.getElementById('info').value;
@@ -433,6 +440,7 @@
       }
     }
 
+/*newsletter subscribe*/
 
     function onsubscribe(e) {
       e.preventDefault();
@@ -447,10 +455,6 @@
 
 
 
-    function redirect() {
-      location.replace("checkout.html")
-
-    }
   </script>
 
 
