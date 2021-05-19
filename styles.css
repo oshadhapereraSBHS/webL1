@@ -21,7 +21,7 @@ html {
     animation: pulse 6s infinite;
 }
 
-/*animation for background transfers between different shades of blue*/
+/*animation for background transfers between different shades of blue. The animation of shades of blue creates contrast against background images on the pages*/
 @keyframes pulse {
     0% {
         background-color: #1075b0;
@@ -81,7 +81,6 @@ h1 {
     font-size: 45px;
 }
 
-
 /*font size for number of items in cart displayed on the navigation bar*/
 #items {
     text-decoration: none;
@@ -102,7 +101,7 @@ p {
     grid-template-rows: auto;
 }
 
-/*layout, colours and text settings of navigation bar*/
+/*layout, colours and text settings of navigation bar. Navigation bar on top of website to find it is easy to find and user friendly*/
 #navlink {
     background-image: radial-gradient(#0d7bbc, #040640);
     max-height: 100px;
@@ -146,7 +145,6 @@ p {
     grid-column: 1/2;
 }
 
-
 /*colours and styles for increase decrease buttons on the cart*/
 .plusoncart,
 .minusoncart {
@@ -172,7 +170,6 @@ p {
 .plusoncart {
     grid-column: 6/7;
 }
-
 
 /*sizes and alignments for image of product on cart*/
 #jacketa,
@@ -221,14 +218,14 @@ nav a {
     align-self: center
 }
 
-/*position of slider on index.html*/
+/*position of slider on index.html. This helps make the website user friendly as many websites have sliders on their home pages*/
 .slider,
 .slider2 {
     width: 100vw;
     grid-row: 1/2;
 }
 
-/*following is code for positions and sizes of products for index.html*/
+/*following is code for positions and sizes of products for index.html - these products help navigate the users to what they want on arrival to the website homepage and makes the website user friendly*/
 #mens {
     grid-column: 2/3;
     grid-row: 2/3;
@@ -324,10 +321,7 @@ img {
     top: 50%;
 }
 
-
-
-/*positions and sources of background images for products in index.html8*/
-
+/*positions and sources of background images for products in index.html - background images create contrast against content*/
 #ice {
     grid-column: 2/4;
     grid-row: 2/3;
@@ -400,7 +394,6 @@ img {
     grid-column: 9/10;
 }
 
-
 /*layout of grids for contact.html*/
 .contactdiv {
     display: grid;
@@ -451,7 +444,6 @@ select {
     font-family: "coolvetica", sans-serif;
 }
 
-
 /*position of total in cart*/
 .totaldiv {
     grid-column: 1/2;
@@ -461,7 +453,7 @@ select {
     grid-column: 4/5;
 }
 
-/*background image and other setting for contact.html*/
+/*background image and other setting for contact.html - background images create contrast against content*/
 .contact {
     background-image: url(images/lake.png);
     background-repeat: no-repeat;
@@ -473,7 +465,7 @@ select {
     z-index: 1;
 }
 
-/*background settings for store.html*/
+/*background settings for store.html - background images create contrast against content*/
 .clothingbody {
     background-image: url(images/ice%20picture.png);
     background-size: 100% 100%;
@@ -481,8 +473,7 @@ select {
     background-repeat: no-repeat;
 }
 
-/*background settings for checkout.html*/
-
+/*background settings for checkout.html - background images create contrast against content*/
 .checkoutsec {
     box-shadow: 2px 2px 5px black;
     box-shadow: -2px -2px 5px black;
@@ -492,10 +483,9 @@ select {
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr;
-
 }
 
-/*display grid settings for store.html*/
+/*display grid settings for store.html - the use of grid layout helps the user find products easily and makes the website user friendly*/
 .clothing {
     display: grid;
     grid-template-rows: auto;
@@ -542,7 +532,6 @@ li img,
     transition: .5s ease;
     backface-visibility: hidden;
 }
-
 
 .hva {
     grid-column: 2/3;
@@ -635,7 +624,6 @@ li img,
     opacity: 1;
 }
 
-
 .middle {
     transition: .5s ease;
     opacity: 0;
@@ -666,7 +654,7 @@ li img,
     place-self: center;
 }
 
-/*layout for sizing.html*/
+/*layout for sizing.html - background images create contrast against content*/
 .size {
     display: grid;
     grid-template-rows: auto;
@@ -707,9 +695,6 @@ table {
     grid-column: 3/4;
 }
 
-
-
-
 /*hover settings for nav bar link*/
 .navigation:hover {
     text-shadow: 0 0 7px white;
@@ -741,6 +726,7 @@ img {
     margin: auto;
     align-items: end
 }
+
 .mySlides {
     grid-row: 1/2;
     grid-column: 1/6;
@@ -749,10 +735,10 @@ img {
     margin-bottom: 1%;
 }
 
-
 .slideimg {
     width: 100%
 }
+
 .mySlides {
     min-width: 100vw;
     margin-bottom: 1%;
@@ -760,11 +746,9 @@ img {
 
 /*hover settings for slider*/
 .fade {
-
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
 
 @keyframes fade {
     from {
@@ -828,7 +812,6 @@ img {
 }
 
 /*text alignment in carts*/
-
 .cartdiv {
     justify-content: center;
     text-align: center;
@@ -838,7 +821,6 @@ img {
     justify-content: center;
     text-align: center;
 }
-
 
 /*positions for totals in cart*/
 .totaldiv {
@@ -854,7 +836,7 @@ button {
     font-family: "coolvetica", sans-serif;
 }
 
-/*text shadows*/
+/*text shadows - helps create contrast from background to text*/
 .clothingtxt {
     text-shadow: 0 0 2px white;
 }
@@ -911,8 +893,8 @@ table {
 #removel:hover {
     text-decoration: underline
 }
-/*positions, sizes and other settings product names in cart*/
 
+/*positions, sizes and other settings product names in cart*/
 #texta,
 #textb,
 #textc,
@@ -944,7 +926,6 @@ table {
 }
 
 /*positions, sizes and other settings prices in cart*/
-
 #textaaa,
 #textbbb,
 #textccc,
@@ -962,8 +943,8 @@ table {
     justify-self: center;
     align-self: center;
 }
-/*positions, sizes and other settings quanitities in cart*/
 
+/*positions, sizes and other settings quanitities in cart*/
 #textaa,
 #textbb,
 #textcc,
@@ -1020,7 +1001,6 @@ table {
     margin-left: 10%
 }
 
-
 #cartimg2 {
     opacity: 0;
     height: 80%;
@@ -1033,7 +1013,7 @@ table {
     margin-left: 10%
 }
 
-/*text shadows*/
+/*text shadows - helps create contrast from background to text*/
 .contactus {
     text-shadow: 0 0 4px white
 }
@@ -1076,7 +1056,7 @@ table {
     margin-top: 6%;
 }
 
-/*zoom products on hover in index.html*/
+/*zoom products on hover in index.html - zooming helps create contrast of products against the content of the page*/
 #mens,
 #womens,
 #kids,
@@ -1097,8 +1077,7 @@ table {
     transform: scale(1.08);
 }
 
-
-/*zoom product images on hover in store.html*/
+/*zoom product images on hover in store.html - zooming helps create contrast of products against the content of the page*/
 .storeimg {
     transition: transform .1s;
 }
@@ -1107,7 +1086,7 @@ table {
     transform: scale(1.08);
 }
 
-/*positions and sizes of overlays*/
+/*positions and sizes of overlays - the background colour and opacity creates contrast against the the webpage and the contents in the cart*/
 #overlay,
 #overlaycontact,
 #overlaycheckout {
@@ -1123,6 +1102,7 @@ table {
     z-index: 2;
     cursor: pointer;
 }
+
 #overlaya {
     position: fixed;
     display: none;
@@ -1171,6 +1151,7 @@ table {
     color: white;
     margin-top: 50px
 }
+
 /*text decoration for checkout button on cart*/
 .cartcheckoutdiv a {
     text-decoration: none
@@ -1200,7 +1181,6 @@ table {
     grid-template-rows: auto;
 }
 
-
 /*position of elements in grids in checkout.html*/
 .columntwo {
     grid-column: 4/5;
@@ -1216,7 +1196,7 @@ table {
     grid-row: 2/3;
 }
 
-/*text shadows*/
+/*text shadows - helps create contrast from background to text*/
 h3 {
     text-shadow: 0 0 4px black
 }
@@ -1292,7 +1272,6 @@ label {
     opacity: 0.8;
 }
 
-
 /*positions and alignments for number of items on cart displayed on the nav bar*/
 #items {
     font-size: 30px;
@@ -1300,10 +1279,12 @@ label {
     align-self: center;
     padding-right: 50%
 }
+
 /*hover settings for number of items on cart displayed on the nav bar*/
 #items:hover {
     text-decoration: none;
 }
+
 /*overlay in checkout.html*/
 #thanks {
     margin: 3% 4% 0 4%;

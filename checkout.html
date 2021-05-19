@@ -12,12 +12,14 @@
     <title>Arctic Home</title>
     <link rel="stylesheet" href="styles.css">
     <script>
+        /*overlay shown when checkout button on form pressed*/
         function oncheckout(e) {
             e.preventDefault();
             document.getElementById("overlaycheckout").style.display = "block";
 
         }
 
+        /*overlay hidden*/
 
         function offcheckout() {
             document.getElementById("overlaycheckout").style.display = "none";
@@ -25,11 +27,12 @@
 
 
 
-        /*total items on cart*/
+
 
         window.onload = function() {
+            /*total price calculated for checkout*/
             document.getElementById('totala').value = localStorage.getItem("total");
-
+            /*total items on cart*/
             document.getElementById('items').innerHTML = localStorage.getItem('quantitya') * 1 +
                 localStorage.getItem('quantityb') * 1 +
                 localStorage.getItem('quantityc') * 1 +
@@ -87,16 +90,9 @@
                 document.getElementById("quantityl").value = 0
             }
 
-
-
-
-
-
-
-
-
         }
 
+        /*takes from cart to previous page*/
 
 
         function offa() {
@@ -105,11 +101,13 @@
 
         }
 
+        /*displaying, increasing, decreasing and removing products in cart*/
 
         function ona() {
+            /*increase decrease and remove buttons in cart are not displayed*/
+
             document.getElementById("overlaya").style.display = "block";
             document.getElementById("increasea").style.display = "none"
-
             document.getElementById("increaseb").style.display = "none"
             document.getElementById("increasec").style.display = "none"
             document.getElementById("increased").style.display = "none"
@@ -146,6 +144,7 @@
             document.getElementById("removej").style.display = "none"
             document.getElementById("removek").style.display = "none"
 
+            /*if there are no items in cart say that the cart is empty*/
 
             if ((localStorage.getItem('quantitya') * 1 +
                     localStorage.getItem('quantityb') * 1 +
@@ -173,6 +172,7 @@
 
 
 
+            /*if there are items in cart, don't show text that says the cart is empty*/
 
             if (
                 localStorage.getItem('quantitya') > 0 ||
@@ -200,11 +200,15 @@
 
 
 
+            /*show products, their descriptions and prices in cart if the user has added them to the cart*/
 
 
             if (localStorage.getItem("quantitya") > 0) {
+                /*product name*/
                 document.getElementById("texta").innerHTML = "Arctic Geothermal Jacket";
+                /*price*/
                 document.getElementById("textaa").innerHTML = "$" + 199 * localStorage.getItem('quantitya');
+                /*quanitity*/
                 document.getElementById("textaaa").innerHTML = localStorage.getItem('quantitya');
             }
 
@@ -276,6 +280,7 @@
             }
 
 
+            /*if a product is not selected, don't show them in the cart*/
 
             if (localStorage.getItem('quantitya') == 0 || localStorage.getItem('quantitya') == null) {
                 document.getElementById("removea").style.display = "none";
@@ -395,11 +400,16 @@
                 document.getElementById("textlll").style.display = "none";
 
             };
+            /*show total correctly*/
+
             document.getElementById('total').innerHTML = localStorage.getItem("total")
 
-
-
         };
+        /*redirect to checkout.html when checkout button is clicked*/
+        function redirect() {
+            location.replace("checkout.html")
+
+        }
 
     </script>
 
@@ -416,10 +426,14 @@
                 <a href="contact.html">CONTACT</a>
                 <a href="sizing.html">SIZING</a>
             </div>
+            <!-- cart icon on nav bar-->
+
             <div id="cart"><a onclick="ona()"><img alt="cart1" id="cartimg" src="images/cart6.png"> </a></div>
 
             <div id="cart2"><a onclick="ona()"><img alt="cart2" id="cartimg2" src="images/cart2.png"> </a></div>
             <div class="itemdiv" onclick="ona()">
+                <!--total items-->
+
                 <a id="items">
                     0
                 </a>
@@ -431,23 +445,25 @@
         <h2 id="yourcart">Your Cart</h2>
         <h3 id="empty">Your cart is empty. Please add items and return to checkout.</h3>
         <div class="cartdivb">
-
+            <!--image-->
             <img alt="jacket" id="jacketa" src="images/black%201.png">
-
+            <!--description-->
             <h3 id="texta"></h3>
+            <!--price-->
             <h3 id="textaa"></h3>
+            <!--decrease button-->
             <button class="minusoncart" id="reducea" onclick="reducea()">&minus;</button>
-
+            <!--quantity-->
             <h3 id="textaaa"></h3>
-
+            <!--increase button-->
             <button class="plusoncart" id="increasea" onclick="increasea()">&plus;</button>
-
+            <!--remove button-->
             <button id="removea" onclick="removea()">remove</button>
 
 
 
 
-
+            <!-- other products with same format as above-->
             <img alt="jacket" id="jacketb" src="images/black%203.png">
 
 
@@ -572,70 +588,78 @@
         <div class="row">
             <div class="col-75">
                 <div class="containercheckout">
-                    <!-- billing details -->
                     <div class="col-50 columnone">
                         <h2>Billing Address</h2>
+                        <!--name-->
                         <label for="fname">Full Name</label><br>
                         <input type="text" id="fname" name="firstname" placeholder="John Smith"><br><br>
+                        <!--email-->
                         <label for="email">Email</label> <br>
                         <input type="text" id="email" name="email" placeholder="john@abc.xyz"><br><br>
+                        <!--phone number-->
                         <label for="phone">Phone</label> <br>
                         <input type="number" id="phone" name="phone" placeholder="123456789"><br><br>
+                        <!--address-->
                         <label for="adr">Address</label> <br>
                         <input type="text" id="adr" name="address" placeholder="99 End of the World Street"><br><br>
+                        <!--city-->
                         <label for="city">City</label> <br>
                         <input type="text" id="city" name="city" placeholder="Dunedin"><br><br>
-
+                        <!--region-->
                         <div class="col-50">
                             <label for="state">Region</label><br>
                             <input type="text" id="state" name="state" placeholder="Otago"><br><br>
                         </div>
+                        <!--post code-->
                         <div class="col-50">
                             <label for="zip">Postcode</label><br>
                             <input type="text" id="zip" name="zip" placeholder="9999"><br><br>
+                            <!--checkbox for shipping details-->
                             <label>
                                 <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                             </label><br><br><br>
                         </div>
                     </div>
-                    <!-- payment details -->
-                    <div class="col-50 columntwo">
+                    ] <div class="col-50 columntwo">
                         <h2>Payment</h2>
 
-
+                        <!--name on credit card-->
                         <label for="cname">Name on Card</label><br>
                         <input type="text" id="cname" name="cardname" placeholder="John Smith"><br><br>
+                        <!--credit card number-->
                         <label for="ccnum">Credit card number</label><br>
                         <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"><br><br>
-
+                        <!--expiry-->
                         <div class="row">
                             <div class="col-50">
                                 <label for="expyear">Expiry</label><br>
                                 <input type="text" id="expyear" name="expyear" placeholder="11/11">
                             </div><br>
-
+                            <!--CVV-->
                             <div class="col-50">
                                 <label for="cvv">CVV</label><br>
                                 <input type="text" id="cvv" name="cvv" placeholder="111">
                             </div>
                         </div> <br>
+                        <!--total price-->
                         <div class="col-50">
                             <label>Total</label><br>
                             <input readonly id="totala">
                         </div><br>
+                        <!--promotion code-->
                         <div class="col-50">
                             <label for="promo">Promo code</label><br>
                             <input type="text" id="promo" name="promo" placeholder="111ABC">
                         </div>
 
                         <br><br>
-
+                        <!--submit button-->
                         <div class="submitcheckout">
                             <input onclick="oncheckout(event)" type="submit" value="Continue to checkout" class="btn">
                         </div>
                     </div>
                 </div>
-                <!-- overlay -->
+                <!-- overlay when submit button pressed-->
                 <div id="overlaycheckout" onclick="offcheckout()">
                     <div id="text">
                         <h3>Thank you for shopping with us. Your order will be delivered to you within three working days.</h3>

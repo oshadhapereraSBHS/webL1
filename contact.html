@@ -12,27 +12,27 @@
     <title>Arctic Home</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        /*overlay functions for contact form and subscribe form*/
+        /*overlay shown when contact form submitted*/
         function on(e) {
             e.preventDefault();
             document.getElementById("overlaycontact").style.display = "block";
 
         }
 
-
+        /*overlay hidden*/
         function off() {
             document.getElementById("overlaycontact").style.display = "none";
         }
 
 
-
+        /*overlay shown when subscribe form submitted*/
         function onsubscribe(e) {
             e.preventDefault();
             document.getElementById("overlay").style.display = "block";
 
         }
 
-
+        /*overlay hidden*/
         function offsubscribe() {
             document.getElementById("overlay").style.display = "none";
         }
@@ -102,6 +102,7 @@
         }
 
 
+        /*takes from cart to previous page*/
 
         function offa() {
             document.getElementById("overlaya").style.display = "none";
@@ -114,9 +115,10 @@
         /*displaying, increasing, decreasing and removing products in cart*/
 
         function ona() {
+            /*increase decrease and remove buttons in cart are not displayed*/
+
             document.getElementById("overlaya").style.display = "block";
             document.getElementById("increasea").style.display = "none"
-
             document.getElementById("increaseb").style.display = "none"
             document.getElementById("increasec").style.display = "none"
             document.getElementById("increased").style.display = "none"
@@ -179,6 +181,7 @@
 
 
 
+            /*if there are items in cart, don't show text that says the cart is empty*/
 
 
             if (
@@ -208,10 +211,14 @@
 
 
 
+            /*show products, their descriptions and prices in cart if the user has added them to the cart*/
 
             if (localStorage.getItem("quantitya") > 0) {
+                /*product name*/
                 document.getElementById("texta").innerHTML = "Arctic Geothermal Jacket";
+                /*price*/
                 document.getElementById("textaa").innerHTML = "$" + 199 * localStorage.getItem('quantitya');
+                /*quanitity*/
                 document.getElementById("textaaa").innerHTML = localStorage.getItem('quantitya');
             }
 
@@ -282,6 +289,7 @@
                 document.getElementById("textlll").innerHTML = localStorage.getItem('quantityl');
             }
 
+            /*if a product is not selected, don't show them in the cart*/
 
 
             if (localStorage.getItem('quantitya') == 0 || localStorage.getItem('quantitya') == null) {
@@ -403,11 +411,13 @@
 
             };
 
+            /*show total correctly*/
 
             document.getElementById('total').innerHTML = localStorage.getItem("total")
 
         };
 
+        /*redirect to checkout.html when checkout button is clicked*/
 
         function redirect() {
             location.replace("checkout.html")
@@ -429,10 +439,14 @@
                 <a href="contact.html">CONTACT</a>
                 <a href="sizing.html">SIZING</a>
             </div>
+            <!-- cart icon on nav bar-->
+
             <div id="cart"><a onclick="ona()"><img alt="cart1" id="cartimg" src="images/cart6.png"> </a></div>
 
             <div id="cart2"><a onclick="ona()"><img alt="cart2" id="cartimg2" src="images/cart2.png"> </a></div>
             <div class="itemdiv" onclick="ona()">
+                <!--total items-->
+
                 <a id="items">
                     0
                 </a>
@@ -440,7 +454,6 @@
         </nav>
     </div>
     <section>
-        <!--overlay-->
 
         <div class="contact"><br>
             <h2 class="contactus">We value our customers and strive to provide them a memorable experience with us. Whether it is feedback, queries or help, we would love to hear from you.</h2><br>
@@ -451,23 +464,25 @@
                 <h2 id="yourcart">Your Cart</h2>
                 <h3 id="empty">Your cart is empty. Please add items and return to checkout.</h3>
                 <div class="cartdivb">
-
+                    <!--image-->
                     <img alt="jacket" id="jacketa" src="images/black%201.png">
-
+                    <!--description-->
                     <h3 id="texta"></h3>
+                    <!--price-->
                     <h3 id="textaa"></h3>
+                    <!--decrease button-->
                     <button class="minusoncart" id="reducea" onclick="reducea()">&minus;</button>
-
+                    <!--quantity-->
                     <h3 id="textaaa"></h3>
-
+                    <!--increase button-->
                     <button class="plusoncart" id="increasea" onclick="increasea()">&plus;</button>
-
+                    <!--remove button-->
                     <button id="removea" onclick="removea()">remove</button>
 
 
 
 
-
+                    <!-- other products with same format as above-->
                     <img alt="jacket" id="jacketb" src="images/black%203.png">
 
 
@@ -601,16 +616,17 @@
                 <!--contact form in the middle-->
                 <div class="contactform">
                     <form action="action_page.php">
-
+                        <!--name-->
                         <label for="name" class="contacte">Name</label><br>
                         <input type="text" id="name" name="name" placeholder="Your name">
                         <br>
                         <br>
-
+                        <!--email-->
                         <label for="email" class="contacte">Email</label><br>
                         <input type="text" id="email" name="email" placeholder="Your email">
                         <br>
                         <br>
+                        <!--country-->
                         <label for="country" class="contacte">Country</label><br>
                         <select id="country" name="country" class="country">
                             <option value="nz" class="countries">New Zealand</option>
@@ -618,11 +634,14 @@
                         </select>
                         <br>
                         <br>
+                        <!--subject-->
                         <label for="subject" class="contacte">Subject</label><br>
                         <textarea id="subject" name="subject" placeholder="Write you feedback, suggestions and questions" style="height:200px"></textarea>
                         <br>
                         <br>
+                        <!--submit button-->
                         <button onclick="on(event)">Submit</button>
+                        <!--overlay shown when contact form is submitted-->
                         <div id="overlaycontact" onclick="off(event)">
                             <div id="textcontact">
                                 <h3>Thank you for contacting us. One of our customer service representatives will get back in touch with you shortly.</h3>
@@ -631,19 +650,21 @@
 
                     </form><br><br>
                 </div>
-                <!--map on rightt-->
+                <!--map on right-->
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d590332.0893760236!2d163.55679314623086!3d-70.49567154190846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snz!4v1617927178261!5m2!1sen!2snz"></iframe>
 
                 </div>
 
                 <div id="contcontact">
+                    <!--subscribe form-->
+
                     <form action="/action_page.php">
                         <div class="container2">
 
-                            <!--newsletter-->
                             <h2 id="new">Subscribe to our Newsletter</h2>
                             <p>Subscribe to our newsletter and get 20% off your first order. We also deliver the lastest news and offers straight to your inbox.</p>
+                            <!--input fields-->
 
                             <input id="newsname" type="text" placeholder="Name" name="name">
                             <input id="newsemail" type="text" placeholder="Email address" name="mail">
@@ -652,6 +673,8 @@
                             </label>
 
                             <input type="submit" onclick="onsubscribe(event)" value="Subscribe" id="subscribe">
+                            <!--overlay shown when subscribe button pressed-->
+
                             <div id="overlay" onclick="offsubscribe()">
                                 <div id="text">
                                     <h3>Thank you for subscribing.</h3>
